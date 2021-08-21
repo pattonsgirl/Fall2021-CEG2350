@@ -1,7 +1,5 @@
 # Lab 1 - NOT FINALIZED
 
-## Updated 1/18/2020
-
 The purpose of this lab is to familiarize yourself with the lab space we will be using  
 for the remainder of the labs. You should have received an email regarding your AWS  
 Educate account for this class. We will be using AWS to create virtual environments  
@@ -18,55 +16,18 @@ for you to use to complete the tasks given.
 
 - 22
 
-## Getting Started:
+## Pre-Reqs:
 
-### Text Editors:
-
-I recommend [Visual Studio Code](https://code.visualstudio.com/) as a cross platform solution (plus dark mode looks cool). You can also use any default text editor on your system (Notepad, Notepad++, or whatever Mac's have).
-
-### Setup for Windows Users
-
-1. Install WSL 2
-
-- [Follow instructions on the Windows blog](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps)
-- Common pitfalls:
-  - Windows is not fully up to date.
-  - Did not reboot **before** running the change version command
-- After installing Ubuntu from the Windows store, open Ubuntu once
-  - After the installion message finishes, you should be prompted to create a username and password
-
-2. In later labs, you will need two terminals open. It is absolutely alright to open multiple instances of Ubuntu, but it can be convenient to have a "tab" based setup. I recommend `Windows Terminal` (can be found in the Windows Store) or `MobaXTerm` (installation instructions below)
-
-3. Optional: [Download MobaXterm Home Edition: Installer Edition](https://download.mobatek.net/2062020111930940/MobaXterm_Installer_v20.6.zip)
-
-- Extract the contents to your Desktop.
-- Double-click to run the installer
-- Once installed, run the program one time - this finishes the installation
-- You can now delete the installation files
-- Open Moba. You can now choose to run WSL Ubuntu _or_ Moba bash.
-  - To change terminals, go to Settings -> Configuration. Select the Terminal tab. In the dropdown at the bottom, change from `bash` to `WSL Ubuntu`
-- Keep your SSH session "alive"
-  - `Settings` -> `Configuration`. In `SSH` tab, checkmark the box corresponding to `SSH keepalive`
-
-4. If you **do not have administrative privileges** on the system, you will need to install MobaXTerm (step 3) and install Cygutils (instructions below) in order to perform the labs.
-
-- In Moba, select the Packages icon at the top.
-- Wait for the package menu to appear.
-- In the search bar, type "cygutils". Select the package from the result listings
-- Select Install / Update.
-- Restart Moba. Start Local Terminal should work
-- In the toolbar for Moba, go to Settings -> Configuration
-- In the General tab, check the following two fields are populated with the following values:
-  - Persistent home directory: `_MyDocuments_\MobaXterm\home`
-  - Persistent root directory: `_MyDocuments_\MobaXterm\slash`
-
-### Mac & Linux Users
-
-- You should have a terminal already installed. Hunt it down ;)
+- A GitHub account
+- A terminal on your system
+  - [See Environment Setup](../EnvironmentSetup.md)
+- A text editor
+  - I recommend [Visual Studio Code](https://code.visualstudio.com/) as a cross platform solution (plus dark mode looks cool)
+  - You can also use any default text editor on your system (Notepad, Notepad++, or whatever Mac's have).
 
 ## Lab Procedure
 
-Perform the following tasks. Document your answers in a plain text file named `Lab01-LastName.txt`where LastName is your last name. At the top of the file please enter your personal details as follows:
+Perform the following tasks. Document your answers in a plain text file named `Lab01-LastName.txt` where LastName is your last name. At the top of the file please enter your personal details as follows:
 
 ```
 Name: Your name
@@ -82,7 +43,7 @@ Note: The email was sent to your wright.edu email account
 _Registration form warnings_:
 
 - Make sure you set a **graduation date** IN THE FUTURE
-  - For Spring 2021, I recommend using 12/30/2026
+  - For Fall 2021, I recommend using 12/30/2030
 - The last field on the right is a **Promotional Code** field. Your autofill may mistake it for a  
   zip code and unhelpfully fill it out for you. Make sure the Promotional Code field is _blank_ (empty)
 
@@ -143,7 +104,7 @@ While exploring and discovery is an important part of this course, any additiona
 
 ### Part 1 Lab Report Questions:
 
-1. What is the Elastic IP address for your environment? (2 pts)
+1. What is the IP address for your environment? (2 pts)
 
 ## Part 2 - Connecting to the AWS environment
 
@@ -171,36 +132,19 @@ While exploring and discovery is an important part of this course, any additiona
 2. Write the full (absolute) path to your local key file and the command(s) you used to find it. (1 pt)
    **Useful Commands: `pwd, ls, cd`**
 3. Write the command you used to `ssh` in to your AWS environment. (3 pts)  
-   `ssh` into your AWS environment for the questions below. Provide the command(s) used to find your answers.
+   `ssh` into your AWS environment for the question(s) below. Provide the command(s) used to find your answers.
 4. Read `/etc/*-release`. What is the PRETTY_NAME of the Operating System in AWS? (1 pt)
    **Useful Commands: `cat, cd`**
 
-## Part 3 - Git Fidgetting: Updated 1/18
+## Part 3 - Git Fidgetting:
 
 1. Create or sign in to your [github](https://github.com/) account.
-2. ~~Create a new Repository with a name of your choice. I recommend `Spring2021-CEG2350`.~~
+2. Follow the [instructions here](../GitHubClassrooms.md) to set up your repository and perform your first clone! 
+  - If you previous followed these instructions for your personal machine, follow the SSH key setup part and clone for your system on AWS
 
-- ~~Set it to Private (you can change this in the future).~~
-- ~~Check the box to Initialize this repository with a README~~
-- ~~Click Create Repository~~
+### Part 3 Lab Report Questions:
 
-2. In Pilot -> this course -> Content -> Labs, click the `Link to GitHub Classroom Invite`
-
-- Select your wright.edu email address from the list shown.
-- Select `OK` on the popup to confirm you selected the correct email address.
-- Select `Accept this assignment`
-- After a minute, refresh the next page.
-- Click the lower link / link that looks similar to: `https://github.com/WSU-kduncan/spring2021-ceg2350-your_GitHub_username`. The top link sometimes presents an "error" but things are actually fine.
-- It may be convenient to bookmark this link for easy access.
-
-3. In your github repository, select Code (green button). It should say "Clone with HTTPS". Copy the URL to your clipboard.
-4. Go to your AWS Educate environment.
-5. Create a folder called `git` and change into the folder.
-6. Use the `git` command to `clone` your repository.
-
-### Part 3 Lab Report Questions: Updated 1/18
-
-1. Copy the URL to your GitHub repository (the magic one from GitHub Classrooms).
+1. Write the URL to your GitHub repository setup in GitHub classrooms.
 2. Write the command you used to clone your repository. (2 pts)
 
 ## Submission
