@@ -25,7 +25,7 @@ Click the link when you are ready, then follow the instruction in [Setup](#Setup
 3. Select `Accept this assignment`
 4. After a minute, refresh the next page. You'll see something similar to:
   ![You're ready to go!](Images/github-classrooms-success.png)
-4. Click the lower link / link that looks similar to: `https://github.com/WSU-kduncan/CEG2350-F21-your_GitHub_username`. 
+4. Click the lower link / link that looks similar to: `https://github.com/WSU-kduncan/ceg2350-your_GitHub_username`. 
   - The top link sometimes presents an "error" but things are actually fine.
 5. It may be convenient to bookmark this link for easy access down the road.
 
