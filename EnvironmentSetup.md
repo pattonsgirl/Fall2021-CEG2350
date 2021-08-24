@@ -3,7 +3,7 @@
 This guide is for new users who need to set up their environment.
 
 - Windows Users
-  - [WSL2](#Install-WSL2)
+  - [WSL2](#Install-WSL-2)
     - [WSL2 Troubleshooting](#WSL-2-Install-Errors)
   - [Terminal Manager](#Terminal-Manager)
   - [MobaXTerm](#Install-MobaXTerm)
