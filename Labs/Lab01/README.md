@@ -20,7 +20,7 @@ for you to use to complete the tasks given.
 
 - A GitHub account
 - A terminal on your system
-  - [See Environment Setup](../EnvironmentSetup.md)
+  - [See Environment Setup](../../EnvironmentSetup.md)
 - A text editor
   - I recommend [Visual Studio Code](https://code.visualstudio.com/) as a cross platform solution (plus dark mode looks cool)
   - You can also use any default text editor on your system (Notepad, Notepad++, or whatever Mac's have).
@@ -139,7 +139,7 @@ While exploring and discovery is an important part of this course, any additiona
 ## Part 3 - Git Fidgetting:
 
 1. Create or sign in to your [github](https://github.com/) account.
-2. Follow the [instructions here](../GitHubClassrooms.md) to set up your repository and perform your first clone! 
+2. Follow the [instructions here](../../GitHubClassrooms.md) to set up your repository and perform your first clone! 
   - If you previous followed these instructions for your personal machine, follow the SSH key setup part and clone for your system on AWS
 
 ### Part 3 Lab Report Questions:
