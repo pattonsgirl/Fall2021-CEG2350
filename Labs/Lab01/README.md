@@ -82,9 +82,9 @@ Create an SSH key pair to get to your virtual machine.
 
 Create your AWS environment
 
-- Once you have created your SSH key, [click here to provision your virtual environment](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=CEG-2350&templateURL=https:%2F%2Fwsu-cecs-cf-templates.s3.us-east-2.amazonaws.com%2Fceg2350.yml)
-  This link autofills many fields for creating our virtual machine.
-
+- Once you have created your SSH key, [click here to provision your virtual environment](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=ceg2350&templateURL=https:%2F%2Fwsu-cecs-cf-templates.s3.us-east-2.amazonaws.com%2Fcourse-templates%2Fceg2350.yml)
+  - LINK UPDATED 8/26/2021  
+  - This link autofills many fields for creating our virtual machine.
   - On the first menu, click Next
   - On the second menu, under Parameters, type the name of the key pair you made in the  
     step above. If you don't remember, you can [open your key list here](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#KeyPairs:sort=keyName). Click Next
