@@ -141,15 +141,49 @@ While exploring and discovery is an important part of this course, any additiona
 1. Create or sign in to your [github](https://github.com/) account.
 2. Follow the [instructions here](../../GitHubClassrooms.md) to set up your repository and perform your first clone! 
   - If you previous followed these instructions for your personal machine, follow the SSH key setup part and clone for your system on AWS
+3. In the folder for your repo
 
 ### Part 3 Lab Report Questions:
 
 1. Write the URL to your GitHub repository setup in GitHub classrooms.
 2. Write the command you used to clone your repository. (2 pts)
 
+## Part 4 - Try out markdown and play with `git` commands:
+
+So far, you have been doing what this lab told you.  You created a .txt file.  You have likely found out that any fancy formatting doesn't exist.  It's just text.  Therefore, you are going to create your first file using `markdown`
+- [What is markdown?](https://www.markdownguide.org/getting-started/)
+
+1. On your Ubuntu system we made on AWS (previous steps), go into the folder you cloned  
+   **Useful Commands: `pwd, ls, cd`**
+2. Create and open a file named `Lab01.md`  
+   **Useful Commands: `vim`**
+3. Check out the [Lab Template](LabTemplate.md)
+  - View the [raw version of the Lab Template]() 
+  - [Basic `vim` usage](https://www.howtoforge.com/vim-basics)
+4. Use markdown to make this look nice.
+  - Hints: if you look around in your folder, you'll see a folder named `sample`.  In `sample` is a sample file with some commonly used markdown.  You can see how this markdown looks by going to your repository in the browser, clicking into the sample folder, and clicking on `markdown-guide.md`
+5. You have now made a new file, added some text to it, and (hopefully) made it look fancy... but how can we test this?
+6. Use `git` commands to `add`, `commit` and `push` the file you made to GitHub.
+  - If successful, when you go to the repository in your browser, you'll see `Lab01.md` as something you can click to view.
+7. Now that you can see it, go back to your file and make tweaks if needed to fix the markdown.
+
+**Resources**
+- [git + GitHub guide](https://guides.github.com/introduction/git-handbook/)
+  - This is more than you need, but well done for the basic usage of `add`, `commit`, `push`
+
+## Part 4 Lab Report Questions:
+
+There are none, proof is in the proverbial pudding.  Head to Submission
+
 ## Submission
 
-Upload your file named Lab01-LastName.txt to the Pilot Dropbox.
+- If `Lab01.md` is in your repository and verified viewable on GitHub:
+  1. In the Pilot Dropbox, paste the URL to `Lab01.md` in your GitHub repo
+
+- If not:
+  1. Reach out to the TAs and / or I.  Getting this process down is required for future lab submissions.
+  2. Add to your Lab01-LastName.txt what steps you had trouble with
+  3. Upload your file named Lab01-LastName.txt to the Pilot Dropbox for partial credit
 
 ### Acknowledgement
 
