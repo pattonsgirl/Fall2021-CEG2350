@@ -110,21 +110,23 @@ While exploring and discovery is an important part of this course, any additiona
 
 **You are now ready to make an SSH connection to your AWS server.**
 
-- Open Ubuntu or another terminal.
-- Copy of the AWS SSH key that was downloaded to your home directory
-  - Helpful commands: `cp, ls, man`
-  - The manual method: Create a file with a useful name (or the same name as the downloaded file) `ceg2350-aws-vm.pem`
-  - Open a text editor (`vim` or `nano`)
+1. Open Ubuntu or another terminal.
+2. Copy the AWS SSH key that AWS made you download into your user's home directory
+  - Helpful commands: `cd, cp, ls, man`
+  - The manual method (especially for those using WSL2): 
+  - In your user's home directory, create a file named `ceg2350-aws-vm.pem`
+  - Open the file in a text editor (`vim` or `nano`)
   - Copy and paste the contents of the key that was downloaded from AWS Educate into the file.
-- Change the permissions on the key file in your directory
+3. Change the permissions on the key file in your directory
   - Because private keys need to be protected, the key needs to be changed to readable by your user by using `chmod`
   - `chmod 600 /path/to/private/key` - replace _/path/to/private/key_ with your information
   - Resource on how to use [chmod](https://www.howtogeek.com/437958/how-to-use-the-chmod-command-on-linux/)
-- SSH into your AWS server with the following command  
+4. SSH into your AWS server with the following command  
    `ssh -i /path/to/private/key ubuntu@ElasticIP`  
    Note: replace _/path/to/private/key_ and _ElasticIP_ with your information
   - If your connection was refused, you may have forgotten to put the username `ubuntu` in front of your Elastic IP address
-- You are now signed in to your AWS Educate system as the user `ubuntu`
+  - If prompted, type 'y' or 'yes' to continue connecting
+5. You are now signed in to your AWS Educate system as the user `ubuntu`
 
 ### Part 2 Lab Report Questions: (4 pts)
 
