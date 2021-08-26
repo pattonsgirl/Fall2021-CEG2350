@@ -14,3 +14,6 @@
 
 # Lab 02
 - 
+
+Now have:
+Spare volume (4GB in size) - xvdb
