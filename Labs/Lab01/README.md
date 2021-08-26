@@ -150,7 +150,8 @@ While exploring and discovery is an important part of this course, any additiona
 
 ## Part 4 - Try out markdown and play with `git` commands:
 
-So far, you have been doing what this lab told you.  You created a .txt file.  You have likely found out that any fancy formatting doesn't exist.  It's just text.  Therefore, you are going to create your first file using `markdown`
+So far, you have been doing what this lab told you.  You created a .txt file.  You have likely found out that any fancy formatting doesn't exist.  It's just text.  Therefore, you are going to create your first file using `markdown`.  
+If you look around in the folder you cloned, you'll see a folder named `sample`.  In `sample` is a sample file with some commonly used markdown.  You can see how this markdown looks by going to your repository in the browser, clicking into the sample folder, and clicking on `markdown-guide.md`
 - [What is markdown?](https://www.markdownguide.org/getting-started/)
 
 1. On your Ubuntu system we made on AWS (previous steps), go into the folder you cloned  
@@ -158,14 +159,14 @@ So far, you have been doing what this lab told you.  You created a .txt file.  Y
 2. Create and open a file named `Lab01.md`  
    **Useful Commands: `vim`**
 3. Check out the [Lab Template](LabTemplate.md)
-  - View the [raw version of the Lab Template]() 
+  - View the [raw version of the Lab Template](https://raw.githubusercontent.com/pattonsgirl/Fall2021-CEG2350/main/Labs/Lab01/LabTemplate.md) 
+4. Copy the format of the lab template and fill it in with your lab answers.
   - [Basic `vim` usage](https://www.howtoforge.com/vim-basics)
-4. Use markdown to make this look nice.
-  - Hints: if you look around in your folder, you'll see a folder named `sample`.  In `sample` is a sample file with some commonly used markdown.  You can see how this markdown looks by going to your repository in the browser, clicking into the sample folder, and clicking on `markdown-guide.md`
 5. You have now made a new file, added some text to it, and (hopefully) made it look fancy... but how can we test this?
 6. Use `git` commands to `add`, `commit` and `push` the file you made to GitHub.
   - If successful, when you go to the repository in your browser, you'll see `Lab01.md` as something you can click to view.
 7. Now that you can see it, go back to your file and make tweaks if needed to fix the markdown.
+  - Once you are done making changes, use `git` commands to `commit` and `push` the changes to GitHub - hitting refresh will show the updated version.
 
 **Resources**
 - [git + GitHub guide](https://guides.github.com/introduction/git-handbook/)
