@@ -7,6 +7,7 @@ This guide is for new users who need to set up their environment.
     - [WSL2 Troubleshooting](#WSL-2-Install-Errors)
   - [Terminal Manager](#Terminal-Manager)
   - [MobaXTerm](#Install-MobaXTerm)
+    - [cygutils Package](#add-cygutils)
 - Mac & Linux Users
   - Use terminal already installed on your system
   - Let me (the instructor) or your ta's know if this needs updating
@@ -44,6 +45,8 @@ In later labs, you will need two terminals open. It is absolutely alright to ope
   - `Settings` -> `Configuration`. In `SSH` tab, checkmark the box corresponding to `SSH keepalive`
 
 If you **do not have administrative privileges** on the system, you will need to install MobaXTerm (step 3) and install Cygutils (instructions below) in order to perform the labs.
+
+### add cygutils
 
 - In Moba, select the Packages icon at the top.
 - Wait for the package menu to appear.
