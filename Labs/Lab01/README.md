@@ -102,7 +102,7 @@ Create your AWS environment
 **WARNING**
 While exploring and discovery is an important part of this course, any additional resources you create in AWS have an associated charge. If resources besides those strictly asked for by this course stay running, you risk running out of funds for this course. While fixable, this will hinder your ability to complete labs on time. Please let the TA's know if you need assistance cleaning up you environments.
 
-### Part 1 Lab Report Questions:
+### Part 1 Lab Report Questions: (2 pts)
 
 1. What is the IP address for your environment? (2 pts)
 
@@ -126,14 +126,13 @@ While exploring and discovery is an important part of this course, any additiona
   - If your connection was refused, you may have forgotten to put the username `ubuntu` in front of your Elastic IP address
 - You are now signed in to your AWS Educate system as the user `ubuntu`
 
-### Part 2 Lab Report Questions:
+### Part 2 Lab Report Questions: (4 pts)
 
 1. How do you exit `vim`? (1 pt)
-2. Write the full (absolute) path to your local key file and the command(s) you used to find it. (1 pt)  
-   **Useful Commands: `pwd, ls, cd`**
-3. Write the command you used to `ssh` in to your AWS environment. (3 pts)  
-   `ssh` into your AWS environment for the question(s) below. Provide the command(s) used to find your answers.
-4. Read `/etc/*-release`. What is the PRETTY_NAME of the Operating System in AWS? (1 pt)  
+2. Write the command you used to `ssh` in to your AWS environment. (2 pts)  
+
+`ssh` into your AWS environment for the question(s) below. Provide the command(s) used to find your answers.
+3. Read `/etc/os-release`. What is the PRETTY_NAME of the Operating System in AWS? (1 pt)  
    **Useful Commands: `cat, cd`**
 
 ## Part 3 - Git Fidgetting:
@@ -143,9 +142,9 @@ While exploring and discovery is an important part of this course, any additiona
   - If you previous followed these instructions for your personal machine, follow the SSH key setup part and clone for your system on AWS
 3. In the folder for your repo
 
-### Part 3 Lab Report Questions:
+### Part 3 Lab Report Questions: (3 pts)
 
-1. Write the URL to your GitHub repository setup in GitHub classrooms.
+1. Write the URL to your GitHub repository setup in GitHub classrooms. (1 pt)
 2. Write the command you used to clone your repository. (2 pts)
 
 ## Part 4 - Try out markdown and play with `git` commands:
@@ -172,9 +171,10 @@ If you look around in the folder you cloned, you'll see a folder named `sample`.
 - [git + GitHub guide](https://guides.github.com/introduction/git-handbook/)
   - This is more than you need, but well done for the basic usage of `add`, `commit`, `push`
 
-## Part 4 Lab Report Questions:
+### Part 4 Lab Report Questions: (1 pt)
 
-There are none, proof is in the proverbial pudding.  Head to Submission
+There are none, proof is in the proverbial pudding.  Head to Submission  
+Successful completion of this portion is worth 1 pt
 
 ## Submission
 
