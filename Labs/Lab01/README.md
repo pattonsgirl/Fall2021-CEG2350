@@ -179,7 +179,8 @@ Successful completion of this portion is worth 1 pt
 ## Submission
 
 - If `Lab01.md` is in your repository and verified viewable on GitHub:
-  1. In the Pilot Dropbox, paste the URL to `Lab01.md` in your GitHub repo
+  1. In the Pilot Dropbox, paste the URL to the `Lab01.md` file in your GitHub repo
+    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBNAME/Lab01.md
 
 - If not:
   1. Reach out to the TAs and / or I.  Getting this process down is required for future lab submissions.
