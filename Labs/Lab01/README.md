@@ -1,4 +1,4 @@
-# Lab 1 - NOT FINALIZED
+# Lab 01
 
 The purpose of this lab is to familiarize yourself with the lab space we will be using  
 for the remainder of the labs. You should have received an email regarding your AWS  
