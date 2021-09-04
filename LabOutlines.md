@@ -22,7 +22,6 @@
 - folders
 - permissions - NEW
 - other users - NEW
-- zip / compression?
 - ~~inodes & hard / symbolic links~~ - move to lab on fs
 
 # Lab 03

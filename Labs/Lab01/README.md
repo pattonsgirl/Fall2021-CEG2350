@@ -133,7 +133,7 @@ While exploring and discovery is an important part of this course, any additiona
 1. How do you exit `vim`? (1 pt)
 2. Write the command you used to `ssh` in to your AWS environment. (2 pts)  
 
-`ssh` into your AWS environment for the question(s) below. Provide the command(s) used to find your answers.
+- `ssh` into your AWS environment for the question(s) below. Provide the command(s) used to find your answers.  
 3. Read `/etc/os-release`. What is the PRETTY_NAME of the Operating System in AWS? (1 pt)  
    **Useful Commands: `cat, cd`**
 
