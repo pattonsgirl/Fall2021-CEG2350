@@ -6,8 +6,8 @@
 - [Part 3 - Play with hidden files](#Part-3---Play-with-hidden-files)
 - [Part 4 - Regular `bob`](#Part-4---Regular-bob)
 - [Part 5 - Get a crew](#Part-5---Get-a-crew)
-- [Part 6 - `sudo` make me a sandwich](#Part-6---sudo-make-me-a-sandwich])
-- [Part 7 - `git` & GitHub](#Part-7---git-&-GitHub)
+- [Part 6 - `sudo` make me a sandwich](#Part-6---sudo-make-me-a-sandwich)
+- [Part 7 - `git` & GitHub](#Part-7---git-and-GitHub)
 - [Extra Credit - Test your skills](#Extra-Credit---Test-your-skills)
 - [Submission](#Submission)
 
@@ -108,7 +108,7 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 2. What are the permissions of this file?
 3. Without modifying the permissions fo the file, edit the file and add some text.
 
-## Part 7 - `git` & GitHub
+## Part 7 - `git` and GitHub
 
 1. On your Ubuntu system we made on AWS (Lab01), go into the folder you cloned  
    **Useful Commands: `pwd, ls, cd`**
