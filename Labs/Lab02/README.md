@@ -73,11 +73,19 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 
 ## Part 4: Regular bob
 
-- **Useful commands for this part: `adduser, sudo, su, chown`**
+- **Useful commands for this part: `adduser, sudo, su, chown, pwd, cd`**
+
 1. Create a new user named `bob`
 2. What is the path to `bob`'s `home` directory?
-3. 
-
+3. Find a way for the `ubuntu` user to add a file to `bob`'s home directory named `fromubuntu.txt`
+   - Write the command(s) you used.
+   - Are you happy with your solution?
+4. Switch to the user `bob`
+5. Get to `bob`'s `home` directory
+6. Can `bob` edit `fromubuntu.txt`?
+7. Fix the permissions so that `bob` owns `fromubuntu.txt`
+   - Hint: can `bob` use `sudo`?
+8. Switch back to the `ubuntu` user
 
 ## Part 5: Get a crew
 
