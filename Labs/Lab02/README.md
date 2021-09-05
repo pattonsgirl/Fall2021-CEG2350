@@ -1,7 +1,7 @@
 # Lab 02 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Play with directories & naming](#Part-1---Play-with-directories-&-naming)
+- [Part 1 - Play with directories & naming](#Part-1---Play-with-directories-and-naming)
 
 ## Lab Pre-Reqs
 
@@ -35,7 +35,7 @@ Answer: `touch bubbles.txt`
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later. 
 
-## Part 1 - Play with directories & naming
+## Part 1 - Play with directories and naming
 
 Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)  
    - If you were unsuccessful before, meet with the TAs and / or I
