@@ -1,6 +1,9 @@
-# Lab 2 - NOT FINALIZED
+# Lab 02 - NOT FINALIZED
 
-## Setup
+- [Lab Procedure](#Lab-Procedure)
+- [Part 1: Play with directories & naming](#Part-1:-Play-with-directories-&-naming)
+
+## Lab Pre-Reqs
 
 This lab assumes that you have completed [Lab 01](../Lab01/README.md)
 
@@ -8,31 +11,19 @@ This lab assumes that you have completed [Lab 01](../Lab01/README.md)
 - You have connected to your GitHub repository for this course
   - If you forgot to bookmark it, the URL is:
   - `https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME`
-- You have cloned the repository to you Ubuntu AWS system
+- You have cloned the repository to your Ubuntu AWS instance
+   - The thing you `ssh` into
+- This is a great time to check your Lab01 feedback too!
 
-## Lab Procedure
+## Lab Procedure:
 
-**For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.  
-
-1. `ssh` in to your AWS environment. 
-   - If you've forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
-   - See [Remaking your AWS Educate environment](../../README.md) for instructions.
-2. Go to the folder in which you cloned your Git repository for this course.
-3. Create a directory called `Lab02`
-4. In this directory, create a file called `README.md`
-5. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS system for ease of use.
-   - At the top of the file please enter your personal details as follows:
+Document your answers in a plain text file named `Lab02-LastName.txt` where LastName is your last name. At the top of the file please enter your personal details as follows:
 
 ```
 Name: Your name
 Email: Your email
+
 ```
-
-**Useful commands: `man, mkdir, cd, ls, pwd, vim / nano`**
-
-## TODO: Place GitHub setup up here?
-
-## Lab Procedure:
 
 For each part below, you will be asked to do an action or answer a question.  The actions are going to be commands - you will write the command you used as "answers" to the action requested.  You are allowed to use multiple commands to solve an action.  Just write down all that were needed to complete.  Check with the TAs if you need clarification.
 
@@ -42,7 +33,9 @@ Prompt: Create a file named bubbles.txt
 Answer: `touch bubbles.txt`
 ```
 
-## Part 1: Play with directories & naming (3 pts)
+If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later. 
+
+## Part 1: Play with directories & naming
 
 Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)  
    - If you were unsuccessful before, meet with the TAs and / or I
@@ -73,7 +66,7 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 
 ## Part 4: Regular bob
 
-- **Useful commands for this part: `adduser, sudo, su, chown, pwd, cd`**
+- **Useful commands for this part: `adduser, sudo, su, chown, pwd, cd, whoami`**
 
 1. Create a new user named `bob`
 2. What is the path to `bob`'s `home` directory?
@@ -103,32 +96,9 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 
 - **Useful commands for this part: `sudo`**
 
-1. 
-
-## Part 6: Test your skills
-
-- **Useful commands for this part: All of the above!**
-
-1. Create a file in `DirB` with the following permission set:  
-   - `-rw-rw-rw- sally crew [size] [datetime] mydiary.txt`
-   - where `[size]` and `[datetime]` are going to be unique for you
-2. `sally` would like the file to be readable and writeable only by her.  Change the needed permissions to fix this.
-3. Copy the new permission set listing and use it as the answer to this question.
-4. `ubuntu` would like to edit `sally`'s `mydiary.txt` file, just to mess with her.  How can `ubuntu` do this without changing the permissions?
-5. `bob` wants in on the joke to edit `sally`'s `mydiary.txt` file, just to mess with her.  How can `bob` do this without changing the permissions?
-
-### Part 4: Play with permissions (5 pts)
-
-1. What are the permission settings for user, group, and other of the files in `DirA`? What is the current  
-   owner and group name?
-2. Use `sudo` to make a copy of `test.txt` called `su-test.txt`
-3. What are the permission settings for user, group, and other for `su-test.txt`? What is the current  
-   owner and group name?
-4. Can your user write to `su-test.txt`? If not, how can you write to the file without changing the permissions?
-5. Change the file permissions so you can read and write to the file as your user (as in read / write without using `sudo`).  
-   **Useful Commands: `chmod, chown, chgrp, ls, sudo, cp, cat`**
-
-
+1. In the `ubuntu` user's `home` directory, make a file with `sudo` named `sudowho.txt`
+2. What are the permissions of this file?
+3. Without modifying the permissions fo the file, edit the file and add some text.
 
 ## `git` & GitHub (2 pts)
 
@@ -145,6 +115,18 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
   - If successful, when you go to the repository in your browser, you'll see `Lab02.md` as something you can click to view.
 7. Now that you can see it, go back to your file and make tweaks if needed to fix the markdown.
   - Once you are done making changes, use `git` commands to `commit` and `push` the changes to GitHub - hitting refresh will show the updated version.
+
+## Extra Credit: Test your skills (10%)
+
+- **Useful commands for this part: All of the above!**
+
+1. Create a file in `DirB` with the following permission set:  
+   - `-rw-rw-rw- sally crew [size] [datetime] mydiary.txt`
+   - where `[size]` and `[datetime]` are going to be unique for you
+2. `sally` would like the file to be readable and writeable only by her.  Change the needed permissions to fix this.
+3. Copy the new permission set listing and use it as the answer to this question.
+4. `ubuntu` would like to edit `sally`'s `mydiary.txt` file, just to mess with her.  How can `ubuntu` do this without changing the permissions?
+5. `bob` wants in on the joke to edit `sally`'s `mydiary.txt` file, just to mess with her.  How can `bob` do this without changing the permissions?
 
 
 ## Submission
