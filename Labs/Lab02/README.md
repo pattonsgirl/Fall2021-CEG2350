@@ -1,7 +1,9 @@
 # Lab 02 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Play with directories & naming](#Part-1---Play-with-directories-and-naming)
+- [Part 1 - Play with directories and naming](#Part-1---Play-with-directories-and-naming)
+- [Extra Credit - Test your skills (10%)](#Extra-Credit---Test-your-skills-(10%))
+- [Submission](#Submission)
 
 ## Lab Pre-Reqs
 
@@ -80,7 +82,7 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
    - Hint: can `bob` use `sudo`?
 8. Switch back to the `ubuntu` user & return to the `ubuntu` user's `home` directory
 
-## Part 5: Get a crew
+## Part 5 - Get a crew
 
 - **Useful commands for this part: `addgroup, chown, chgrp`**
 
@@ -92,7 +94,7 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 6. Why was this successful?
 
 
-## Part 6: [`sudo` make me a sandwich](https://xkcd.com/149/)
+## Part 6 - [`sudo` make me a sandwich](https://xkcd.com/149/)
 
 - **Useful commands for this part: `sudo`**
 
@@ -100,7 +102,7 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 2. What are the permissions of this file?
 3. Without modifying the permissions fo the file, edit the file and add some text.
 
-## `git` & GitHub (2 pts)
+## Part 7 - `git` & GitHub (2 pts)
 
 1. On your Ubuntu system we made on AWS (Lab01), go into the folder you cloned  
    **Useful Commands: `pwd, ls, cd`**
@@ -116,7 +118,7 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 7. Now that you can see it, go back to your file and make tweaks if needed to fix the markdown.
   - Once you are done making changes, use `git` commands to `commit` and `push` the changes to GitHub - hitting refresh will show the updated version.
 
-## Extra Credit: Test your skills (10%)
+## Extra Credit - Test your skills (10%)
 
 - **Useful commands for this part: All of the above!**
 

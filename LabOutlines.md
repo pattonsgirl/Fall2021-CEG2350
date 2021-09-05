@@ -22,6 +22,7 @@
 - folders
 - permissions - NEW
 - other users - NEW
+- playing with root and sudo - NEW
 - ~~inodes & hard / symbolic links~~ - move to lab on fs
 
 # Lab 03
