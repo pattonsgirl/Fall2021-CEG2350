@@ -5,6 +5,8 @@ for the remainder of the labs. You should have received an email regarding your 
 Educate account for this class. We will be using AWS to create virtual environments  
 for you to use to complete the tasks given.
 
+- [Part 1 - Provision Lab Environment in AWS](Part-1---Provision-the-lab-environment-in-AWS)
+
 ## Objectives
 
 1. Get Started with AWS Educate
@@ -50,7 +52,7 @@ _Registration form warnings_:
 Once you have filled in the registration information and verified your email address, you will get an account  
 approval email. For reference, mine took 2-3 minutes to arrive.
 
-## Part 1 - Provision the lab environment in AWS.
+## Part 1 - Provision the lab environment in AWS
 
 Assuming you have registered for AWS Educate and have access to this class, perform the following:
 
