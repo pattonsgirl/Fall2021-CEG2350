@@ -5,16 +5,20 @@ for the remainder of the labs. You should have received an email regarding your 
 Educate account for this class. We will be using AWS to create virtual environments  
 for you to use to complete the tasks given.
 
-- [Part 1 - Provision Lab Environment in AWS](#Part-1---Provision-the-lab-environment-in-AWS)
+- [Part 1 - Provision Lab Environment in AWS](#Part-1---Provision-Lab-Environment-in-AWS)
+- [Part 2 - Connecting to the AWS instance](#Part-2---Connecting-to-the-AWS-instance)
+- [Part 3 - Git Fidgetting](#Part-3---Git-Fidgetting)
+- [Part 4 - Try out markdown and play with `git` commands](#Part-4---Try-out-markdown-and-play-with-`git`-commands)
+- [Submission](#Submission)
 
 ## Objectives
 
 1. Get Started with AWS Educate
 2. Start building your git(hub) toolbox
-3. Use some linux commands in your AWS environment
+3. Use some linux commands in your AWS instance
 4. Submit your answers to Pilot in a .txt file
 
-**Important Note:** This AWS environment only allows inbound access from following ports:
+**Important Note:** This AWS instance only allows inbound access from following ports:
 
 - 22
 
@@ -52,7 +56,7 @@ _Registration form warnings_:
 Once you have filled in the registration information and verified your email address, you will get an account  
 approval email. For reference, mine took 2-3 minutes to arrive.
 
-## Part 1 - Provision the lab environment in AWS
+## Part 1 - Provision Lab Environment in AWS
 
 Assuming you have registered for AWS Educate and have access to this class, perform the following:
 
@@ -80,9 +84,9 @@ Create an SSH key pair to get to your virtual machine.
     **MAKE SURE YOU SELECT SSH (pem) as the key type**
   - This creates a public/private key pair, stores the public key in AWS, and downloads the private key to your local machine.
   - **Do not lose the downloaded key.**
-  - Back it up to a USB drive or your Office365 account. Once you go through the steps below, this key will be the only way to log in to your AWS environment. If the key is lost, you will need to delete the environment and start from scratch.
+  - Back it up to a USB drive or your Office365 account. Once you go through the steps below, this key will be the only way to log in to your AWS instance. If the key is lost, you will need to delete the environment and start from scratch.
 
-Create your AWS environment
+Create your AWS instance
 
 - Once you have created your SSH key, [click here to provision your virtual environment](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=ceg2350&templateURL=https:%2F%2Fwsu-cecs-cf-templates.s3.us-east-2.amazonaws.com%2Fcourse-templates%2Fceg2350.yml)
   - LINK UPDATED 8/26/2021 - if you clicked the link before this message, you need to delete the old verion of your stack.  See Remaking your AWS educate environment
@@ -108,7 +112,7 @@ While exploring and discovery is an important part of this course, any additiona
 
 1. What is the IP address for your environment? (2 pts)
 
-## Part 2 - Connecting to the AWS environment
+## Part 2 - Connecting to the AWS instance
 
 **You are now ready to make an SSH connection to your AWS server.**
 
@@ -133,25 +137,24 @@ While exploring and discovery is an important part of this course, any additiona
 ### Part 2 Lab Report Questions: (4 pts)
 
 1. How do you exit `vim`? (1 pt)
-2. Write the command you used to `ssh` in to your AWS environment. (2 pts)  
+2. Write the command you used to `ssh` in to your AWS instance. (2 pts)  
 
-- `ssh` into your AWS environment for the question(s) below. Provide the command(s) used to find your answers.  
+- `ssh` into your AWS instance for the question(s) below. Provide the command(s) used to find your answers.  
 3. Read `/etc/os-release`. What is the PRETTY_NAME of the Operating System in AWS? (1 pt)  
    **Useful Commands: `cat, cd`**
 
-## Part 3 - Git Fidgetting:
+## Part 3 - Git Fidgetting
 
 1. Create or sign in to your [github](https://github.com/) account.
 2. Follow the [instructions here](../../GitHubClassrooms.md) to set up your repository and perform your first clone! 
   - If you previous followed these instructions for your personal machine, follow the SSH key setup part and clone for your system on AWS
-3. In the folder for your repo
 
 ### Part 3 Lab Report Questions: (3 pts)
 
 1. Write the URL to your GitHub repository setup in GitHub classrooms. (1 pt)
 2. Write the command you used to clone your repository. (2 pts)
 
-## Part 4 - Try out markdown and play with `git` commands:
+## Part 4 - Try out markdown and play with `git` commands
 
 So far, you have been doing what this lab told you.  You created a .txt file.  You have likely found out that any fancy formatting doesn't exist.  It's just text.  Therefore, you are going to create your first file using `markdown`.  
 If you look around in the folder you cloned, you'll see a folder named `sample`.  In `sample` is a sample file with some commonly used markdown.  You can see how this markdown looks by going to your repository in the browser, clicking into the sample folder, and clicking on `markdown-guide.md`
