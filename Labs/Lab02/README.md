@@ -2,6 +2,12 @@
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Play with directories and naming](#Part-1---Play-with-directories-and-naming)
+- [Part 2 - Create and edit a file](#Part-2---Create-and-edit-a-file)
+- [Part 3 - Play with hidden files](#Part-3---Play-with-hidden-files)
+- [Part 4 - Regular `bob`](#Part-4---Regular-bob)
+- [Part 5 - Get a crew](#Part-5---Get-a-crew)
+- [Part 6 - `sudo` make me a sandwich](#Part-6---sudo-make-me-a-sandwich])
+- [Part 7 - `git` & GitHub](#Part-7---git-&-GitHub)
 - [Extra Credit - Test your skills](#Extra-Credit---Test-your-skills)
 - [Submission](#Submission)
 
@@ -52,21 +58,21 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 6. Rename `Dir B` to `DirB`
 
 
-## Part 2: Create and edit a file (2 pt)
+## Part 2 - Create and edit a file
 
 - **Useful commands for this part: `touch, vim`**
 
 1. In `DirA`, create a file called `test.txt`
 2. Put at least three lines of text in `test.txt` using `vim`  
 
-## Part 3: Play with hidden files (3 pt)
+## Part 3 - Play with hidden files
 
 - **Useful commands for this part: `cp, mv, ls`**
 
 1. Make a copy of `test.txt` inside `DirA` named `.hiddentext.txt`
 2. Write the command and flags needed to see the file in `DirA`
 
-## Part 4: Regular bob
+## Part 4 - Regular `bob`
 
 - **Useful commands for this part: `adduser, sudo, su, chown, pwd, cd, whoami`**
 
@@ -102,7 +108,7 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 2. What are the permissions of this file?
 3. Without modifying the permissions fo the file, edit the file and add some text.
 
-## Part 7 - `git` & GitHub (2 pts)
+## Part 7 - `git` & GitHub
 
 1. On your Ubuntu system we made on AWS (Lab01), go into the folder you cloned  
    **Useful Commands: `pwd, ls, cd`**
