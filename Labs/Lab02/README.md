@@ -85,17 +85,25 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 6. Can `bob` edit `fromubuntu.txt`?
 7. Fix the permissions so that `bob` owns `fromubuntu.txt`
    - Hint: can `bob` use `sudo`?
-8. Switch back to the `ubuntu` user
+8. Switch back to the `ubuntu` user & return to the `ubuntu` user's `home` directory
 
 ## Part 5: Get a crew
 
 - **Useful commands for this part: `addgroup, chown, chgrp`**
 
+1. Create a new group named `crew`
+2. Add `ubuntu` and `bob` to the `crew` group
+3. Change the `ubuntu` user's home directory so that `crew` is the group
+4. Switch user to `bob`
+5. As `bob` create a file in the `ubuntu` user's `home` directory.
+6. Why was this successful?
 
 
-## Part 5: [`sudo` make me a sandwich](https://xkcd.com/149/)
+## Part 6: [`sudo` make me a sandwich](https://xkcd.com/149/)
 
 - **Useful commands for this part: `sudo`**
+
+1. 
 
 ## Part 6: Test your skills
 
