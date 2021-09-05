@@ -5,7 +5,7 @@ for the remainder of the labs. You should have received an email regarding your 
 Educate account for this class. We will be using AWS to create virtual environments  
 for you to use to complete the tasks given.
 
-- [Part 1 - Provision Lab Environment in AWS](Part-1---Provision-the-lab-environment-in-AWS)
+- [Part 1 - Provision Lab Environment in AWS](#Part-1---Provision-the-lab-environment-in-AWS)
 
 ## Objectives
 
