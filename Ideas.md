@@ -78,3 +78,19 @@ sed is nice
 
 So that just the emails remain:
 john.smith@gmail.com
+
+
+### Part 5: Play with hard links, soft links, and inodes (11 pts)
+
+1. By default, what does `ln` followed by a filename do?
+2. Use `ln` to create a file named `hard.txt` from `test.txt`
+3. Note the inode number of `hard.txt` and `test.txt`. Are they the same?
+4. Create a symbolic link called `sym.txt` from `hard.txt`
+5. Note the inode number of `sym.txt`. Is it the same as `hard.txt`?
+6. Delete `test.txt`. Is `hard.txt` and `sym.txt` still readable?
+7. Delete `hard.txt`. Is `sym.txt` still readable? Why or why not?
+8. Make a new file called `hard.txt` with some text in it. Can `sym.txt` be read now? Why or why not?
+9. Move `hard.txt` to `DirB`. Can you read `sym.txt`?
+10. Delete `sym.txt`
+11. Create a symbolic link from `hard.txt` in `DirB` to `newsym.txt` in `DirA`  
+    **Useful Commands: `ln, test, stat, cp, mv, rm`**

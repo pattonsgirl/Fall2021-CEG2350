@@ -30,27 +30,51 @@ Email: Your email
 
 **Useful commands: `man, mkdir, cd, ls, pwd, vim / nano`**
 
-## Directories, Files, and Permissions
+## TODO: Place GitHub setup up here?
 
-### Part 1: Play with directories & naming (3 pts)
+## Lab Procedure:
 
-1. In `Lab02`, create one directory called `DirA` and one directory called `Directory B`
-2. What happens to the path name of `Directory B`? Which of the folders uses a better naming convention?
-3. Rename `Directory B` to `DirB`  
-   **Useful commands: `man, mkdir, cd, ls, pwd, mv`**
+For each part below, you will be asked to do an action or answer a question.  The actions are going to be commands - you will write the command you used as "answers" to the action requested.  You are allowed to use multiple commands to solve an action.  Just write down all that were needed to complete.  Check with the TAs if you need clarification.
+```
+Example:  
+Prompt: Create a file named bubbles.txt
+Answer: `touch bubbles.txt`
+```
 
-### Part 2: Create and edit a file (2 pt)
+## Part 1: Play with directories & naming (3 pts)
+
+Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)  
+   - If you were unsuccessful before, meet with the TAs and / or I
+- **Useful commands for this part: `man, mkdir, cd, ls, pwd, mv`**
+
+1. Create a folder named `Lab02`
+2. In `Lab02`, create a directory called `DirA`
+3. In `Lab02`, create a directory called `Dir B`
+   - You must end up with a folder named `Dir B`
+4. How do you go into `Dir B`?
+5. Which of these uses a better naming convention, and why?
+6. Rename `Dir B` to `DirB`
+
+
+## Part 2: Create and edit a file (2 pt)
+
+- **Useful commands for this part: `touch, vim`**
 
 1. In `DirA`, create a file called `test.txt`
 2. Put at least three lines of text in `test.txt` using `vim`  
-   **Useful commands: `touch, vim`**
 
-### Part 3: Play with hidden files (3 pt)
+## Part 3: Play with hidden files (3 pt)
 
-1. Make a copy of `test.txt`
-2. Rename it to `.hidden.txt`
-3. Type `ls`. Can you see both files? Use flags for `ls` to see your file.  
-   **Useful commands: `cp, mv, ls`**
+- **Useful commands for this part: `cp, mv, ls`**
+
+1. Make a copy of `test.txt` inside `DirA` named `.hiddentext.txt`
+2. Write the command and flags needed to see the file in `DirA`
+
+## Part 4:
+
+## Part 5:
+
+
 
 ### Part 4: Play with permissions (5 pts)
 
@@ -63,27 +87,26 @@ Email: Your email
 5. Change the file permissions so you can read and write to the file as your user (as in read / write without using `sudo`).  
    **Useful Commands: `chmod, chown, chgrp, ls, sudo, cp, cat`**
 
-### Part 5: Play with hard links, soft links, and inodes (11 pts)
 
-1. By default, what does `ln` followed by a filename do?
-2. Use `ln` to create a file named `hard.txt` from `test.txt`
-3. Note the inode number of `hard.txt` and `test.txt`. Are they the same?
-4. Create a symbolic link called `sym.txt` from `hard.txt`
-5. Note the inode number of `sym.txt`. Is it the same as `hard.txt`?
-6. Delete `test.txt`. Is `hard.txt` and `sym.txt` still readable?
-7. Delete `hard.txt`. Is `sym.txt` still readable? Why or why not?
-8. Make a new file called `hard.txt` with some text in it. Can `sym.txt` be read now? Why or why not?
-9. Move `hard.txt` to `DirB`. Can you read `sym.txt`?
-10. Delete `sym.txt`
-11. Create a symbolic link from `hard.txt` in `DirB` to `newsym.txt` in `DirA`  
-    **Useful Commands: `ln, test, stat, cp, mv, rm`**
 
-### Part 6: Updating the Git Repo (2 pts)
+## `git` & GitHub (2 pts)
 
-1. Use `git` commands to `add`, `commit` and `push` the `Lab02` folder and files you created into your repository. Write the commands you used and any headaches you ran into along the way.
+1. On your Ubuntu system we made on AWS (Lab01), go into the folder you cloned  
+   **Useful Commands: `pwd, ls, cd`**
+2. Create and open a file named `Lab02.md`  
+   **Useful Commands: `vim`**
+3. Check out the [Lab Template](LabTemplate.md)
+  - View the [raw version of the Lab Template](https://raw.githubusercontent.com/pattonsgirl/Fall2021-CEG2350/main/Labs/Lab02/LabTemplate.md) 
+4. Copy the format of the lab template and fill it in with your lab answers.
+  - [Basic `vim` usage](https://www.howtoforge.com/vim-basics)
+5. You have now made a new file, added some text to it, and (hopefully) made it look fancy... but how can we test this?
+6. Use `git` commands to `add`, `commit` and `push` the file you made to GitHub.
+  - If successful, when you go to the repository in your browser, you'll see `Lab02.md` as something you can click to view.
+7. Now that you can see it, go back to your file and make tweaks if needed to fix the markdown.
+  - Once you are done making changes, use `git` commands to `commit` and `push` the changes to GitHub - hitting refresh will show the updated version.
+
 
 ## Submission
 
-Please submit the Github URL / link for the `README.md` file containing answers to `Lab02` in the Pilot Dropbox 
-
-Your URL should look something like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/blob/main/Lab02/README.md
+- In the Pilot Dropbox, paste the URL to the `Lab02.md` file in your GitHub repo
+    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/blob/main/Lab02.md
