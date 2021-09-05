@@ -35,6 +35,7 @@ Email: Your email
 ## Lab Procedure:
 
 For each part below, you will be asked to do an action or answer a question.  The actions are going to be commands - you will write the command you used as "answers" to the action requested.  You are allowed to use multiple commands to solve an action.  Just write down all that were needed to complete.  Check with the TAs if you need clarification.
+
 ```
 Example:  
 Prompt: Create a file named bubbles.txt
@@ -70,11 +71,35 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 1. Make a copy of `test.txt` inside `DirA` named `.hiddentext.txt`
 2. Write the command and flags needed to see the file in `DirA`
 
-## Part 4:
+## Part 4: Regular bob
 
-## Part 5:
+- **Useful commands for this part: `adduser, sudo, su, chown`**
+1. Create a new user named `bob`
+2. What is the path to `bob`'s `home` directory?
+3. 
 
 
+## Part 5: Get a crew
+
+- **Useful commands for this part: `addgroup, chown, chgrp`**
+
+
+
+## Part 5: [`sudo` make me a sandwich](https://xkcd.com/149/)
+
+- **Useful commands for this part: `sudo`**
+
+## Part 6: Test your skills
+
+- **Useful commands for this part: All of the above!**
+
+1. Create a file in `DirB` with the following permission set:  
+   - `-rw-rw-rw- sally crew [size] [datetime] mydiary.txt`
+   - where `[size]` and `[datetime]` are going to be unique for you
+2. `sally` would like the file to be readable and writeable only by her.  Change the needed permissions to fix this.
+3. Copy the new permission set listing and use it as the answer to this question.
+4. `ubuntu` would like to edit `sally`'s `mydiary.txt` file, just to mess with her.  How can `ubuntu` do this without changing the permissions?
+5. `bob` wants in on the joke to edit `sally`'s `mydiary.txt` file, just to mess with her.  How can `bob` do this without changing the permissions?
 
 ### Part 4: Play with permissions (5 pts)
 
