@@ -2,7 +2,7 @@
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Play with directories and naming](#Part-1---Play-with-directories-and-naming)
-- [Extra Credit - Test your skills (10%)](#Extra-Credit---Test-your-skills-(10%))
+- [Extra Credit - Test your skills](#Extra-Credit---Test-your-skills)
 - [Submission](#Submission)
 
 ## Lab Pre-Reqs
@@ -118,7 +118,7 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 7. Now that you can see it, go back to your file and make tweaks if needed to fix the markdown.
   - Once you are done making changes, use `git` commands to `commit` and `push` the changes to GitHub - hitting refresh will show the updated version.
 
-## Extra Credit - Test your skills (10%)
+## Extra Credit - Test your skills
 
 - **Useful commands for this part: All of the above!**
 
