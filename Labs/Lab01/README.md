@@ -8,7 +8,7 @@ for you to use to complete the tasks given.
 - [Part 1 - Provision Lab Environment in AWS](#Part-1---Provision-Lab-Environment-in-AWS)
 - [Part 2 - Connecting to the AWS instance](#Part-2---Connecting-to-the-AWS-instance)
 - [Part 3 - Git Fidgetting](#Part-3---Git-Fidgetting)
-- [Part 4 - Try out markdown and play with `git` commands](#Part-4---Try-out-markdown-and-play-with-`git`-commands)
+- [Part 4 - Try out markdown and play with `git` commands](#Part-4---Try-out-markdown-and-play-with-git-commands)
 - [Submission](#Submission)
 
 ## Objectives
