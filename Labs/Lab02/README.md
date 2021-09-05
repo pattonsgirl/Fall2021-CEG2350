@@ -5,7 +5,7 @@
 - [Part 2 - Create and edit a file](#Part-2---Create-and-edit-a-file)
 - [Part 3 - Play with hidden files](#Part-3---Play-with-hidden-files)
 - [Part 4 - Regular `bob`](#Part-4---Regular-bob)
-- [Part 5 - Get a crew](#Part-5---Get-a-crew)
+- [Part 5 - Get a `crew`](#Part-5---Get-a-crew)
 - [Part 6 - `sudo` make me a sandwich](#Part-6---sudo-make-me-a-sandwich)
 - [Part 7 - `git` & GitHub](#Part-7---git-and-GitHub)
 - [Extra Credit - Test your skills](#Extra-Credit---Test-your-skills)
@@ -88,7 +88,7 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
    - Hint: can `bob` use `sudo`?
 8. Switch back to the `ubuntu` user & return to the `ubuntu` user's `home` directory
 
-## Part 5 - Get a crew
+## Part 5 - Get a `crew`
 
 - **Useful commands for this part: `addgroup, chown, chgrp`**
 
@@ -109,6 +109,8 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 3. Without modifying the permissions fo the file, edit the file and add some text.
 
 ## Part 7 - `git` and GitHub
+
+You do not need to write anything in your Lab for this part, just focus on getting answers up to GitHub.
 
 1. On your Ubuntu system we made on AWS (Lab01), go into the folder you cloned  
    **Useful Commands: `pwd, ls, cd`**
