@@ -13,19 +13,19 @@ This lab assumes that you have completed [Lab 01](../Lab01/README.md)
 ## Lab Procedure
 
 **For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.  
-`ssh` in to your AWS environment. If you've forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
-See [Remaking your AWS Educate environment](../../..) for instructions.
 
-1. Go to the folder in which you cloned your Git repository for this course.
-2. Create a directory called `Lab02`
-3. In this directory, create a file called `README.md`
-4. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS system for ease of use.
+1. `ssh` in to your AWS environment. 
+   - If you've forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
+   - See [Remaking your AWS Educate environment](../../README.md) for instructions.
+2. Go to the folder in which you cloned your Git repository for this course.
+3. Create a directory called `Lab02`
+4. In this directory, create a file called `README.md`
+5. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS system for ease of use.
    - At the top of the file please enter your personal details as follows:
 
 ```
 Name: Your name
 Email: Your email
-
 ```
 
 **Useful commands: `man, mkdir, cd, ls, pwd, vim / nano`**
@@ -84,6 +84,6 @@ Email: Your email
 
 ## Submission
 
-In your GitHub repository, select the green `Code` button then select `Download ZIP`. Upload this zip file to the Pilot Dropbox.
+Please submit the Github URL / link for the `README.md` file containing answers to `Lab02` in the Pilot Dropbox 
 
-In the `Comment` area in the Pilot Dropbox, copy URL / link to the repository corresponding to the project your are submitting.
+Your URL should look something like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/blob/main/Lab02/README.md
