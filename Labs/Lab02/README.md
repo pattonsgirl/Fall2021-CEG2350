@@ -25,13 +25,7 @@ This lab assumes that you have completed [Lab 01](../Lab01/README.md)
 
 ## Lab Procedure:
 
-Document your answers in a plain text file named `Lab02-LastName.txt` where LastName is your last name. At the top of the file please enter your personal details as follows:
-
-```
-Name: Your name
-Email: Your email
-
-```
+Document your answers in a plain text file named `Lab02-LastName.txt` where LastName is your last name. You can also skip down to Part 7 and start with the [LabTemplate.md](LabTemplate.md).
 
 For each part below, you will be asked to do an action or answer a question.  The actions are going to be commands - you will write the command you used as "answers" to the action requested.  You are allowed to use multiple commands to solve an action.  Just write down all that were needed to complete.  Check with the TAs if you need clarification.
 
@@ -43,10 +37,10 @@ Answer: `touch bubbles.txt`
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later. 
 
+It is expected that all parts are done on your AWS instance (the thing you `ssh` into).
+
 ## Part 1 - Play with directories and naming
 
-- Do this work in your AWS instance.
-   - If you were unsuccessful before, meet with the TAs and / or I
 - **Useful commands for this part: `man, mkdir, cd, ls, pwd, mv`**
 
 1. Create a directory called `DirA`
