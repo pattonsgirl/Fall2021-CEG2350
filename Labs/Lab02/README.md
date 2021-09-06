@@ -10,6 +10,7 @@
 - [Part 7 - `git` & GitHub](#Part-7---git-and-GitHub)
 - [Extra Credit - Test your skills](#Extra-Credit---Test-your-skills)
 - [Submission](#Submission)
+- [Rubric](#Rubric)
 
 ## Lab Pre-Reqs
 
@@ -122,15 +123,20 @@ You do not need to write anything in your Lab for this part, just focus on getti
 - **Useful commands for this part: All of the above!**
 
 1. Create a file in `DirB` with the following permission set:  
-   - `-rw-rw-rw- sally crew [size] [datetime] mydiary.txt`
+   - `-rw------- sally crew [size] [datetime] mydiary.txt`
    - where `[size]` and `[datetime]` are going to be unique for you
-2. `sally` would like the file to be readable and writeable only by her.  Change the needed permissions to fix this.
-3. Copy the new permission set listing and use it as the answer to this question.
-4. `ubuntu` would like to edit `sally`'s `mydiary.txt` file, just to mess with her.  How can `ubuntu` do this without changing the permissions?
-5. `bob` wants in on the joke to edit `sally`'s `mydiary.txt` file, just to mess with her.  How can `bob` do this without changing the permissions?
-
+   - write all steps needed to make this happen
+2. `ubuntu` would like to edit `sally`'s `mydiary.txt` file, just to mess with her.  How can `ubuntu` do this without changing the permissions?
+3. `bob` wants in on the joke to edit `sally`'s `mydiary.txt` file, just to mess with her.  How can `bob` do this without changing the permissions?
 
 ## Submission
 
 - In the Pilot Dropbox, paste the URL to the `Lab02.md` file in your GitHub repo
     - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/blob/main/Lab02.md
+
+## Rubric
+
+- Every question is worth 1 point.
+- This lab is worth a total of 26 points
+- The extra credit is also worth 1 point per question
+- This makes the extra credit worth ~11.54%
