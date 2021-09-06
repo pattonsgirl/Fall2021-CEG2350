@@ -15,7 +15,10 @@
 ## Part 2 Answers
 
 1. 
-2.  
+2. File contents:
+```
+**file contents here**
+```
 
 ## Part 3 Answers
 

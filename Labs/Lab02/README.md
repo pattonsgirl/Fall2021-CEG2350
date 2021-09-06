@@ -45,17 +45,16 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - Play with directories and naming
 
-Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)  
+- Do this work in your AWS instance.
    - If you were unsuccessful before, meet with the TAs and / or I
 - **Useful commands for this part: `man, mkdir, cd, ls, pwd, mv`**
 
-1. Create a folder named `Lab02`
-2. In `Lab02`, create a directory called `DirA`
-3. In `Lab02`, create a directory called `Dir B`
+1. Create a directory called `DirA`
+2. Create a directory called `Dir B`
    - You must end up with a folder named `Dir B`
-4. How do you go into `Dir B`?
-5. Which of these uses a better naming convention, and why?
-6. Rename `Dir B` to `DirB`
+3. How do you go into `Dir B`?
+4. Which of these uses a better naming convention, and why?
+5. Rename `Dir B` to `DirB`
 
 
 ## Part 2 - Create and edit a file
@@ -74,29 +73,27 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 
 ## Part 4 - Regular `bob`
 
-- **Useful commands for this part: `adduser, sudo, su, chown, pwd, cd, whoami`**
+- **Useful commands for this part: `adduser, sudo, su, chown, pwd, cd, whoami, exit`**
 
 1. Create a new user named `bob`
 2. What is the path to `bob`'s `home` directory?
-3. Find a way for the `ubuntu` user to add a file to `bob`'s home directory named `fromubuntu.txt`
-   - Write the command(s) you used.
-   - Are you happy with your solution?
+3. Can the `ubuntu` user add files to `bob`'s home directory?  Why or why not?
 4. Switch to the user `bob`
 5. Get to `bob`'s `home` directory
-6. Can `bob` edit `fromubuntu.txt`?
-7. Fix the permissions so that `bob` owns `fromubuntu.txt`
-   - Hint: can `bob` use `sudo`?
-8. Switch back to the `ubuntu` user & return to the `ubuntu` user's `home` directory
+6. Can `bob` add files to `bob`'s home directory?  Why or why not?
+7. Switch back to the `ubuntu` user
+8. Return to the `ubuntu` user's `home` directory
 
 ## Part 5 - Get a `crew`
 
-- **Useful commands for this part: `addgroup, chown, chgrp`**
+- **Useful commands for this part: `addgroup, usermod, chown, chgrp`**
 
 1. Create a new group named `crew`
 2. Add `ubuntu` and `bob` to the `crew` group
-3. Change the `ubuntu` user's home directory so that `crew` is the group
+3. Change `DirA` in the `ubuntu` user's home directory so that `crew` is the group for the whole folder
+   - Yes, including contents in `DirA`
 4. Switch user to `bob`
-5. As `bob` create a file in the `ubuntu` user's `home` directory.
+5. As `bob` create a file in `DirA`.
 6. Why was this successful?
 
 
@@ -106,7 +103,7 @@ Do this work in your AWS instance, in the folder you cloned from GitHub (Lab 01)
 
 1. In the `ubuntu` user's `home` directory, make a file with `sudo` named `sudowho.txt`
 2. What are the permissions of this file?
-3. Without modifying the permissions fo the file, edit the file and add some text.
+3. Without modifying the permissions of the file, edit the file and add some text.
 
 ## Part 7 - `git` and GitHub
 

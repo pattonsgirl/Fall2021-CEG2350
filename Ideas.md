@@ -94,3 +94,13 @@ john.smith@gmail.com
 10. Delete `sym.txt`
 11. Create a symbolic link from `hard.txt` in `DirB` to `newsym.txt` in `DirA`  
     **Useful Commands: `ln, test, stat, cp, mv, rm`**
+
+Lab 02
+Part 4
+Removed:
+3. Find a way for the `ubuntu` user to add a file to `bob`'s home directory named `fromubuntu.txt`
+   - Write the command(s) you used.
+   - Are you happy with your solution?
+6. Can `bob` edit `fromubuntu.txt`?
+7. Fix the permissions so that `bob` owns `fromubuntu.txt`
+   - Hint: can `bob` use `sudo`?
