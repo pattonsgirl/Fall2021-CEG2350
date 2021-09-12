@@ -132,8 +132,8 @@ Make sure you `commit` and `push` your script changes for grading.
 
 ## Submission
 
-- In the Pilot Dropbox, paste the URL to the `Lab03.md` file in your GitHub repo
-    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/blob/main/Lab03.md
+- In the Pilot Dropbox, paste the URL to the `Lab03` folder in your GitHub repo
+    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab03
 
 ## Rubric
 
