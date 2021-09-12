@@ -24,7 +24,7 @@ This lab assumes that you have completed [Lab 01](../Lab01/README.md)
    - The thing you `ssh` into
 - This is a great time to check your Lab01 feedback too!
 
-## Lab Procedure:
+## Lab Procedure
 
 Document your answers in a plain text file named `Lab02-LastName.txt` where LastName is your last name. You can also skip down to Part 7 and start with the [LabTemplate.md](LabTemplate.md).
 
