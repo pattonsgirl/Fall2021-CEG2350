@@ -1,7 +1,7 @@
 # Lab 03 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Aliases - 2pts)](#Part-1---Aliases-2pts)
+- [Part 1 - Aliases - 2pts](#Part-1---Aliases-2pts)
 - [Part 2 - Create and edit a file](#Part-2---Create-and-edit-a-file)
 - [Part 3 - Play with hidden files](#Part-3---Play-with-hidden-files)
 - [Part 4 - Regular `bob`](#Part-4---Regular-bob)
@@ -27,7 +27,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 It is expected that all parts are done on your AWS instance (the thing you `ssh` into).
 
-## Part 1 - Aliases - 2 pts
+## Part 1 - Aliases - 2pts
 
 You know how I said you would need multiple terminals at some point?  Boom.  Leave a terminal open where you can keep editing your `Lab03.md` file with your answers, and open another terminal (but stay local, do not `ssh` in to your AWS instance), and do the following.
 
