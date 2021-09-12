@@ -107,7 +107,7 @@ This and the following parts are meant to be done in your AWS instance in your `
 ## Part 4 - Intro to Regular Expressions
 
 1. Add an `if` statement to your script that checks if the file in the argument ends in `.txt`
-2. If the file does **not** end in `.txt` your script should exit with an error message: `File format not allowed`  
+2. If the file does **not** end in `.txt` your script should exit with an error message: `File extension not allowed`  
 - Hint: maybe make some other files with other file extension to test your else statement
 
 - **Resources:**
