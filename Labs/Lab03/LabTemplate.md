@@ -1,4 +1,4 @@
-## Lab 02
+## Lab 03
 
 - Name:
 - Email
@@ -9,49 +9,20 @@
 2. 
 3. 
 4. 
-5. 
+5.  
 
 ## Part 2 Answers
 
-1. 
-2. File contents:
-```
-**file contents here**
-```
-
-## Part 3 Answers
-
-1. 
-2. 
-
-## Part 4 Answers
-
-1. 
+1. Verify here that input.txt made it to GitHub in your `Lab03` folder
 2. 
 3. 
-4. 
-5. 
-6. 
-7. 
-8. 
 
-## Part 5 Answers
+## Script Usage Guide
 
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-
-## Part 6 Answers
-
-1. 
-2. 
-3. 
+1. How to run
+2. What extensions are expected
+3. What is the output
 
 ## Extra Credit
 
-1. 
-2. 
-3. 
+1. Note here if you did the extra credit so the tas can verify :)
