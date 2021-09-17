@@ -95,7 +95,7 @@ john.smith@gmail.com
 11. Create a symbolic link from `hard.txt` in `DirB` to `newsym.txt` in `DirA`  
     **Useful Commands: `ln, test, stat, cp, mv, rm`**
 
-Lab 02
+## Lab 02
 Part 4
 Removed:
 3. Find a way for the `ubuntu` user to add a file to `bob`'s home directory named `fromubuntu.txt`
@@ -104,3 +104,26 @@ Removed:
 6. Can `bob` edit `fromubuntu.txt`?
 7. Fix the permissions so that `bob` owns `fromubuntu.txt`
    - Hint: can `bob` use `sudo`?
+
+## Lab 04
+marco / polo - use after talking about parent / child processes?
+
+1. In your `Lab04` folder, create a folder called `scripts`. Inside that folder, create two scripts, one named `marco` and one named `polo`.
+2. For now, have `marco` and `polo` print a statment to standard output when they are run - `This is from marco` and `This is from polo` respectively.
+3. Add the folder these scripts are located in to your `PATH`. (2 pts)
+- First use the `export` command in you terminal to test you have properly added to the `PATH`. Write this command in your lab notes.
+    - If you really mess this up, log out (`exit`) your AWS Linux connection and `ssh` back in.  You can refer to [here](PATH-backup) to verify it looks how it used to.
+- Test that `marco` and `polo` can now be run in any directory.
+- Add your working `export` command to your home directory's `.profile`.  
+    - If you really mess up, there is a backup `.profile` file [here](.profile-backup).  You can copy and paste the contents.
+
+4. Modify `marco` so that when it is run, it should save the current working directory in a file so that `polo` can reference it. (1 pt)
+  - Hint: If `marco` can be ran in any directory and `polo` can be run in any directory, should the path to the file be relative or absolute?
+5. Modify `polo` so that when it is run, it echos the command the user needs to go to the directory `marco` was called in.
+
+For the `marco` script, when `marco` is run it should check if a path has already been "saved" and ask if the user would like to update the path. Don't forget to `commit` and `push` your updates for grading.
+
+- [Hint](https://www.cyberciti.biz/faq/linux-unix-script-check-if-file-empty-or-not/)
+### Credits:
+
+Exercise based on https://missing.csail.mit.edu/2020/shell-tools/

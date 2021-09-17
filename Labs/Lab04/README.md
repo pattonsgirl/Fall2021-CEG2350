@@ -1,24 +1,28 @@
 # Lab 04 - NOT FINALIZED
 
+- [Lab Procedure](#Lab-Procedure)
+- [Part 1 - Aliases](#Part-1---Aliases)
+- [Part 2 - IO Redirection](#Part-2---IO-Redirection)
+- [Part 3 - Intro to Scripts](#Part-3---Intro-to-Scripts)
+- [Submission](#Submission)
+- [Rubric](#Rubric)
+
 ## Lab Procedure
 
-**For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.  
-`ssh` in to your AWS environment. If you've forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
-See [Remaking your AWS Educate environment](../../..) for instructions.
+In your terminal, head to your repository (the folder named `ceg2350-yourgithubusername).
 
-1. Go to the folder in which you cloned your Git repository for this course.
-   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/` depending on your setup
-2. Create a directory called `Lab04`
-   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab04` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab04` depending on your setup
-3. In this directory, create a file called `README.md`
-4. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS so you can keep the `README.md` file open while you expirement with the lab.
-   - At the top of the file please enter your personal details as follows:
+Create a new directory, `Lab04`
 
-```
-Name: Your name
-Email: Your email
+This lab will have you creating input files, scripts, and output files.  All of your work should be found here.
 
-```
+Same questions will need you to write anwers in `Lab04.md` the [LabTemplate.md is here](LabTemplate.md).
+   - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Fall2021-CEG2350/main/Labs/Lab04/LabTemplate.md)
+
+For each part below, you will be asked to do an action or answer a question.  The actions are going to be commands - you will write the command you used as "answers" to the action requested.  You are allowed to use multiple commands to solve an action.  Just write down all that were needed to complete.  Check with the TAs if you need clarification.
+
+If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later. 
+
+It is expected that all parts are done on your AWS instance (the thing you `ssh` into).
 
 ## Part 1: Regular Expressions (5 pts)
 
@@ -39,18 +43,9 @@ Email: Your email
 
 ## Part 2: Scripting, Paths, and Arguments, Oh My! (4 pts)
 
-1. In your `Lab04` folder, create a folder called `scripts`. Inside that folder, create two scripts, one named `marco` and one named `polo`.
-2. For now, have `marco` and `polo` print a statment to standard output when they are run - `This is from marco` and `This is from polo` respectively.
-3. Add the folder these scripts are located in to your `PATH`. (2 pts)
-- First use the `export` command in you terminal to test you have properly added to the `PATH`. Write this command in your lab notes.
-    - If you really mess this up, log out (`exit`) your AWS Linux connection and `ssh` back in.  You can refer to [here](PATH-backup) to verify it looks how it used to.
-- Test that `marco` and `polo` can now be run in any directory.
+
 - Add your working `export` command to your home directory's `.profile`.  
     - If you really mess up, there is a backup `.profile` file [here](.profile-backup).  You can copy and paste the contents.
-
-4. Modify `marco` so that when it is run, it should save the current working directory in a file so that `polo` can reference it. (1 pt)
-  - Hint: If `marco` can be ran in any directory and `polo` can be run in any directory, should the path to the file be relative or absolute?
-5. Modify `polo` so that when it is run, it echos the command the user needs to go to the directory `marco` was called in.
 
 ## Part 3: The Git Part (1 pt)
 
@@ -59,17 +54,13 @@ Email: Your email
 
 ## Extra Credit (1 pt):
 
-For the `marco` script, when `marco` is run it should check if a path has already been "saved" and ask if the user would like to update the path. Don't forget to `commit` and `push` your updates for grading.
 
-- [Hint](https://www.cyberciti.biz/faq/linux-unix-script-check-if-file-empty-or-not/)
 
 
 ## Submission
 
-In your GitHub repository, select the green `Code` button then select `Download ZIP`. Upload this zip file to the Pilot Dropbox.
+- In the Pilot Dropbox, paste the URL to the `Lab04` folder in your GitHub repo
+    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab04
 
-In the `Comment` area in the Pilot Dropbox, copy URL / link to the repository corresponding to the project your are submitting.
+## Rubric
 
-### Credits:
-
-Exercise based on https://missing.csail.mit.edu/2020/shell-tools/
