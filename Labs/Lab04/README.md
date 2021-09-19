@@ -111,6 +111,8 @@ A sample data list you can use is in [registered-users.txt](registered-users.txt
 
 1. Verify that your GitHub repo has a `Lab04` folder with at minimum:
    - `parser`
+   - your input file
+   - `clean-emails.txt`
    - `Lab04.md`
 
 2. In the Pilot Dropbox, paste the URL to the `Lab04` folder in your GitHub repo
