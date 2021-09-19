@@ -20,12 +20,15 @@
 
 ## Part 2 Answers
 
-1. 
-2. Command:
+1. PATH = 
+2. 
+3. Command:
     - Full path: 
-3. 
-4. 
+4. PATH = 
+    - Difference: 
 5. 
+6. 
+7. 
 
 ## Part 3 Answers
 

@@ -51,15 +51,19 @@ It is expected that all parts are done on your AWS instance (the thing you `ssh`
 
 ## Part 2 - .profile and PATH 
 
-1. Read through your `~/.profile`.  Determine where your binary files and scripts should go in order to be part of the PATH variable.  Write the path.
+1. What is the value of the `PATH` environment variable?
 
-2. Make the folder required in the location required.  Write the command(s) used and the full path of the folder.
+2. Read through your `~/.profile`.  Determine where your binary files and scripts should go in order to be part of the PATH variable.  Write the path.
 
-3. In Lab 03, you wrote a script.  Copy it into the folder.  Write the command(s) used.
+3. Make the folder required in the location required.  Write the command(s) used and the full path of the folder.
 
-4. Modify the permissions so that you can run your script on the command line from any location.  Write the modifications needed.  
+4. Reload `~/.profile` either was `source` or by closing and opening the terminal.  What is the value of the `PATH` environment variable?  What was added now vs. in your answer to 1?
 
-5. In terms of user, group, and other, explain who is allowed to run the script.
+5. In Lab 03, you wrote a script.  Copy it into the folder.  Write the command(s) used.
+
+6. Modify the permissions so that you can run your script on the command line from any location.  Write the modifications needed.  
+
+7. In terms of user, group, and other, explain who is allowed to run the script.
 
 ## Part 3 - Parsing Data
 
