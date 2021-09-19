@@ -118,3 +118,11 @@ A sample data list you can use is in [registered-users.txt](registered-users.txt
 
 ## Rubric
 
+- Part 1 - 1 pt per question
+- Part 2 - 1 pt per question
+- Part 3:
+  - if statement that checks for file existence, else exits - 1 pt
+  - if statement that prints usage guide if argument is `-h` then exits - 1 pt
+  - parses input file for just @wright.edu email addresses - 2 pts
+  - outputs only @wright.edu email addresses to `clean-emails.txt` - 2 pts
+
