@@ -95,7 +95,11 @@ A sample email list you can use is in [registered-users.txt](registered-users.tx
 
 ## Submission
 
-- In the Pilot Dropbox, paste the URL to the `Lab04` folder in your GitHub repo
+1. Verify that your GitHub repo has a `Lab04` folder with at minimum:
+   - `parser`
+   - `Lab04.md`
+
+2. In the Pilot Dropbox, paste the URL to the `Lab04` folder in your GitHub repo
     - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab04
 
 ## Rubric
