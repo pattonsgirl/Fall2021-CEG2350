@@ -65,26 +65,30 @@ It is expected that all parts are done on your AWS instance (the thing you `ssh`
 
 There are all sort of reasons to automate tasks.  Some I do every semester including getting a list of all of your names and emails, then parsing it for only the emails so that I can make accounts for you on different systems (GitHub Classrooms and AWS Educate).  
 
-A sample email list you can use is in [registered-users.txt](registered-users.txt) - you just need to copy its contents to a file on your system.
+A sample data list you can use is in [registered-users.txt](registered-users.txt) - you just need to copy its contents to a file on your system.
 
 - ** For starters, create this script in your `Lab04` folder.**
 - Write a script named `parser` that performs the following objectives:
-1. Prompts the user for a file with emails
+
+1. Prompts the user for a file with user and email data
   - Hint: `read`
-2. For each line in the file:
-  1. Parse out only the email address
-    - There are different approaches: "Remove the junk" OR "Find the good"
-    - There is no explicitly right approach, just the one that works for how you think about the problem
-  2. Verify the email address ends in `@wright.edu`
-  3. Output the verified emails to `clean-emails.txt`
-    - This output should only contains the emails, and nothing else.
+
+2. For each line in the file:  
+    - Parse out only the email address
+      - There are different approaches: "Remove the junk" OR "Find the good"
+      - There is no explicitly right approach, just the one that works for how you think about the problem
+    - Verify the email address ends in `@wright.edu`
+    - Output the verified emails to `clean-emails.txt`
+      - This output should only contains the emails, and nothing else.
+
 3. If the script is given the argument `-h`, print out a simple help guide stating:
-  1. what the script does
-  2. expected input
-  3. where output will be stored
-  - the help guide should not print unless the `-h` option is given
-  - else the script should run its regular duties
-  - **Note** - this is to make you think about the order of your script
+    - what the script does
+    - expected input
+    - where output will be stored
+    - the help guide should not print unless the `-h` option is given
+    - else the script should run its regular duties
+    - **Note** - this is to make you think about the order of your script
+
 4. Copy your script into your `bin` folder, and make sure it has appropriate permissions to run.  Write the command(s) you used
 
 - **Hints and Resources**
