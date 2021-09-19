@@ -27,3 +27,9 @@
 4. 
 5. 
 
+## Part 3 Answers
+
+1-3 - verify `parser` is here in your Lab 04 folder.
+
+4. 
+

@@ -69,22 +69,26 @@ A sample data list you can use is in [registered-users.txt](registered-users.txt
 
 - ** For starters, create this script in your `Lab04` folder.**
 - Write a script named `parser` that performs the following objectives:
+- Make sure it has permission to be executed.  If you run the script with `source` the `exit` command will make you sad ;)
 
-1. Prompts the user for a file with user and email data
-  - Hint: `read`
+1. Prompts the user for a file with user and email data.
+  - Verify the file exists.  
+  - If the file does not exist, tell the user they gave you bad input, and `exit` the program
+  - Hint: `read`, `test`, `exit`
 
-2. For each line in the file:  
-    - Parse out only the email address
+2. For the file:  
+    - Parse out only the email address that end in `wright.edu`
       - There are different approaches: "Remove the junk" OR "Find the good"
       - There is no explicitly right approach, just the one that works for how you think about the problem
-    - Verify the email address ends in `@wright.edu`
     - Output the verified emails to `clean-emails.txt`
       - This output should only contains the emails, and nothing else.
+    - You can use a for loop OR `egrep`, whatever floats your boat.
 
 3. If the script is given the argument `-h`, print out a simple help guide stating:
     - what the script does
     - expected input
     - where output will be stored
+    - ends program after printing the help guide
     - the help guide should not print unless the `-h` option is given
     - else the script should run its regular duties
     - **Note** - this is to make you think about the order of your script
@@ -94,8 +98,10 @@ A sample data list you can use is in [registered-users.txt](registered-users.txt
 - **Hints and Resources**
 - Don't dive straight into the script and hope.  Get little parts working.  For example:
   - On the command line, parse the file with `grep` or `egrep` and see what command(s) are needed to get just the emails
-  - Get a for loop working that prints out each line in the file
+  - Get a for loop working that prints out each line in the file (if you choose the loop route)
   - Get an if statement working that triggers in the script is run with `-h` as the argument
+- [Loop through lines in a file](https://codefather.tech/blog/bash-loop-through-lines-file/)
+- [Play with regex and your input](https://regex101.com/)
 
 ## Submission
 
