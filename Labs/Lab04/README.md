@@ -1,9 +1,9 @@
 # Lab 04 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Aliases](#Part-1---Aliases)
-- [Part 2 - IO Redirection](#Part-2---IO-Redirection)
-- [Part 3 - Intro to Scripts](#Part-3---Intro-to-Scripts)
+- [Part 1 - Regular Expressions](#Part-1---Regular-Expressions)
+- [Part 2 - .profile and PATH](#Part-2---.profile-and-PATH)
+- [Part 3 - Parsing Data](#Part-3---Parsing-Data)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -24,38 +24,74 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 It is expected that all parts are done on your AWS instance (the thing you `ssh` into).
 
-## Part 1: Regular Expressions (5 pts)
+## Part 1 - Regular Expressions
 
-1. On your Linux AWS system, use the package manager `apt` to install a package named `wamerican`. Write the command you used in your lab notes.
-2. Verify `/usr/share/dict/words` exists. If it does not, see if `/usr/dict/words` exists.  Write which one is correct in your lab notes.
-3. For the `grep` command, describe what the `-c`, `-E` and `-i` options do. (1 pt)
-  * Note, for the exercises below, you may use either `egrep` or `grep -E`
-4. For each below, write the `grep` command you used as well as the answer.
+- **Useful commands for this part: `apt`, `find`, `wc`, `|`, `grep`, `egrep`**
 
-- How many words in the `words` file start with a vowel (uppercase OR lowercase)? (1 pt)
-- How many words in the `words` file have the word `cat` inside of the word? (1 pt)
+1. Use the package manager `apt` to install a package named `wamerican`. Write the command used.
+
+2. You now have a `words` file on your system.  Use the `find` command to find where it is located.  Write the command used and the location of the file.
+
+3. Using `wc`, find out how many words are in the `words` file.
+
+- **For each below, write the `grep` or `egrep` command you used as well as the word count of matches.**
+
+4. How many words in the `words` file start with a vowel (uppercase OR lowercase)?
+
+5. How many words in the `words` file have the word `cat` inside of the word?
   - concatenate, for example, should be a match
-- How many words in the `words` file have a non-alphanumeric character in the word? (1 pt)
+
+6. How many words in the `words` file have a non-alphanumeric character in the word?
   - ' , e with a hat are examples of non-alphanumeric characters
-- How many words in the `words` file have at least one letter `m` in the word? (1 pt)  
-  **Resources**
+
+7. How many words in the `words` file have at least one letter `m` in the word?
+
+- **Resources**
 - [RegEx Cheatsheet](http://web.mit.edu/hackl/www/lab/turkshop/slides/regex-cheatsheet.pdf)
 
-## Part 2: Scripting, Paths, and Arguments, Oh My! (4 pts)
+## Part 2 - .profile and PATH 
 
+1. Read through your `~/.profile`.  Determine where your binary files and scripts should go in order to be part of the PATH variable.  Write the path.
 
-- Add your working `export` command to your home directory's `.profile`.  
-    - If you really mess up, there is a backup `.profile` file [here](.profile-backup).  You can copy and paste the contents.
+2. Make the folder required in the location required.  Write the command(s) used and the full path of the folder.
 
-## Part 3: The Git Part (1 pt)
+3. In Lab 03, you wrote a script.  Copy it into the folder.  Write the command(s) used.
 
-1. Add a usage guide for `marco` and `polo` to your lab notes.
-2. Use `git` commands to `add`, `commit` and `push` the `Lab04` folder to GitHub.
+4. Modify the permissions so that you can run your script on the command line from any location.  Write the modifications needed.  
 
-## Extra Credit (1 pt):
+5. In terms of user, group, and other, explain who is allowed to run the script.
 
+## Part 3 - Parsing Data
 
+There are all sort of reasons to automate tasks.  Some I do every semester including getting a list of all of your names and emails, then parsing it for only the emails so that I can make accounts for you on different systems (GitHub Classrooms and AWS Educate).  
 
+A sample email list you can use is in [registered-users.txt](registered-users.txt) - you just need to copy its contents to a file on your system.
+
+- ** For starters, create this script in your `Lab04` folder.**
+- Write a script named `parser` that performs the following objectives:
+1. Prompts the user for a file with emails
+  - Hint: `read`
+2. For each line in the file:
+  1. Parse out only the email address
+    - There are different approaches: "Remove the junk" OR "Find the good"
+    - There is no explicitly right approach, just the one that works for how you think about the problem
+  2. Verify the email address ends in `@wright.edu`
+  3. Output the verified emails to `clean-emails.txt`
+    - This output should only contains the emails, and nothing else.
+3. If the script is given the argument `-h`, print out a simple help guide stating:
+  1. what the script does
+  2. expected input
+  3. where output will be stored
+  - the help guide should not print unless the `-h` option is given
+  - else the script should run its regular duties
+  - **Note** - this is to make you think about the order of your script
+4. Copy your script into your `bin` folder, and make sure it has appropriate permissions to run.  Write the command(s) you used
+
+- **Hints and Resources**
+- Don't dive straight into the script and hope.  Get little parts working.  For example:
+  - On the command line, parse the file with `grep` or `egrep` and see what command(s) are needed to get just the emails
+  - Get a for loop working that prints out each line in the file
+  - Get an if statement working that triggers in the script is run with `-h` as the argument
 
 ## Submission
 

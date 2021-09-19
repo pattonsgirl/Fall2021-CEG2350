@@ -7,22 +7,23 @@
 
 1. 
 2. 
+    - Location: 
 3. 
-4. 
-5.  
+4. Command:
+    - Number of matching words: 
+5. Command:
+    - Number of matching words: 
+6. Command:
+    - Number of matching words: 
+7. Command:
+    - Number of matching words: 
 
 ## Part 2 Answers
 
-1. Verify here that input.txt made it to GitHub in your `Lab03` folder
-2. 
+1. 
+2. Command:
+    - Full path: 
 3. 
+4. 
+5. 
 
-## Script Usage Guide
-
-1. How to run
-2. What extensions are expected
-3. What is the output
-
-## Extra Credit
-
-1. Note here if you did the extra credit so the tas can verify :)
