@@ -72,9 +72,9 @@ A sample data list you can use is in [registered-users.txt](registered-users.txt
 - Make sure it has permission to be executed.  If you run the script with `source` the `exit` command will make you sad ;)
 
 1. Prompts the user for a file with user and email data.
-  - Verify the file exists.  
-  - If the file does not exist, tell the user they gave you bad input, and `exit` the program
-  - Hint: `read`, `test`, `exit`
+    - Verify the file exists.  
+    - If the file does not exist, tell the user they gave you bad input, and `exit` the program
+    - Hint: `read`, `test`, `exit`
 
 2. For the file:  
     - Parse out only the email address that end in `wright.edu`
