@@ -1,4 +1,4 @@
-# Lab 04 - NOT FINALIZED
+# Lab 04
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Regular Expressions](#Part-1---Regular-Expressions)
