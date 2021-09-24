@@ -41,6 +41,7 @@
         - emails from list of output
             - from survey, has mix of emails.  Want just @wright.edu emails
         - data from csv? - data needs to be formatted columar style
+    - FUTURE?
     - use usernames from emails to bulk do something?
         - create files with username
         - put a `fortune` in each file
