@@ -1,77 +1,85 @@
 # Lab 05 - NOT FINALIZED
 
+- [Lab Procedure](#Lab-Procedure)
+- [Part 1 - Regular Expressions](#Part-1---Regular-Expressions)
+- [Part 2 - .profile and PATH](#Part-2---.profile-and-PATH)
+- [Part 3 - Parsing Data](#Part-3---Parsing-Data)
+- [Submission](#Submission)
+- [Rubric](#Rubric)
+
 ## Lab Procedure
 
-**For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.  
-`ssh` in to your AWS environment. If you've forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
-See [Remaking your AWS Educate environment](../../..) for instructions.
+## Lab Procedure
 
-1. Go to the folder in which you cloned your Git repository for this course.
-   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/` depending on your setup
-2. Create a directory called `Lab05`
-   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab05` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab05` depending on your setup
-3. In this directory, create a file called `README.md`
-4. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS so you can keep the `README.md` file open while you expirement with the lab.
-   - At the top of the file please enter your personal details as follows:
+In your terminal, head to your repository (the folder named `ceg2350-yourgithubusername).
 
-```
-Name: Your name
-Email: Your email
+Create a new directory, `Lab05`
 
-```
+This lab will have you creating input files, scripts, and output files.  All of your work should be found here.
 
-## Part 1: Write Source Code (2 pts)
+Same questions will need you to write anwers in `Lab05.md` the [LabTemplate.md is here](LabTemplate.md).
+   - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Fall2021-CEG2350/main/Labs/Lab05/LabTemplate.md)
 
-1. You may choose _Java_ or _C_ or _C++_ to do the following:
+For each part below, you will be asked to do an action or answer a question.  The actions are going to be commands - you will write the command you used as "answers" to the action requested.  You are allowed to use multiple commands to solve an action.  Just write down all that were needed to complete.  Check with the TAs if you need clarification.
 
-- Write source code that prompts the user to enter text / a string from standard input, then outputs the same string back to standard out. Include your code in your lab write up.
-  - I recommend naming the source code file `repeat` with the appropriate language extension (ie. `repeat.java`, `repeat.c`, `repeat.cpp`).
-  - Code integrity does not matter - you may work together or use things found on the internet or textbooks.
-  - Python only coders - you will be happiest in C. Go about halfway through [this guide](https://www.geeksforgeeks.org/strings-in-c-2/) for starter code. You'll need to add another print statement before the scan statement to prompt the user to enter a string.
+If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later. 
 
-## Part 2: Compile Source Code (4 pts)
+## Part 1: Self Discovery (5 pts)
 
-1. Find the location of the C compiler, `gcc`. Write the command to find out which version of `gcc` is running. (1 pt)  
-   **Useful commands: `whereis, which, man`**
-2. Find the location of the Java compiler, `javac`. Write the command to find out which version of `javac` is running. (1 pt)  
-   **Useful commands: `whereis, which, man`**
-3. Compile your code using the corresponding compiler. Write the command you used to compile your source code. (1 pt)
-4. Run your program. Write the command you used to run your compiled program. (1 pt)
+Find out the following information about your personal system. Write the answers to the information requested.
 
-**Resources**
+- You can use the manufactuers website / manuals
+- Windows users, I recommend `msinfo`
+- You should _not_ need to install additional programs to find this information. If someone tells you to install something, run away.
 
-- [Compile a Java Program](https://beginnersbook.com/2013/05/first-java-program/)
-- [Compile a C/C++ Program](https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html)
+1. BIOS version / mode. (1 pt)
+2. CPU brand and info. (0.5 pt)
+3. Installed memory size. (0.5 pt)
+4. Virtual memory size. Does you system have a pagefile or a swapfile? What does this mean? (1 pt)
+5. File system on installed disk(s). (0.5 pt)
+6. Number of partitions. Which partition is your primary partition? (0.5 pt)
+7. Get to your UEFI BIOS. Note what you did to access it. Then run away. (1 pt)
+   - If you don't own the machine (and therefore may not be able to access the BIOS), lookup information about the machine and what steps would have worked.
+   - Note for Chromebook users: Document what your tried and what you learned about your system.
+   - Note for Mac users: [This article](https://www.techwalla.com/articles/macbook-efi-access) may help
 
-## Part 3: Make that Makefile (3 pts)
+## Part 2: Exploration (5 pts)
 
-1. Create a file called `Makefile`.
-2. Write contents in `Makefile` so that in the shell the following commands perform the following actions:
-   - `make` will compile the program and create an executable version if the source code file exists (1 pt)
-   - `make run` will execute the program if the compiled program exists (1 pt)
-   - `make clean` will delete the compiled program (1 pt)
+Use your AWS / Ubuntu system to discover the following information.
 
-**Resources**
+1. Read `/boot/grub/menu.lst`. What boot options would the `grub` menu present? (1 pt)
+   - Note: since we are using a remote connection, we will never see / interact with the `grub` menu. But it is still there.
+2. Using the command `df -h`, determine how much disk space is used and how much space is free. (1 pt)
+3. Run the command `sudo parted -l` to answer the following:
+   - What is the primary disk in the `/dev` folder? (.33 pt)
+   - What type of partition table is the device using? (.33 pt)
+     - Hint: If it looks unfamilar, use Google to find a more common name
+   - What file system is used by the device? (.33 pt)
+4. Use `lshw` to find the following:
+   - BIOS version (.33 pt)
+   - CPU brand and info (.33 pt)
+   - Memory size (.33 pt)
+5. Does this system have a swap file (use virtual memory)? Write how you checked. (1 pt)
+   - [Hint](https://unix.stackexchange.com/questions/23072/how-can-i-check-if-swap-is-active-from-the-command-line)
 
-- [Sample Java Makefile in this folder](./Makefile-Java)
-- [Sample C/C++ Makefile in the folder](./Makefile-C)
-- [Makefile in C](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#C)
-- [Makefile in Java](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#java)
+## Part 3 - Info Finder
 
-## Part 4: The Git Part (1 pt)
-
-1. In your `README.md` file, add details on how to run your program manually & how to run your program with the `make` command. 
-2. Use `git` commands to `add`, `commit` and `push` the `Lab05` folder to GitHub.
-
-## Extra Credit (2 pt):
-
-- Create an additional source code file that the original uses as a dependency. Perhaps your main code file calls on a function that is detailed in the other file (function can do a simple action, like print a message).
-  - You may use an old / existing multifile project (again, just need to require compilation)
-- Modify your `Makefile` to compile the original file & its new dependency. Note that your `Makefile` should have an updated version of the pre requisites to compile the program.
-- Don't forget to `commit` and `push` your updates for grading.
+- file with list of commands that get system information
+- option to run only core commands
+- generates report with name based on date
 
 ## Submission
 
-In your GitHub repository, select the green `Code` button then select `Download ZIP`. Upload this zip file to the Pilot Dropbox.
+1. Verify that your GitHub repo has a `Lab05` folder with at minimum:
+   - `parser`
+   - your input file
+   - `clean-emails.txt`
+   - `Lab04.md`
 
-In the `Comment` area in the Pilot Dropbox, copy URL / link to the repository corresponding to the project your are submitting.
+2. In the Pilot Dropbox, paste the URL to the `Lab05` folder in your GitHub repo
+    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab05
+
+## Rubric
+
+- Part 1 - 1 pt per question
+- Part 2 - 1 pt per question
