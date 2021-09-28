@@ -53,7 +53,7 @@ Use your AWS / Ubuntu system to discover the following information.  Part of thi
 
 For example, this system does not have a dedicated gpu card.  I can run commands whose output will confirm there is no GPU
 
-- **Useful commands for this part: `lscpu`, `free`, `vmstat`, lsblk`, `df`, `fdisk --list`**
+- **Useful commands for this part: `lscpu`, `free`, `vmstat`, `lsblk`, `df`, `fdisk --list`**
 
 1. CPU brand, number of cores, and number of logical cores
 2. Physical memory size (translate to GB)
