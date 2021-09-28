@@ -1,13 +1,12 @@
-# Lab 05 - NOT FINALIZED
+# Lab 05
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Regular Expressions](#Part-1---Regular-Expressions)
-- [Part 2 - .profile and PATH](#Part-2---.profile-and-PATH)
-- [Part 3 - Parsing Data](#Part-3---Parsing-Data)
+- [Part 1 - Self Discovery](#Part-1---Self-Discovery)
+- [Part 2 - AWS Instance Exploration](#Part-2---AWS-Instance-Exploration)
+- [Part 3 - Info Finder](#Part-3---Info-Finder)
+- [Extra Credit - `date` stamp](#Extra-Credit---`date`-stamp)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
-
-## Lab Procedure
 
 ## Lab Procedure
 
@@ -24,7 +23,7 @@ For each part below, you will be asked to do an action or answer a question.  Th
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later. 
 
-## Part 1 -  Self Discovery
+## Part 1 - Self Discovery
 
 Find out the following information about your personal system. Write the answers to the information requested.  Part of this is learning about your system, so some info will not be findable.  Provide confirmation of your findings where possible.  
 
@@ -74,29 +73,33 @@ For example, this system does not have a dedicated gpu card.  I can run commands
 
 You could see that manually raoming around tracking down system information could be clunky over enough time over enough systems.  So, we are going to focus on the important bits via a script.  
 
-Is this is perfect way to write such a script, not really.  Will it make you play with `while` or `for` loops?  Yup.
+You have also noticed that some of these commands only run as a certian user (or with certian user priviledges)
 
-1. Copy the contents of [command-list.txt](command-list.txt) to your repo on your AWS instance.
+1. Check out the list of commands in [command-list.txt](command-list.txt)
 2. Create a script in your Lab05 folder named `sys-info`.  Give the script appropriate permissions to be executable.
    - Note: I don't care about PATH knowing where it is
 3. `sys-info` should perform the following tasks:
-   - Use a `while` or `for` loop to read the `command-list.txt` file
-   - Run each line read in from the file
-      - Hint: think about those backticks and $ parens
-   - Store the output in a file named `system-report.txt`
+   - If the script is run with `sudo` / as `root`, run a full sytstem report using all commands listed in `command-list.txt`
+      - Store the output in a file named `full-system-report.txt`
+   - Else, run only the commands that a regular user can run without `sudo`
+      - Store the output in a file named `basic-system-report.txt`
+
+- Hint: [baeldung.com/linux/identify-user-called-by-sudo](baeldung.com/linux/identify-user-called-by-sudo)
+
 
 Sample execution:
 ```
 $ ./sys-info
-Running report...
-Report saved to system-report.txt
-$ cat system-report.txt
-
+You get a basic report
+Report saved to basic-system-report.txt
+$ sudo ./sys-info
+Running a full report, sir.
+Report saved to full-system-report.txt
 ```
 
 ## Extra Credit - `date` stamp
 
-- Use the `date` command to make a better `system-report.txt` filename.  Instead of `system-report.txt`, the filename should now be `system-report-0927.txt`, for example.  I'll allow for any use of the `date` command as long as it adds some useful timestamping to the report generation.
+- Use the `date` command to make a better filename.  Instead of `*-system-report.txt`, the filename should now be `*-system-report-0927.txt`, for example.  I'll allow for any use of the `date` command as long as it adds some useful timestamping to the report generation.
    - Hint: https://www.cyberciti.biz/faq/unix-linux-appleosx-bsd-shell-appending-date-to-filename/ 
 
 ## Submission
@@ -104,8 +107,9 @@ $ cat system-report.txt
 1. Verify that your GitHub repo has a `Lab05` folder with at minimum:
    - `Lab05.md`
    - `sys-info`
-   - `command-list.txt`
-   - `system-report.txt` (or the ec version of report name)
+   - `basic-system-report.txt` (or the ec version of report name)
+   - `full-system-report.txt` (or the ec version of report name)
+
 
 2. In the Pilot Dropbox, paste the URL to the `Lab05` folder in your GitHub repo
     - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab05
@@ -114,5 +118,8 @@ $ cat system-report.txt
 
 - Part 1 - 1 pt per question - 10 pts total
 - Part 2 - 1 pt per question - 8 pts total
-- Part 3 - 
-- EC - 5%
+- Part 3 - 6 pts total
+   - can detect if script is run with sudo / as root - 2 pts
+   - outputs basic report if run as regular user - 2 pt
+   - outputs full report if run with sudo / root priviledges - 2 pt
+- EC - 2.4 pts - 10% 

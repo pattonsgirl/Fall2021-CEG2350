@@ -3,6 +3,10 @@ lscpu | grep "Model name:"
 echo "System memory"
 free -h --total | grep "Total:"
 echo "Disk space"
-df -h | grep "/dev/xvd*"
+df -h | egrep "[xs][v?]d*"
 echo "Disk partition info"
-sudo fdisk -l /dev/xvd*
+# needs sudo
+sudo fdisk -l /dev/[xs][v?]d*
+echo "Looking for GPU"
+# needs sudo
+lshw -class display
