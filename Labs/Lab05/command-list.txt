@@ -1,0 +1,8 @@
+echo "CPU info"
+lscpu | grep "Model name:"
+echo "System memory"
+free -h --total | grep "Total:"
+echo "Disk space"
+df -h | grep "/dev/xvd*"
+echo "Disk partition info"
+sudo fdisk -l /dev/xvd*

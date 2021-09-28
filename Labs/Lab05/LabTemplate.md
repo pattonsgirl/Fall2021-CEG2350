@@ -5,34 +5,47 @@
 
 ## Part 1 Answers
 
-1. 
-2. 
-    - Location: 
-3. 
-4. Command:
-    - Number of matching words: 
-5. Command:
-    - Number of matching words: 
-6. Command:
-    - Number of matching words: 
-7. Command:
-    - Number of matching words: 
+1. Where / how info was found:
+    - Answer: 
+2. Where / how info was found:
+    - Answer:
+3. Where / how info was found:
+    - Answer:
+4. Where / how info was found:
+    - Answer:
+5. Where / how info was found:
+    - Answer:
+6. Where / how info was found:
+    - Answer: 
+7. Where / how info was found:
+    - Answer:
+8. Where / how info was found:
+    - Answer:
+9. Where / how info was found:
+    - Answer:
+10. Where / how info was found:
+    - Answer:
 
 ## Part 2 Answers
 
-1. PATH = 
-2. 
-3. Command:
-    - Full path: 
-4. PATH = 
-    - Difference: 
-5. 
-6. 
-7. 
+1. Where / how info was found:
+    - Answer:
+2. Where / how info was found:
+    - Answer:
+3. Where / how info was found:
+    - Answer:
+4. Where / how info was found:
+    - Answer:
+5. Where / how info was found:
+    - Answer:
+6. Where / how info was found:
+    - Answer:
+7. Where / how info was found:
+    - Answer:
+8. Where / how info was found:
+    - Answer:
 
 ## Part 3 Answers
 
-1-3 - verify `parser` is here in your Lab 04 folder.
 
-4. 
 

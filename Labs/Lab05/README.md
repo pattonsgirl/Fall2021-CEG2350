@@ -24,62 +24,95 @@ For each part below, you will be asked to do an action or answer a question.  Th
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later. 
 
-## Part 1: Self Discovery (5 pts)
+## Part 1 -  Self Discovery
 
-Find out the following information about your personal system. Write the answers to the information requested.
+Find out the following information about your personal system. Write the answers to the information requested.  Part of this is learning about your system, so some info will not be findable.  Provide confirmation of your findings where possible.  
+
+For example, my laptop does not have a dedicated gpu card.  I can run commands whose output will confirm there is no GPU
 
 - You can use the manufactuers website / manuals
 - Windows users, I recommend `msinfo`
 - You should _not_ need to install additional programs to find this information. If someone tells you to install something, run away.
 
-1. BIOS version / mode. (1 pt)
-2. CPU brand and info. (0.5 pt)
-3. Installed memory size. (0.5 pt)
-4. Virtual memory size. Does you system have a pagefile or a swapfile? What does this mean? (1 pt)
-5. File system on installed disk(s). (0.5 pt)
-6. Number of partitions. Which partition is your primary partition? (0.5 pt)
-7. Get to your UEFI BIOS. Note what you did to access it. Then run away. (1 pt)
-   - If you don't own the machine (and therefore may not be able to access the BIOS), lookup information about the machine and what steps would have worked.
-   - Note for Chromebook users: Document what your tried and what you learned about your system.
-   - Note for Mac users: [This article](https://www.techwalla.com/articles/macbook-efi-access) may help
+1. CPU brand, number of cores, and number of logical cores
+2. Physical memory size (translate to GB)
+3. Virtual memory size (translate to GB)
+   - Does your system have a pagefile, and if so where is it?
+4. Disk type / model
+5. Disk size (translate to GB)
+6. Remaining disk space (translate to GB)
+7. File system used on primary partition
+   - C partition for Windows users
+   - / partition for Linux / Mac(?) users
+8. BIOS mode / version
+9. Note whether or not your BIOS / UEFI is accessible, and what steps shoud let you access it.
+10. System bootloader and location
 
-## Part 2: Exploration (5 pts)
+## Part 2 - AWS Instance Exploration
 
-Use your AWS / Ubuntu system to discover the following information.
+Use your AWS / Ubuntu system to discover the following information.  Part of this is learning about a system, so some info will not be findable.  Provide confirmation of your findings where possible.  
 
-1. Read `/boot/grub/menu.lst`. What boot options would the `grub` menu present? (1 pt)
-   - Note: since we are using a remote connection, we will never see / interact with the `grub` menu. But it is still there.
-2. Using the command `df -h`, determine how much disk space is used and how much space is free. (1 pt)
-3. Run the command `sudo parted -l` to answer the following:
-   - What is the primary disk in the `/dev` folder? (.33 pt)
-   - What type of partition table is the device using? (.33 pt)
-     - Hint: If it looks unfamilar, use Google to find a more common name
-   - What file system is used by the device? (.33 pt)
-4. Use `lshw` to find the following:
-   - BIOS version (.33 pt)
-   - CPU brand and info (.33 pt)
-   - Memory size (.33 pt)
-5. Does this system have a swap file (use virtual memory)? Write how you checked. (1 pt)
-   - [Hint](https://unix.stackexchange.com/questions/23072/how-can-i-check-if-swap-is-active-from-the-command-line)
+For example, this system does not have a dedicated gpu card.  I can run commands whose output will confirm there is no GPU
+
+- **Useful commands for this part: `lscpu`, `free`, `vmstat`, lsblk`, `df`, `fdisk --list`**
+
+1. CPU brand, number of cores, and number of logical cores
+2. Physical memory size (translate to GB)
+3. Virtual memory size (translate to GB)
+   - Does your system have a pagefile, and if so where is it?
+   - https://phoenixnap.com/kb/linux-commands-check-memory-usage 
+4. Disk type / model
+   - https://www.cyberciti.biz/faq/find-hard-disk-hardware-specs-on-linux/
+   - https://askubuntu.com/questions/166083/what-is-the-dev-xvda1-device
+5. Disk size (translate to GB)
+6. Remaining disk space (translate to GB)
+7. File system used on primary partition
+   - Focus on the ID column - https://www.win.tue.nl/~aeb/partitions/partition_types-1.html
+8. System bootloader and location
 
 ## Part 3 - Info Finder
 
-- file with list of commands that get system information
-- option to run only core commands
-- generates report with name based on date
+You could see that manually raoming around tracking down system information could be clunky over enough time over enough systems.  So, we are going to focus on the important bits via a script.  
+
+Is this is perfect way to write such a script, not really.  Will it make you play with `while` or `for` loops?  Yup.
+
+1. Copy the contents of [command-list.txt](command-list.txt) to your repo on your AWS instance.
+2. Create a script in your Lab05 folder named `sys-info`.  Give the script appropriate permissions to be executable.
+   - Note: I don't care about PATH knowing where it is
+3. `sys-info` should perform the following tasks:
+   - Use a `while` or `for` loop to read the `command-list.txt` file
+   - Run each line read in from the file
+      - Hint: think about those backticks and $ parens
+   - Store the output in a file named `system-report.txt`
+
+Sample execution:
+```
+$ ./sys-info
+Running report...
+Report saved to system-report.txt
+$ cat system-report.txt
+
+```
+
+## Extra Credit - `date` stamp
+
+- Use the `date` command to make a better `system-report.txt` filename.  Instead of `system-report.txt`, the filename should now be `system-report-0927.txt`, for example.  I'll allow for any use of the `date` command as long as it adds some useful timestamping to the report generation.
+   - Hint: https://www.cyberciti.biz/faq/unix-linux-appleosx-bsd-shell-appending-date-to-filename/ 
 
 ## Submission
 
 1. Verify that your GitHub repo has a `Lab05` folder with at minimum:
-   - `parser`
-   - your input file
-   - `clean-emails.txt`
-   - `Lab04.md`
+   - `Lab05.md`
+   - `sys-info`
+   - `command-list.txt`
+   - `system-report.txt` (or the ec version of report name)
 
 2. In the Pilot Dropbox, paste the URL to the `Lab05` folder in your GitHub repo
     - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab05
 
 ## Rubric
 
-- Part 1 - 1 pt per question
-- Part 2 - 1 pt per question
+- Part 1 - 1 pt per question - 10 pts total
+- Part 2 - 1 pt per question - 8 pts total
+- Part 3 - 
+- EC - 5%
