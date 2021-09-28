@@ -46,12 +46,18 @@
         - create files with username
         - put a `fortune` in each file
     - ec is check for contents before overwrite
-- move marco/polo to processes
 
-# Lab 06
+# Lab 05
 - explore your own hardware
 - explore the VM resources on AWS
+- VM - install VirtualBox
+    - Mac M1 peeps - UMT is free, Parallels discounted through Cats
+- script to scrape for info on linux / bash
+
+# Lab 06
 - ~~inodes & hard / symbolic links~~ - move to lab on fs
+- marco/polo script
+    - pay attention to PATH and file locations
 
 
 # Lab 07
@@ -65,7 +71,6 @@
 - run the script "normally" and kill via PID
 - run the script with bg and kill via job ID
 - run in screen
-- modified marco / polo - playing with where scripts run (in subshell) - bring it to current shell
 - EC is create and solve a merge conflict
 
 # Lab 05
