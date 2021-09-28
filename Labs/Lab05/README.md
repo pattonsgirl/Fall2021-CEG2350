@@ -84,7 +84,7 @@ You have also noticed that some of these commands only run as a certian user (or
    - Else, run only the commands that a regular user can run without `sudo`
       - Store the output in a file named `basic-system-report.txt`
 
-- Hint: [baeldung.com/linux/identify-user-called-by-sudo](baeldung.com/linux/identify-user-called-by-sudo)
+- Hint: [baeldung.com/linux/identify-user-called-by-sudo](https://www.baeldung.com/linux/identify-user-called-by-sudo)
 
 
 Sample execution:
