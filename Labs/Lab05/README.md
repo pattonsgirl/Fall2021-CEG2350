@@ -45,7 +45,7 @@ For example, my laptop does not have a dedicated gpu card.  I can run commands w
    - / partition for Linux / Mac(?) users
 8. BIOS mode / version
 9. Note whether or not your BIOS / UEFI is accessible, and what steps shoud let you access it.
-10. System bootloader and location
+10. ~~System bootloader and location~~ removed 9/29
 
 ## Part 2 - AWS Instance Exploration
 
@@ -67,7 +67,7 @@ For example, this system does not have a dedicated gpu card.  I can run commands
 6. Remaining disk space (translate to GB)
 7. File system used on primary partition
    - Focus on the ID column - https://www.win.tue.nl/~aeb/partitions/partition_types-1.html
-8. System bootloader and location
+8. ~~System bootloader and location~~ - removed 9/29
 
 ## Part 3 - Info Finder
 
@@ -118,8 +118,8 @@ Report saved to full-system-report.txt
 
 ## Rubric
 
-- Part 1 - 1 pt per question - 10 pts total
-- Part 2 - 1 pt per question - 8 pts total
+- Part 1 - 1 pt per question - 9 pts total
+- Part 2 - 1 pt per question - 7 pts total
 - Part 3 - 6 pts total
    - can detect if script is run with sudo / as root - 2 pts
    - outputs basic report if run as regular user - 2 pt

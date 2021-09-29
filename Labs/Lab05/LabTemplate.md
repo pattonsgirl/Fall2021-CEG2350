@@ -14,7 +14,6 @@
 7. 
 8. 
 9. 
-10. 
 
 ## Part 2 Answers
 
@@ -31,8 +30,6 @@
 6. Where / how info was found:
     - Answer:
 7. Where / how info was found:
-    - Answer:
-8. Where / how info was found:
     - Answer:
 
 ## Part 3 Answers
