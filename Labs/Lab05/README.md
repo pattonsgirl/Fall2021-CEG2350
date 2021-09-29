@@ -124,4 +124,4 @@ Report saved to full-system-report.txt
    - can detect if script is run with sudo / as root - 2 pts
    - outputs basic report if run as regular user - 2 pt
    - outputs full report if run with sudo / root priviledges - 2 pt
-- EC - 2.4 pts - 10% 
+- EC - 2.2 pts - 10% 
