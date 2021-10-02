@@ -1,75 +1,83 @@
 # Lab 06 - NOT FINALIZED
 
+- [Lab Procedure](#Lab-Procedure)
+- [Part 1 - Self Discovery](#Part-1---Self-Discovery)
+- [Part 2 - AWS Instance Exploration](#Part-2---AWS-Instance-Exploration)
+- [Part 3 - Info Finder](#Part-3---Info-Finder)
+- [Extra Credit - `date` stamp](#Extra-Credit---`date`-stamp)
+- [Submission](#Submission)
+- [Rubric](#Rubric)
+
 ## Lab Procedure
 
-**For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.  
-`ssh` in to your AWS environment. If you've forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
-See [Remaking your AWS Educate environment](../../..) for instructions.
+In your terminal, head to your repository (the folder named `ceg2350-yourgithubusername).
 
-1. Go to the folder in which you cloned your Git repository for this course.
-   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/` depending on your setup
-2. Create a directory called `Lab06`
-   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab06` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab06` depending on your setup
-3. In this directory, create a file called `README.md`
-4. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS so you can keep the `README.md` file open while you expirement with the lab.
-   - At the top of the file please enter your personal details as follows:
+Create a new directory, `Lab06`
 
-```
-Name: Your name
-Email: Your email
+Create a file named `Lab06.md` [based on the template](LabTemplate.md).
+   - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Fall2021-CEG2350/main/Labs/Lab06/LabTemplate.md)
 
-```
+For each part below, you will be asked to do an action or answer a question.  The actions are going to be commands - you will write the command you used as "answers" to the action requested.  You are allowed to use multiple commands to solve an action.  Just write down all that were needed to complete.  Check with the TAs if you need clarification.
 
-## Part 1: Self Discovery (5 pts)
+If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later. 
 
-Find out the following information about your personal system. Write the answers to the information requested.
+## Part 1 - Virtualize the Machine
 
-- You can use the manufactuers website / manuals
-- Windows users, I recommend `msinfo`
-- You should _not_ need to install additional programs to find this information. If someone tells you to install something, run away.
+We have been talking about the boot process and computer parts and installing operating systems, but it's hard to give you a computer to build and feel this out - so how about a virtual one!
 
-1. BIOS version / mode. (1 pt)
-2. CPU brand and info. (0.5 pt)
-3. Installed memory size. (0.5 pt)
-4. Virtual memory size. Does you system have a pagefile or a swapfile? What does this mean? (1 pt)
-5. File system on installed disk(s). (0.5 pt)
-6. Number of partitions. Which partition is your primary partition? (0.5 pt)
-7. Get to your UEFI BIOS. Note what you did to access it. Then run away. (1 pt)
-   - If you don't own the machine (and therefore may not be able to access the BIOS), lookup information about the machine and what steps would have worked.
-   - Note for Chromebook users: Document what your tried and what you learned about your system.
-   - Note for Mac users: [This article](https://www.techwalla.com/articles/macbook-efi-access) may help
+You will need a computer that has CPU virtualization enabled.  The lab machines & open lab machines in Russ are all good candidates (and may have VirtualBox already installed).  For your own machine, you may need to enable CPU virtualization in your BIOS.
 
-## Part 2: Exploration (5 pts)
+- Windows, Linux, Mac users:
+   - [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+   - Pick your host OS when installing (for example, I would pick "Windows hosts")
+- Mac M1 Users:
+   - Install either:
+      - Parallels - Wright State offers a student discount on Parallels
+         - [Get Parallels via the Hub](https://www.wright.edu/information-technology/software-purchases-for-personal-use)
+      - [UTM](https://mac.getutm.app/) - free if you click "Download".  You can support the developers by paying through the App Store.
+   - the instuctions below should apply generically, but if you are having trouble Shree has Mac experience.  Posting in the general chat on Discord may also get you help
 
-Use your AWS / Ubuntu system to discover the following information.
+1. Create a Virtual Machine with the following minimum specifications:
+   - Type: Linux
+   - Version: Other Linux (64-bit)
+   - 2 GB RAM
+   - 10 GB disk space
+2. Download an iso (installation image) for a Linux distubution of your choice.  State which Linux distrubition you picked
+   - Ubuntu Desktop is a safe bet
+   - Linux Mint, Elementary, Kali, Pop OS - or check distro watch
+   - I will warn that if your selection "isn't working" you should try Ubuntu and move on with life
+3. Start your machine and select your iso (installation image)
+4. Go through the installation process for your chosen Linux distribution
+   - For ease right now, I would select "Erase and install" - however that is phrased
+   - Some OSes will have default partition settings that do not play well with only 10GB
+      - You can, in these cases, manually create the root `/` partition to extend over the whole disk
+   - You do not need to encrypt your disk, unless that is your preference
+5. Remove installation media: pick your method
+   - After a successful install, go to Settings and change your boot order to boot from disk first
+   - After a successful install, go to Settings and remove any disks besides your virtual disk
+6. Confirm that when you turn your machine on, the OS starts, not the installation media
+   - A good hint here is that the log in screen comes up
+6. Download [VirtualBox Extension Pack](https://download.virtualbox.org/virtualbox/6.1.26/Oracle_VM_VirtualBox_Extension_Pack-6.1.26.vbox-extpack) to your host.  Launch
 
-1. Read `/boot/grub/menu.lst`. What boot options would the `grub` menu present? (1 pt)
-   - Note: since we are using a remote connection, we will never see / interact with the `grub` menu. But it is still there.
-2. Using the command `df -h`, determine how much disk space is used and how much space is free. (1 pt)
-3. Run the command `sudo parted -l` to answer the following:
-   - What is the primary disk in the `/dev` folder? (.33 pt)
-   - What type of partition table is the device using? (.33 pt)
-     - Hint: If it looks unfamilar, use Google to find a more common name
-   - What file system is used by the device? (.33 pt)
-4. Use `lshw` to find the following:
-   - BIOS version (.33 pt)
-   - CPU brand and info (.33 pt)
-   - Memory size (.33 pt)
-5. Does this system have a swap file (use virtual memory)? Write how you checked. (1 pt)
-   - [Hint](https://unix.stackexchange.com/questions/23072/how-can-i-check-if-swap-is-active-from-the-command-line)
+## Part 2 - 
 
-## Part 3 - Info Finder
+1. In your virtual machine, change your desktop background
+2. In your virtual machine, open a web browser and go to a neat website (or just Pilot)
+3. 
 
-- file with list of commands that get system information
-- option to run only core commands
-- generates report with name based on date
 
-## Part 3: The Git Part (1 pt)
-
-1. Use `git` commands to `add`, `commit` and `push` the `Lab06` folder to GitHub.
 
 ## Submission
 
-In your GitHub repository, select the green `Code` button then select `Download ZIP`. Upload this zip file to the Pilot Dropbox.
+1. Verify that your GitHub repo has a `Lab06` folder with at minimum:
+   - `Lab06.md`
+   - an `images` folder (with your screenshots inside)
 
-In the `Comment` area in the Pilot Dropbox, copy URL / link to the repository corresponding to the project your are submitting.
+
+2. In the Pilot Dropbox, paste the URL to the `Lab06` folder in your GitHub repo
+    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab06
+
+## Rubric
+
+- Part 1 - 1 pt per question - 9 pts total
+- Part 2 - 1 pt per question - 7 pts total
