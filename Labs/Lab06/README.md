@@ -1,10 +1,9 @@
 # Lab 06 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Self Discovery](#Part-1---Self-Discovery)
-- [Part 2 - AWS Instance Exploration](#Part-2---AWS-Instance-Exploration)
-- [Part 3 - Info Finder](#Part-3---Info-Finder)
-- [Extra Credit - `date` stamp](#Extra-Credit---`date`-stamp)
+- [Part 1 - Virtualize the Machine](#Part-1---Virtualize-the-Machine)
+- [Part 2 - Playground](#Part-2---Playground)
+- [Part 3 - Hints - Screenshots and markdown](#Part-3---Hints---Screenshots-and-markdown)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -58,13 +57,13 @@ You will need a computer that has CPU virtualization enabled.  The lab machines 
 6. Remove installation media: pick your method
    - After a successful install, go to Settings and change your boot order to boot from disk first
    - After a successful install, go to Settings and remove any disks besides your virtual disk
-7. Confirm that when you turn your machine on, the OS starts, not the installation media
-   - A good hint here is that the log in screen comes up
-8. Download [VirtualBox Extension Pack](https://download.virtualbox.org/virtualbox/6.1.26/Oracle_VM_VirtualBox_Extension_Pack-6.1.26.vbox-extpack) to your host.  
+   - Confirm that when you turn your machine on, the OS starts, not the installation media
+      - A good hint here is that the log in screen comes up
+7. Download [VirtualBox Extension Pack](https://download.virtualbox.org/virtualbox/6.1.26/Oracle_VM_VirtualBox_Extension_Pack-6.1.26.vbox-extpack) to your host.  
    - Launch your VM, then insert the Guest Additions CD Image.  
    - Run the Guest Additions installer for  your system (I would do the Linux installer)
    - Reboot your VM, then Auto-resize Guest Display
-9. Add a screenshot to your documentation of your running VM
+8. Add a screenshot to your documentation of your running VM
 
 ## Part 2 - Playground
 
@@ -72,6 +71,27 @@ You will need a computer that has CPU virtualization enabled.  The lab machines 
 2. In your vm, open a web browser and go to a neat website (or just Pilot).  Write how you did it
 3. In your vm, install VSCode.  Write how you did it
 4. In your vm, connect to your AWS instance from your VM.  Write how you did it
+
+## Hints - Screenshots and markdown
+
+There are a lot of ways to add screenshots to a markdown file.  I'm going to tell you my way.  This is going to introduce a new `git` command: `git pull`
+
+When content exists on GitHub, but does not exist in your local folder (the one you usually `git push` from) you need to do a `git pull` to sync back up.
+
+We are going to be adding images directly to GitHub, then using `git pull` to get our content and the content on GitHub back in sync.
+
+1. Take the screenshots required by part 1.  Store them somewhere easy to access.
+2. Go to your GitHub classrooms repo in a browser: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME
+3. Click the "Add files" button, then click "Upload files"
+4. Upload your screenshots.  Write commit messages in the browser text fields, then click "Commit Changes"
+   - you should now see the images in your main folder
+5. Head back to a terminal where you are working on your Lab06 documentation
+   - type `git pull`
+   - you should see your file names appear in the change list
+   - and you should now be able to `ls` and see them
+6. In you lab template, you have line similar to: `![Screenshot of VM running](relative_path_to_filename_here)`
+   - keep the parenthesis, but fill them with the relative path to your respective photos
+   - this should be relative to being in your repo folder
 
 ## Submission
 
@@ -84,5 +104,5 @@ You will need a computer that has CPU virtualization enabled.  The lab machines 
 
 ## Rubric
 
-- Part 1 - 1 pt per question - 9 pts total
+- Part 1 - 1 pt per question - 8 pts total
 - Part 2 - 1 pt per question - 4 pts total
