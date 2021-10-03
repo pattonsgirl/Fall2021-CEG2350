@@ -55,12 +55,12 @@
 # Lab 06
 - VM - install VirtualBox
     - Mac M1 peeps - UMT is free, Parallels discounted through Cats
-- ~~inodes & hard / symbolic links~~ - move to lab on fs
 
 # Lab 07
 - Create a folder and layer on a filesystem
 - Mount xvdb, create partition table, create partition, add to /etc/fstab? - NEW
 - use strings to explore what "deletion" means on something on a disk
+- inodes & hard / symbolic links - move to lab on fs
 - git branches
 
 # Lab 08

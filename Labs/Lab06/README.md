@@ -1,4 +1,4 @@
-# Lab 06 - NOT FINALIZED
+# Lab 06
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Virtualize the Machine](#Part-1---Virtualize-the-Machine)
