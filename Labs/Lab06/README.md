@@ -3,7 +3,7 @@
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Virtualize the Machine](#Part-1---Virtualize-the-Machine)
 - [Part 2 - Playground](#Part-2---Playground)
-- [Part 3 - Hints - Screenshots and markdown](#Part-3---Hints---Screenshots-and-markdown)
+- [Hints - Screenshots and markdown](#Hints---Screenshots-and-markdown)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
