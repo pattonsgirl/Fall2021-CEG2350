@@ -32,11 +32,14 @@ Given that `bubbles` is an existing script, suggest a solution to making this co
 
 
 4. For what user(s) will the following script output "Goats"?
+```
 if [[ $EUID -ne 0 ]]; then
     echo "Ducks"
 else
     echo "Goats"
 fi
+```
+    - Only root (EUID 0)
 
 5. The bootloader, perhaps once an option has been selected from the boot menu, loads the ____ into RAM
     - kernel
