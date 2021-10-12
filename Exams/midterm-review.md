@@ -17,7 +17,7 @@
 
 1. OS structure in Linux (and Mac) vs Windows
 2. Files vs directories
-    - Commands: ls, cp, mkdir, rmdir, vim, mv, rm, cat, touch, head/tail, less/more
+    - Commands: ls, cp, mkdir, rmdir, vim, mv, rm, cd, cat, touch, head/tail, less/more
 3. Importance of names and extensions (file)
 4. Ownership & sharing 
     - rwx permissions in Linux (and Windows counterpart)
@@ -29,12 +29,13 @@
 ## Scripting
 
 1. Aliases & customizations (.bashrc, .profile)
-2. Commands: grep, diff, find, file, wc, sort, uniq, whereis, which
+2. Commands: grep, ~~diff~~, find, ~~file~~, wc, sort, uniq, whereis, which
 3. IO redirection (<, >, |, tee)
 4. executing scripts (source, ./, PATH)
 5. Scripting languages: bash
     - variables
     - conditionals (`test`)
+    - arguements
     - if
     - for
     - while
