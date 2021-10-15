@@ -65,8 +65,15 @@
 # Lab 07
 - Mount xvdb, create partition table, create partition, add to /etc/fstab? - NEW
 - use strings to explore what "deletion" means on something on a disk
-- inodes & hard / symbolic links - move to lab on fs
+- inodes & hard / symbolic links
 - ec: Create a folder and layer on a filesystem
+
+# Lab ##
+- tar'ing
+- ~/.ssh/config
+- create key pair for bob (authorized_keys)
+- sftp
+- checksums
 
 # Lab 08
 - create a script that runs infinitely
@@ -83,7 +90,7 @@
 - debug an error with GDB - NEW
 - write a makefile
 - ec is add dependent file (function / library that "main" relies on)
-- ~~git branches~~
+- git branches
 
 # Lab 09
 - explore your internet connection and the AWS internet connection
