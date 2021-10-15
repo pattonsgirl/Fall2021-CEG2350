@@ -35,7 +35,7 @@
 5. Scripting languages: bash
     - variables
     - conditionals (`test`)
-    - arguements
+    - arguments
     - if
     - for
     - while

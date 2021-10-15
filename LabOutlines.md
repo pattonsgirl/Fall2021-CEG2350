@@ -53,15 +53,20 @@
 - script to scrape for info on linux / bash
 
 # Lab 06
-- VM - install VirtualBox
+- install VirtualBox 
     - Mac M1 peeps - UMT is free, Parallels discounted through Cats
+- install OS on VM
+- On Linux VM 
+    - change desktop background
+    - open browser and navigate to site
+    - install VSCode
+    - ssh in to AWS instance
 
 # Lab 07
-- Create a folder and layer on a filesystem
 - Mount xvdb, create partition table, create partition, add to /etc/fstab? - NEW
 - use strings to explore what "deletion" means on something on a disk
 - inodes & hard / symbolic links - move to lab on fs
-- git branches
+- ec: Create a folder and layer on a filesystem
 
 # Lab 08
 - create a script that runs infinitely
@@ -78,6 +83,7 @@
 - debug an error with GDB - NEW
 - write a makefile
 - ec is add dependent file (function / library that "main" relies on)
+- ~~git branches~~
 
 # Lab 09
 - explore your internet connection and the AWS internet connection
