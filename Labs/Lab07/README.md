@@ -1,9 +1,9 @@
 # Lab 07 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - inode you, inode you not](#Part-1---inode-you,-inode-you-not)
+- [Part 1 - If only inode the consequences](#Part-1---If-only-inode-the-consequences)
 - [Part 2 - Unused resources](#Part-2---Unused-resources)
-- [Hints - take a fstab at this](#Hints---take-a-fstab-at-this)
+- [Extra Credit - take a fstab at this](#Extra-Credit---take-a-fstab-at-this)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -20,7 +20,7 @@ For each part below, you will be asked to do an action or answer a question.  Th
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later. 
 
-## Part 1 - inode you, inode you not
+## Part 1 - If only inode the consequences
 - **Useful Commands: `stat`, `ln`, `cp`, `mv`**
 
 1. Create a file in your Lab07 folder named `original.txt`.  Put some stuff in this file.
