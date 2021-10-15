@@ -1,9 +1,9 @@
 # Lab 07 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Virtualize the Machine](#Part-1---Virtualize-the-Machine)
-- [Part 2 - Playground](#Part-2---Playground)
-- [Hints - Screenshots and markdown](#Hints---Screenshots-and-markdown)
+- [Part 1 - inode you, inode you not](#Part-1---inode-you,-inode-you-not)
+- [Part 2 - Unused resources](#Part-2---Unused-resources)
+- [Hints - take a fstab at this](#Hints---take-a-fstab-at-this)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -20,7 +20,7 @@ For each part below, you will be asked to do an action or answer a question.  Th
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later. 
 
-## Part 1 - inode
+## Part 1 - inode you, inode you not
 - **Useful Commands: `stat`, `ln`, `cp`, `mv`**
 
 1. Create a file in your Lab07 folder named `original.txt`.  Put some stuff in this file.
@@ -54,6 +54,9 @@ If you did something "wrong" make a note of it in your lab. These are learning e
    - Effect on other hard linked file?  Explain
    - Effect on copied version of `original.txt`?  Explain
 
+- Resources:
+   - [https://linoxide.com/linux-inode/](https://linoxide.com/linux-inode/)
+
 ## Part 2 - Unused resources
 - **Useful Commands: **
 
@@ -70,14 +73,6 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 11. Mount the partition again, then delete a file (preferably one with text in it)
 12. Unmount the partition and run `strings` on the partition.  Does your file content still exist?
 13.  What does this mean about deleting files?  Do some internet digging and see if there is a way to truly delete data on a disk (using the command line - no powertools)
-
-## Extra Credit - Make a filesystem on a file
-
-This is neat because it is not too far off from what happened when you created the virtual disk on your virtual machine.
-
-1. Use the `dd` command to create a file named reserved that is filled with 0's.  Set `bs` to 1024 bytes, 
-
-Move to in-class demo?
 
 ## Extra Credit - take a fstab at this
 
