@@ -1,7 +1,7 @@
 # Lab 07 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - inode what's up](#Part-1---inode-what's-up)
+- [Part 1 - inode what is up](#Part-1---inode-what-is-up)
 - [Part 2 - unallocated resources](#Part-2---unallocated-resources)
 - [Extra Credit - take a fstab at this](#Extra-Credit---take-a-fstab-at-this)
 - [Submission](#Submission)
@@ -20,7 +20,7 @@ For each part below, you will be asked to do an action or answer a question.  Th
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later. 
 
-## Part 1 - inode what's up
+## Part 1 - inode what is up
 - **Useful Commands: `stat`, `ln`, `cp`, `mv`**
 
 1. Create a file in your Lab07 folder named `original.txt`.  Put some stuff in this file.
