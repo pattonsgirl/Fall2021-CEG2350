@@ -1,7 +1,7 @@
 # Lab 07 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - If only inode the consequences](#Part-1---If-only-inode-the-consequences)
+- [Part 1 - If only inode](#Part-1---If-only-inode)
 - [Part 2 - Unused resources](#Part-2---Unused-resources)
 - [Extra Credit - take a fstab at this](#Extra-Credit---take-a-fstab-at-this)
 - [Submission](#Submission)
@@ -20,7 +20,7 @@ For each part below, you will be asked to do an action or answer a question.  Th
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later. 
 
-## Part 1 - If only inode the consequences
+## Part 1 - If only inode
 - **Useful Commands: `stat`, `ln`, `cp`, `mv`**
 
 1. Create a file in your Lab07 folder named `original.txt`.  Put some stuff in this file.
@@ -58,21 +58,31 @@ If you did something "wrong" make a note of it in your lab. These are learning e
    - [https://linoxide.com/linux-inode/](https://linoxide.com/linux-inode/)
 
 ## Part 2 - Unused resources
-- **Useful Commands: **
+
+For each step below, write the answer to the question / prompt and how you found / configured the answer (commands used).
+
+- **Useful Commands: `df`, `gdisk`, `mkfs`, `mount`, `strings`**
 
 1. What drive letter and partition number are mounted and where are they mounted to?
 2. Is there another drive listed in `/dev/`?
-3. Make a partition table on this drive.
-4. Make a partition on this drive
-5. Make a filesystem on the partition
-6. Mount the partition to a folder in your home directory
-7. Make yourself the owner of the folder and all files in it
-8. Create some files (with and without text) and directories
-9. Unmount the partition
-10. Can you still access the files and folders?
-11. Mount the partition again, then delete a file (preferably one with text in it)
-12. Unmount the partition and run `strings` on the partition.  Does your file content still exist?
-13.  What does this mean about deleting files?  Do some internet digging and see if there is a way to truly delete data on a disk (using the command line - no powertools)
+3. For the `gdisk` GPT partition table manipulator, find out what the following main menu options do:
+   - `p`
+   - `o`
+   - `n`
+   - `i`
+   - `w`
+4. Open the unused drive with `gdisk`.  Using the main menu, configure the disk to use the GPT partition table type, have at least 1 partition, and have that partition use the Linux filesystem type.  Save your changes to the disk.
+5. Make an ext4 filesystem on the new partition
+6. Make a folder in `/mnt/` called `expanse`
+7. Mount the partition to `expanse`
+8. Create some files (with and without text) and directories in the folder where your partition is mounted
+9. Run `strings` on the partition - read through the output and determine what `strings` is outputting
+   - Like other commands we have played with, `strings` has more capabilities.  We are going to use it to show you something interesting about data...
+10. Delete a file that you created on the partition.  Run `strings` on the partition again - read through the output and see if anything surprises you - what's up?
+   - This is a neat trick that starts getting towards digital forensics.  You can assume most people trust that when they hit delete, stuff got deleted.  But the contents may still exist on the disk until they are overwritten...
+11. [Read through this article](https://www.howtogeek.com/425232/how-to-securely-delete-files-on-linux/) and determine a way to truly delete a file.  Write a shot report of steps and proof that the file is no longer readable on the disk.
+12. Umount the partition.  Can you still interact with the files and folders?
+
 
 ## Extra Credit - take a fstab at this
 
