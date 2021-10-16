@@ -6,6 +6,36 @@
 ## Part 1 Answers
 
 1. 
+2. `original.txt` info:
+    - Command: 
+    - Inode: 
+    - Blocks: 
+    - Links: 
+3. 
+4. hard link to `original.txt` info:
+    - Command: 
+    - Inode hard link: 
+    - Blocks hard link: 
+    - Links hard link: 
+    - Explain: 
+5. symbolic link to `original.txt` info:
+    - Command: 
+    - Inode sym link: 
+    - Blocks sym link: 
+    - Links sym link: 
+    - Explain: 
+6. copy of `original.txt`
+    - Command: 
+    - Inode copy: 
+    - Blocks copy: 
+    - Links copy: 
+    - Explain: 
+7. move `original.txt`
+    - Command:
+    - Does it have the same inode?  Explain
+    - Effect of symbolic link?  Explain
+    - Effect on other hard linked file?  Explain
+    - Effect on copied version of `original.txt`?  Explain
 
 ## Part 2 Answers
 
@@ -28,5 +58,10 @@
 12. 
 13. 
 
+## Extra Credit Answers
 
+Line added to `/etc/fstab`:
+```
+Insert line here
+```
 

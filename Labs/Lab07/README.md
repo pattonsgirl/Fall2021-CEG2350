@@ -1,8 +1,8 @@
 # Lab 07 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - If only inode](#Part-1---If-only-inode)
-- [Part 2 - Unused resources](#Part-2---Unused-resources)
+- [Part 1 - inode what's up](#Part-1---inode-what's-up)
+- [Part 2 - unallocated resources](#Part-2---unallocated-resources)
 - [Extra Credit - take a fstab at this](#Extra-Credit---take-a-fstab-at-this)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -20,7 +20,7 @@ For each part below, you will be asked to do an action or answer a question.  Th
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later. 
 
-## Part 1 - If only inode
+## Part 1 - inode what's up
 - **Useful Commands: `stat`, `ln`, `cp`, `mv`**
 
 1. Create a file in your Lab07 folder named `original.txt`.  Put some stuff in this file.
@@ -49,6 +49,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
    - links copied file: 
    - Does modifying the copied file modify `original.txt`? Explain
 7. Move `original.txt` to another directory.
+   - Command: 
    - Does it have the same inode?  Explain
    - Effect of symbolic link?  Explain
    - Effect on other hard linked file?  Explain
@@ -56,8 +57,9 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 - Resources:
    - [https://linoxide.com/linux-inode/](https://linoxide.com/linux-inode/)
+   - [https://www.howtogeek.com/465350/everything-you-ever-wanted-to-know-about-inodes-on-linux/](https://www.howtogeek.com/465350/everything-you-ever-wanted-to-know-about-inodes-on-linux/)
 
-## Part 2 - Unused resources
+## Part 2 - unallocated resources
 
 For each step below, write the answer to the question / prompt and how you found / configured the answer (commands used).
 
@@ -86,10 +88,13 @@ For each step below, write the answer to the question / prompt and how you found
 
 ## Extra Credit - take a fstab at this
 
-Add your partition and the default mount point to `/etc/fstab`  
-Test your changes using the 'mount -a' command.
+1. Add your partition and the mount point (`/mnt/expanse`) to `/etc/fstab`  
+   - Line added to `/etc/fstab`: 
+2. Test your changes using the `mount -a` and `df`.  Write what you did to prove you got it right in `/etc/fstab`
+3. Reboot, if you're brave enough... test that your partition was automounted to `/mnt/expanse`
 
-Reboot, if you're brave enough... test that your partition was automounted to your home directory
+- Resources:
+   - [https://help.ubuntu.com/community/Fstab](https://help.ubuntu.com/community/Fstab)
 
 ## Submission
 
@@ -101,7 +106,11 @@ Reboot, if you're brave enough... test that your partition was automounted to yo
 
 ## Rubric
 
-- Part 1 - 1 pt per question - 8 pts total
-- Part 2 - 1 pt per question - 4 pts total
+- Part 1 - 1 pt per question - 7 pts total
+   - Subquestion scoring:
+   - Q2 (0.25) pts per bullet
+   - Q4 - Q7 (0.2) pts per bullet
+- Part 2 - 1 pt per question - 13 pts total
+- Extra credit - 10% (2 pts)
 
 
