@@ -1,4 +1,4 @@
-# Lab 07 - NOT FINALIZED
+# Lab 07
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - inode what is up](#Part-1---inode-what-is-up)
