@@ -110,7 +110,7 @@ For each step below, write the answer to the question / prompt and how you found
    - Subquestion scoring:
    - Q2 (0.25) pts per bullet
    - Q4 - Q7 (0.2) pts per bullet
-- Part 2 - 1 pt per question - 13 pts total
+- Part 2 - 1 pt per question - 12 pts total
 - Extra credit - 10% (2 pts)
 
 
