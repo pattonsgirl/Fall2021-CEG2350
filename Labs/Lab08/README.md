@@ -1,9 +1,9 @@
-# Lab 08 - NOT FINALIZED
+# Lab 08
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - inode what is up](#Part-1---inode-what-is-up)
-- [Part 2 - unallocated resources](#Part-2---unallocated-resources)
-- [Extra Credit - take a fstab at this](#Extra-Credit---take-a-fstab-at-this)
+- [Part 1 - To Infinity](#Part-1---To-Infinity)
+- [Part 2 - Running Processes](#Part-2---Running-Processes)
+- [Part 3 - `branch`ing out](#Part-3---`branch`ing-out)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -21,113 +21,84 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1: To Infinity (2 pts)
+## Part 1 - To Infinity
 
 1. In your `Lab08` folder, create a script called `infinity`.
-2. Each time the loop runs it should do the following (2 pts)
+2. Each time the loop runs it should do the following
    - Output a statement such as "Still going!" to a file called `still-going.txt`
    - Sleep for 15 seconds
    - Repeat. Infinitely!
+3. Give this script executable permissions (but don't worry about adding to PATH)
 
-**Resources**
+- Resources:
+  - [bash while loop](https://linuxize.com/post/bash-while-loop/)
+  - [sleep bash scripting](https://www.cyberciti.biz/faq/linux-unix-sleep-bash-scripting/)
 
-- [bash while loop](https://linuxize.com/post/bash-while-loop/)
-- [sleep bash scripting](https://www.cyberciti.biz/faq/linux-unix-sleep-bash-scripting/)
+## Part 2 - Running Processes
 
-## Part 2: Terminally Attached (5 pts)
+For the following exercises, you are going to have two terminals open to your AWS instance, which will be refered to as Terminal A and Terminal B. We can't give terminals names, but we needed some way to say where to run what ;)
 
-1. Connect to your AWS system in two different terminals. (1 pt)
-   - The PID of the terminal you will monitor processes on is:
-   - The PID of the terminal you will expirement with running your script is:
-2. Run the script you created in your terminal. Note the PID. Kill the process and write the command you used. (1 pt)
-3. Run your script with `source`. Note the PID. (1 pt)
-   - If you kill this process, what will happen?
-   - Kill the process and write the command you used.
-4. Run the script in the background using `bg`. (2 pts)
-   - Note the PID and the job ID.
-   - Kill the background process via the job ID and write the command you used.
+- **Useful Commands: `pstree`, `ps`, `kill`, `bg`, `job`, `fg`, `screen`**
 
-**Resources**
+1. Connect to your AWS system in two different terminals. Find the process IDs for each terminal.
+   - Command to find the PID:
+   - PID of "Terminal A":
+   - PID of "Terminal B":
+2. Use `./` to run `infinity` in Terminal B. Use Terminal A to find the PID, then kill the process
+   - PID of script:
+   - Command to kill script:
+   - Can you still "use" Terminal B with `infinity` running?
+3. Use `source` to run `infinity` in Terminal B. Use Terminal A to find the PID, then kill the process
+   - PID of script:
+   - Command to kill the script:
+   - When you killed the script, what else was terminated?
+4. Run `infinity` as a background job in Terminal B.
+   - Command to run script in background:
+   - Job ID of script:
+   - PID of script:
+   - Command to kill script via job id:
+   - If you close Terminal B, is the job still running? Why or why not?
+5. Run `infinity` in a `screen` session
+   - Command(s) to run `infinity` in a screen session:
+   - Detach from screen session:
+   - Command to show `screen` sessions:
+   - If you close Terminal B, is the screen session with `infinity` still running? Why or why not?
+   - Command / steps to kill the screen session:
 
-- [How To Use Bash's Job Control to Manage Foreground and Background Processes](https://www.digitalocean.com/community/tutorials/how-to-use-bash-s-job-control-to-manage-foreground-and-background-processes)
-- [Understanding foreground and background Linux processes](https://linuxconfig.org/understanding-foreground-and-background-linux-processes)
+- Resources:
+  - [How To Use Bash's Job Control to Manage Foreground and Background Processes](https://www.digitalocean.com/community/tutorials/how-to-use-bash-s-job-control-to-manage-foreground-and-background-processes)
+  - [Understanding foreground and background Linux processes](https://linuxconfig.org/understanding-foreground-and-background-linux-processes)
+  - [How to Use Linux Screen Command](https://www.howtogeek.com/662422/how-to-use-linuxs-screen-command/)
+  - [Kill detached screen session](https://www.baeldung.com/linux/kill-detached-screen-session)
 
-## Part 3: Terminally Detached (3 pts)
+## Part 3 - `branch`ing out
 
-1. Run your script in `screen`. Write the command(s) to set up a `screen` session, run your script inside, and detach from `screen`. (1 pt)
-2. Use `exit` to disconnect from the terminal. The other terminal can stay open (if it was still open). Does the other terminal also know about your `screen` session?
-3. Go back in, reattach to your `screen` and write the command(s) you used. (1 pt)
-4. End the `screen` session and write the command(s) you used. (1 pt)
+For each step below, write the corresponding command(s) to do the action requested. We will be looking at your repos to make sure the branch exists.
 
-**Resources**
+1. Create a branch in your git repository called `updates`
+2. Switch to the branch.
+3. Edit `infinity` with some comments
+   - comments in bash have a hashtag `#` at the start of the line followed by a space
+4. Commit and push your changes made on your branch to remote (GitHub)
+   - Note: if you try `git push` git will spit out a helpful hint
+5. In the browser, go to your GitHub repo, and switch to view the `updates` branch instead of `main`
+   - confirm that your edits to `infinity` exist in the `updates` branch's version of the file, but not in the `main` branch's version.
+6. Back in your terminal, switch back to the `main` branch.
+7. Merge the changes from the `updates` branch with the `main` branch.
+8. Push the `main` branch to remote (GitHub).
+9. In GitHub, confirm your changes to `infinity` now also exist in the `main` branch
+10. Back in your terminal, how can you find out what branch you are on?
 
-- [How to Use Linux Screen Command](https://www.howtogeek.com/662422/how-to-use-linuxs-screen-command/)
+- Resources:
 
-## Part 4: The better `marco` `polo` (4 pts)
-
-1. In your `Lab08` folder, create a script called `marco` and a script called `polo`
-2. Modify `PATH` to use this directory instead of the old one. Write what you did. (1 pt)
-3. Modify `marco` so that when it is run, it should save the current working directory in a file so that `polo` can reference it. (1 pt)
-   - You may refer back to your work in `Lab04`
-4. Modify polo so that when it is run, it should `cd` you back to the directory where you executed `marco`. (1 pt)
-
-- Hint: For `polo` to work in your shell, you are going to have to run it differently than `marco`. The shell you are running in is the parent shell. When you execute a script, it does its work in a "subshell". If you run `polo` on its own, it might not create errors, but it also won't change into the directory in your shell, the parent shell - it did the action in the subshell! To make it do the action in our shell, the parent shell, play with using `source` or `.`
-
-5. Write a basic `How To` guide for your `marco` and `polo` script here, including how to run each. (1 pt)
-
-**Resources**
-
-- [Using `cd` in bash scripts](https://www.baeldung.com/linux/cd-command-bash-script)
-
-## Extra Credit: Conflict Resolution (2 pts)
-
-Last week you played with branching. That was wonderful, but you got the feeling there may be problems looming on the horizon. Among those problems is dealing with merge conflicts, where there exist two versions of the same file, and only one may survive. So, you are going to pick one of the following strategies to create a merge conflict, then you are going to resolve the conflict.
-
-Documentation (and answers to questions) should be in your `Lab08` `README.md` file under the `Extra Credit` section at the end. Note which option you ran with.
-
-- **Option A: Conflict between branches**
-  - Confirm you are on the `main` branch of your repository.
-  - Create a new file in your `Lab08` folder called `problem-child.txt` Add some text to this file, just to get the party started.
-  - `add`, `commit` and `push` the file, and confirm you see the file on GitHub.
-  - Create / switch to a new branch called `improvements`
-  - Edit `problem-child.txt` in the `improvements` branch.
-  - `commit` and `push`. Write the command to push this branch to GitHub
-  - Switch back to the `main` branch
-  - Don't `merge` yet - you'll ruin the expirement
-  - Making sure you are on the `main` branch, make some edits to `problem-child.txt`
-  - Now `merge` the `improvements` branch with `main`
-  - Summarize the output from making the `merge` between the two branches.
-  - Head to your file in the terminal. What do you see?
-  - Resolve your conflict by modifying the file to no longer have the scary >>'s of doom and have the content you want to keep.
-  - Run `status`. Summarize the output given and what you need to do next now that your file is in a happy state.
-  - Do the things. Write the command(s) you used.
-- **Option B: Conflict from remote**
-
-  - Confirm you are on the `main` branch of your repository
-  - Create a new file in your `Lab08` folder called `problem-child.txt` Add some text to this file, just to get the party started.
-  - `add`, `commit` and `push` the file, and confirm you see the file on GitHub.
-  - Make more edits to the file via your terminal. You may `commit`, but don't `push` - you'll ruin the expirement.
-  - In GitHub, click into the file, then click the little edit button. Make some edits, then `commit` to `main` at the bottom of the page.
-  - Now, back in your terminal, try to `push` those changes. What is the result?
-  - Why do you need to `pull`?
-  - Summarize the output given by `pull`
-  - Head to your file in the terminal. What do you see?
-  - Resolve your conflict by modifying the file to no longer have the scary >>'s of doom and have the content you want to keep.
-  - Run `status`. Summarize the output given and what you need to do next now that your file is in a happy state.
-  - Do the things. Write the command(s) you used.
-
-- Don't forget to `commit` and `push` your updates to the `README.md` file for grading.
-
-**Resources:**
-
-- [Git - Basic Branching & Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
-
-## Extra Credit
+  - [Git Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+  - [Git - Basic Branching & Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 
 ## Submission
 
 1. Verify that your GitHub repo has a `Lab08` folder with at minimum:
 
+   - `infinity`
    - `Lab08.md`
 
 2. In the Pilot Dropbox, paste the URL to the `Lab08` folder in your GitHub repo
@@ -135,9 +106,11 @@ Documentation (and answers to questions) should be in your `Lab08` `README.md` f
 
 ## Rubric
 
-- Part 1 - 1 pt per question - 7 pts total
-  - Subquestion scoring:
-  - Q2 (0.25) pts per bullet
-  - Q4 - Q7 (0.2) pts per bullet
-- Part 2 - 1 pt per question - 13 pts total
-- Extra credit - 10% (2 pts)
+- Part 1 - (3 pts)
+  - while loop
+  - outputs text to file
+  - uses sleep command to slow down output spam
+- Part 2 - 10 pts
+  - 2 pts / question
+- Part 3 - 10 pts
+  - 1 pt / question

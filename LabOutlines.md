@@ -81,9 +81,7 @@
 - run the script "normally" and kill via PID
 - run the script with bg and kill via job ID
 - run in screen
-- marco/polo script
-  - pay attention to PATH and file locations
-- EC is create and solve a merge conflict
+- create a branch, update content, merge branch after
 
 # Lab 09
 
@@ -92,6 +90,7 @@
 - Run a python web server on port 4444, find PID using lsof
 - EC - hello world in jupyter notebook
 - EC - echo a message over a port, access message via public IP or curl localhost
+- create and solve merge conflict
 
 # Lab 10
 
@@ -121,3 +120,8 @@
 - tar a folder, use sftp to transfer file, check checksum on both ends, then un-tar
 - create a new SSH keypair set - goal is to mess with SSH essential files
 - EC - install ninvaders
+
+# Removed:
+
+- ~~marco/polo script~~
+  - pay attention to PATH and file locations

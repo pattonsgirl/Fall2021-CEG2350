@@ -49,9 +49,9 @@ Download file with `wget`. Convert to different file type. Use `basename` to kee
 
 diehardback.com - investigate sketchyness
 
-3. Somewhere in my command history, I have written the perfect ssh command.  Write a search with grep that will narrow down my search of my history.
+3. Somewhere in my command history, I have written the perfect ssh command. Write a search with grep that will narrow down my search of my history.
 
-4. I have a repository with a working version of my project.  I decide I would like to add a new feature to my project.  Should I create a fork or a branch?
+4. I have a repository with a working version of my project. I decide I would like to add a new feature to my project. Should I create a fork or a branch?
 
 Sign a git commit
 Encrypt and decrypt a file
@@ -87,38 +87,44 @@ Note: this is for fun. Have some fun! Personally, I want to play with the AWS De
     **Useful Commands: `ln, test, stat, cp, mv, rm`**
 
 ## Lab 02
+
 Part 4
-Removed:
-3. Find a way for the `ubuntu` user to add a file to `bob`'s home directory named `fromubuntu.txt`
-   - Write the command(s) you used.
-   - Are you happy with your solution?
+Removed: 3. Find a way for the `ubuntu` user to add a file to `bob`'s home directory named `fromubuntu.txt`
+
+- Write the command(s) you used.
+- Are you happy with your solution?
+
 6. Can `bob` edit `fromubuntu.txt`?
 7. Fix the permissions so that `bob` owns `fromubuntu.txt`
    - Hint: can `bob` use `sudo`?
 
 ## Lab 04
+
 marco / polo - use after talking about parent / child processes?
 
 1. In your `Lab04` folder, create a folder called `scripts`. Inside that folder, create two scripts, one named `marco` and one named `polo`.
 2. For now, have `marco` and `polo` print a statment to standard output when they are run - `This is from marco` and `This is from polo` respectively.
 3. Add the folder these scripts are located in to your `PATH`. (2 pts)
+
 - First use the `export` command in you terminal to test you have properly added to the `PATH`. Write this command in your lab notes.
-    - If you really mess this up, log out (`exit`) your AWS Linux connection and `ssh` back in.  You can refer to [here](PATH-backup) to verify it looks how it used to.
+  - If you really mess this up, log out (`exit`) your AWS Linux connection and `ssh` back in. You can refer to [here](PATH-backup) to verify it looks how it used to.
 - Test that `marco` and `polo` can now be run in any directory.
-- Add your working `export` command to your home directory's `.profile`.  
-    - If you really mess up, there is a backup `.profile` file [here](.profile-backup).  You can copy and paste the contents.
+- Add your working `export` command to your home directory's `.profile`.
+  - If you really mess up, there is a backup `.profile` file [here](.profile-backup). You can copy and paste the contents.
 
 4. Modify `marco` so that when it is run, it should save the current working directory in a file so that `polo` can reference it. (1 pt)
-  - Hint: If `marco` can be ran in any directory and `polo` can be run in any directory, should the path to the file be relative or absolute?
+
+- Hint: If `marco` can be ran in any directory and `polo` can be run in any directory, should the path to the file be relative or absolute?
+
 5. Modify `polo` so that when it is run, it echos the command the user needs to go to the directory `marco` was called in.
 
 For the `marco` script, when `marco` is run it should check if a path has already been "saved" and ask if the user would like to update the path. Don't forget to `commit` and `push` your updates for grading.
 
 - [Hint](https://www.cyberciti.biz/faq/linux-unix-script-check-if-file-empty-or-not/)
+
 ### Credits:
 
 Exercise based on https://missing.csail.mit.edu/2020/shell-tools/
-
 
 # Old Lab 05
 
@@ -162,7 +168,7 @@ Exercise based on https://missing.csail.mit.edu/2020/shell-tools/
 
 ## Part 4: The Git Part (1 pt)
 
-1. In your `README.md` file, add details on how to run your program manually & how to run your program with the `make` command. 
+1. In your `README.md` file, add details on how to run your program manually & how to run your program with the `make` command.
 2. Use `git` commands to `add`, `commit` and `push` the `Lab05` folder to GitHub.
 
 ## Extra Credit (2 pt):
@@ -172,8 +178,8 @@ Exercise based on https://missing.csail.mit.edu/2020/shell-tools/
 - Modify your `Makefile` to compile the original file & its new dependency. Note that your `Makefile` should have an updated version of the pre requisites to compile the program.
 - Don't forget to `commit` and `push` your updates for grading.
 
-
 ## Lab 06 OLD
+
 ## Part 1: Self Discovery (5 pts)
 
 Find out the following information about your personal system. Write the answers to the information requested.
@@ -212,38 +218,38 @@ Use your AWS / Ubuntu system to discover the following information.
 5. Does this system have a swap file (use virtual memory)? Write how you checked. (1 pt)
    - [Hint](https://unix.stackexchange.com/questions/23072/how-can-i-check-if-swap-is-active-from-the-command-line)
 
-
 ## Part 1: Create a filesystem from a file to store files (10 pts)
 
-Perform the following in your AWS instance.  For this part, work in your user's home directory (`/home/ubuntu`), not your repository.  Your answers will still go in your `README.md` file associated with this lab.
+Perform the following in your AWS instance. For this part, work in your user's home directory (`/home/ubuntu`), not your repository. Your answers will still go in your `README.md` file associated with this lab.
 
 1. Create a file of a defined amount of space: `dd if=/dev/zero of=space bs=1024 count=0 seek=$[1024*100]`
    - Explain `if` and `of` (.33 pt)
    - Explain what `/dev/zero` is (.33 pt)
    - What size file was created? (.33 pt)
-2. Create a filesystem on this file.  Write the command you used. (1 pt)
+2. Create a filesystem on this file. Write the command you used. (1 pt)
    - **Useful commands:** `mkfs`
-3. Mount the filesystem to your home directory in the folder `usable`.  Write the command you used. (1 pt)
+3. Mount the filesystem to your home directory in the folder `usable`. Write the command you used. (1 pt)
    - **Useful commands:** `mount`, `mkdir`
-4. Check to see if the filesystem was mounted according to the output of `df -h`  Paste the line that indicates where it was mounted and space usage (1 pt)
-   - Notes: you may see and be wondering about `/dev/loop#`  loop is what happens when you are using a file that has a filesystem inside, which is exactly what happened - we used `dd` to create a file filled with 0's, then we used `mkfs` to have the file be a filesystem.
+4. Check to see if the filesystem was mounted according to the output of `df -h` Paste the line that indicates where it was mounted and space usage (1 pt)
+   - Notes: you may see and be wondering about `/dev/loop#` loop is what happens when you are using a file that has a filesystem inside, which is exactly what happened - we used `dd` to create a file filled with 0's, then we used `mkfs` to have the file be a filesystem.
    - [More info on `/dev/loop#`](https://en.wikipedia.org/wiki/Loop_device)
-5. Go in to the folder `usable` and create some new files with some text inside.  Write the steps this took and if you changed permission sets. (1 pt)
-6. Unmount the filesystem currently mounted to `usable`.  Write the command you used. (1 pt)
+5. Go in to the folder `usable` and create some new files with some text inside. Write the steps this took and if you changed permission sets. (1 pt)
+6. Unmount the filesystem currently mounted to `usable`. Write the command you used. (1 pt)
    - **Useful commands:** `umount`
-7. Can you still access the files?  Why or why not? (1 pt)
-8. While the filesystem is still unmounted, run `strings` on `space`.  What do you see?  Can you see the contents of your files? (1 pt)
-   - Notes: `cat` would work, but also might act like its hanging.  `strings` is kind of like `cat` but it will ONLY print the strings of printable characters in files.
-9. Mount the filesystem once more, and delete / remove one of the files.  Unmount the filesystem, and run `strings` again.  Can you see the contents of your files? (1 pt)
-   - Notes: this is the big scary deal about data and disks and making sure data gets overwritten on a disk if the data needs to truly go away.  When you delete a file, all you've done is delete the inode association (you can't vim it, and you can't use an inode to get back to it), but the data is still written to the disk until it is overwritten (which could happen given enough time).  Removing a file is like throwing away a letter.  If the letter is still whole, it can be pulled back out and read.
+7. Can you still access the files? Why or why not? (1 pt)
+8. While the filesystem is still unmounted, run `strings` on `space`. What do you see? Can you see the contents of your files? (1 pt)
+   - Notes: `cat` would work, but also might act like its hanging. `strings` is kind of like `cat` but it will ONLY print the strings of printable characters in files.
+9. Mount the filesystem once more, and delete / remove one of the files. Unmount the filesystem, and run `strings` again. Can you see the contents of your files? (1 pt)
+   - Notes: this is the big scary deal about data and disks and making sure data gets overwritten on a disk if the data needs to truly go away. When you delete a file, all you've done is delete the inode association (you can't vim it, and you can't use an inode to get back to it), but the data is still written to the disk until it is overwritten (which could happen given enough time). Removing a file is like throwing away a letter. If the letter is still whole, it can be pulled back out and read.
 10. Add this filesystem to be automounted by the OS using `/etc/fstab` Write the line you added to `/etc/fstab` (1 pt)
-      - Hint: the line should be in the format of:
-         - `/absolute/path/to/filesystem` **tab** `/absolute/path/to/directory/to/mount/to` **tab** `defaults` **tab** `0 0`
-         - [More info on `fstab`](https://en.wikipedia.org/wiki/Fstab)
-      - Test your changes using the 'mount -a' command.  What does this command do?  
-      - Use `df -h` or head back to your `usable` folder to verify the mount worked (as in the file(s) you didn't delete should be viewable in the folder with `ls`)
+    - Hint: the line should be in the format of:
+      - `/absolute/path/to/filesystem` **tab** `/absolute/path/to/directory/to/mount/to` **tab** `defaults` **tab** `0 0`
+      - [More info on `fstab`](https://en.wikipedia.org/wiki/Fstab)
+    - Test your changes using the 'mount -a' command. What does this command do?
+    - Use `df -h` or head back to your `usable` folder to verify the mount worked (as in the file(s) you didn't delete should be viewable in the folder with `ls`)
 
 **Just in Case Resources:**
+
 - [Mount broken volume to new system](https://www.xtivia.com/blog/recovering-aws-instance-doesnt-start/)
 
 ## Part 2: Gitting Branchy (6 pts)
@@ -257,10 +263,29 @@ Perform the following in your AWS instance.  For this part, work in your user's 
 6. Switch back to the `master`/`main` branch.
 7. Merge the `development` branch with the `master`/`main` branch.
 8. Edit `README.md` to include the commands you used to switch back to the `master`/`main` branch and merge the `development` branch with `master`/`main` (2 pts)
-9. Push the `master`/`main` branch to remote (GitHub). 
+9. Push the `master`/`main` branch to remote (GitHub).
 10. In GitHub, confirm your file now exits in `master`/`main` with both the changes for branch creation and branch merging. (1 pt - visual check)
 
 **Resources:**
 
 - [Git Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 - [Git - Basic Branching & Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+
+  - Confirm you are on the `main` branch of your repository.
+  - Create a new file in your `Lab08` folder called `problem-child.txt` Add some text to this file, just to get the party started.
+  - `add`, `commit` and `push` the file, and confirm you see the file on GitHub.
+  - Create / switch to a new branch called `improvements`
+  - Edit `problem-child.txt` in the `improvements` branch.
+  - `commit` and `push`. Write the command to push this branch to GitHub
+  - Switch back to the `main` branch
+  - Don't `merge` yet - you'll ruin the expirement
+  - Making sure you are on the `main` branch, make some edits to `problem-child.txt`
+  - Now `merge` the `improvements` branch with `main`
+  - Summarize the output from making the `merge` between the two branches.
+  - Head to your file in the terminal. What do you see?
+  - Resolve your conflict by modifying the file to no longer have the scary >>'s of doom and have the content you want to keep.
+  - Run `status`. Summarize the output given and what you need to do next now that your file is in a happy state.
+  - Do the things. Write the command(s) you used.
+
+- Resources:
+  - [Git - Basic Branching & Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
