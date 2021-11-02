@@ -2,3 +2,5 @@
 
 cd ..
 echo "Ran from script" > fromscript
+
+sleep 10000
