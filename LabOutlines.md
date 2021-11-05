@@ -85,15 +85,6 @@
 
 # Lab 09
 
-- explore your internet connection and the AWS internet connection
-- play with port forwarding using jupyter notebooks
-- Run a python web server on port 4444, find PID using lsof
-- EC - hello world in jupyter notebook
-- EC - echo a message over a port, access message via public IP or curl localhost
-- create and solve merge conflict
-
-# Lab 10
-
 - Write source code
 - compile source code
 - debug an error with GDB - NEW
@@ -101,8 +92,18 @@
 - ec is add dependent file (function / library that "main" relies on)
 - git branches
 
+# Lab 10
+
+- explore your internet connection and the AWS internet connection
+- play with port forwarding using jupyter notebooks
+- Run a python web server on port 4444, find PID using lsof
+- EC - hello world in jupyter notebook
+- EC - echo a message over a port, access message via public IP or curl localhost
+- create and solve merge conflict
+
 # Lab 11?
 
+- MINICONDA?
 - tar'ing
 - ~/.ssh/config
 - create key pair for bob (authorized_keys)
