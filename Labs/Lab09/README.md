@@ -34,7 +34,6 @@ Install ninvader from the package included in this folder, [ninvaders-0.1.1.tar.
 - **Useful Commands: `wget`, `tar`, `apt`, `make`**
 
 1. Download `ninvaders-0.1.1.tar.gz` to your home directory.
-   -
 2. Install / check installation of `gcc` and `ncurses`.
 3. Extract ninvaders to your home directory.
 4. Install ninvaders
