@@ -81,4 +81,7 @@ Install ninvader from the source, [ninvaders-0.1.1.tar.gz](ninvaders-0.1.1.tar.g
 
 ## Rubric
 
-- Part 1
+- Part 1 - 4 pts
+- Part 2 - 3 pts
+- Part 3 - 3 pts
+- Extra Credit 1 pt (10%)
