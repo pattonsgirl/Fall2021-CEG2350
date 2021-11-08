@@ -87,8 +87,8 @@
 
 - Write source code
 - compile source code
-- ~~debug an error with GDB - NEW~~
 - write a makefile
+- ec is install ninvaders
 - ec is add dependent file (function / library that "main" relies on)
 
 # Lab 10
@@ -114,6 +114,7 @@
 
 - branching
 - resolving merge conflicts
+- ~~debug an error with GDB - NEW~~
 
 # Lab 10
 

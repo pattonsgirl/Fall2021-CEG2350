@@ -21,7 +21,14 @@
 
 - Add your Makefile to your Lab09 folder in GitHub
 
-## Extra Credit Answers - Please delete all below if you did not do :)
+## Extra Credit - Dependent Answers - Delete the section if not doing :)
+
+- In the `ec` folder, add your:
+  - source code files
+  - your compiled code
+  - `Makefile`
+
+## Extra Credit - G@M3RS Answers - Delete the section if not doing :)
 
 ### Instructions to Install ninvaders
 

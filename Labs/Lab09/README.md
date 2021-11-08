@@ -4,6 +4,7 @@
 - [Part 1 - Write Code](#Part-1---Write-Code)
 - [Part 2 - Compile a Program](#Part-2---Compile-a-Program)
 - [Part 3 - Create a Makefile](#Part-3---Create-a-Makefile)
+- [Extra Credit - Dependent](#Extra-Credit---Dependent)
 - [Extra Credit - G@M3R](#Extra-Credit---G@M3R)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -56,6 +57,15 @@ Use Java or C or C++ to write an echo program. Name your source code file `repea
   - [Makefile in C](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#C)
   - [Makefile in Java](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#java)
 
+## Extra Credit - Dependents
+
+Create a folder in your `Lab09` folder called `ec`. In Java, C or C++, create a multi-file code project.
+
+- Perhaps your main code file calls on a function that is detailed in the other file (function can do a simple action, like print a message)
+- You may use an old / existing multifile project
+
+Modify your `Makefile` to compile the original file & its new dependency(s). Note that your `Makefile` should have an updated version of the pre requisites to compile the program.
+
 ## Extra Credit - G@M3R
 
 Install ninvader from the source, [ninvaders-0.1.1.tar.gz](ninvaders-0.1.1.tar.gz). For credit, you need to detail how you installed ninvaders succesfully by including at least the details specified below including which commands you used.
@@ -84,4 +94,5 @@ Install ninvader from the source, [ninvaders-0.1.1.tar.gz](ninvaders-0.1.1.tar.g
 - Part 1 - 4 pts
 - Part 2 - 3 pts
 - Part 3 - 3 pts
-- Extra Credit 1 pt (10%)
+- Extra Credit - Dependents - 1 pt (10%)
+- Extra Credit - G@M3RS - 1 pt (10%)
