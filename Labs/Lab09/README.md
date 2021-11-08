@@ -47,6 +47,12 @@ Use Java or C or C++ to write an echo program. Name your source code file `repea
    - `make run` - if the compiled program exists, will execute / run the program
    - `make clean` - if the compiled program exists, will delete the compiled program
 
+- **Resources**
+  - [Sample Java Makefile in this folder](./Makefile-Java)
+  - [Sample C/C++ Makefile in the folder](./Makefile-C)
+  - [Makefile in C](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#C)
+  - [Makefile in Java](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#java)
+
 ## Part 4 - Solve a Conflict
 
 ## Extra Credit - G@M3R
