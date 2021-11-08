@@ -87,10 +87,9 @@
 
 - Write source code
 - compile source code
-- debug an error with GDB - NEW
+- ~~debug an error with GDB - NEW~~
 - write a makefile
 - ec is add dependent file (function / library that "main" relies on)
-- git branches
 
 # Lab 10
 
