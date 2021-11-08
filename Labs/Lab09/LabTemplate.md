@@ -1,7 +1,7 @@
 ## Lab 09
 
 - Name:
-- Email
+- Email:
 
 ## Part 1 Answers
 
