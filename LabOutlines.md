@@ -108,6 +108,7 @@
 - create key pair for bob (authorized_keys)
 - sftp
 - checksums
+- EC - solve a merge conflict
 
 # Lab XX
 

@@ -1,7 +1,10 @@
-# Lab 09 - NOT FINALIZED
+# Lab 09
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - To Infinity](#Part-1---To-Infinity)
+- [Part 1 - Write Code](#Part-1---Write-Code)
+- [Part 2 - Compile a Program](#Part-2---Compile-a-Program)
+- [Part 3 - Create a Makefile](#Part-3---Create-a-Makefile)
+- [Extra Credit - G@M3R](#Extra-Credit---G@M3R)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -52,8 +55,6 @@ Use Java or C or C++ to write an echo program. Name your source code file `repea
   - [Sample C/C++ Makefile in the folder](./Makefile-C)
   - [Makefile in C](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#C)
   - [Makefile in Java](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#java)
-
-## Part 4 - Solve a Conflict
 
 ## Extra Credit - G@M3R
 

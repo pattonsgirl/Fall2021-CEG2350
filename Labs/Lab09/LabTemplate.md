@@ -5,7 +5,7 @@
 
 ## Part 1 Answers
 
-## Extra Credit Answers
+## Extra Credit Answers - Please delete all below if you did not do :)
 
 ### Instructions to Install ninvaders
 
