@@ -17,9 +17,9 @@ default: demo.java
         $(JCC) $(JFLAGS) demo.java
 
 # defining target (or command to be used with make) to run my program
-execute:
+execute: demo.class
         $(JV) demo
 
 # defining target to delete my compiled program
-delete:
+delete: 
         rm demo.class

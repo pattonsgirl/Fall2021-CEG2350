@@ -2,12 +2,12 @@
 	# actions
 # compile the program
 
-default: c-demo.c
-	gcc -Wall -o from-makefile c-demo.c
+default: hello-c.c
+	gcc -Wall -o hello-by-makefile hello-c.c
 
-go: from-makefile
-	./from-makefile
+go: hello-by-makefile
+	./hello-by-makefile
 
 # cleaning things up
-clean: from-makefile
-	rm from-makefile
+clean: hello-by-makefile
+	rm hello-by-makefile
