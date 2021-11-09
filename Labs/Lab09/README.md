@@ -1,112 +1,98 @@
-# Lab 09 - NOT FINALIZED
+# Lab 09
+
+- [Lab Procedure](#Lab-Procedure)
+- [Part 1 - Write Code](#Part-1---Write-Code)
+- [Part 2 - Compile a Program](#Part-2---Compile-a-Program)
+- [Part 3 - Create a Makefile](#Part-3---Create-a-Makefile)
+- [Extra Credit - Dependent](#Extra-Credit---Dependent)
+- [Extra Credit - G@M3R](#Extra-Credit---G@M3R)
+- [Submission](#Submission)
+- [Rubric](#Rubric)
 
 ## Lab Procedure
 
-**For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.  
-`ssh` in to your AWS environment. If you've forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
-See [Remaking your AWS Educate environment](../../..) for instructions.
+In your terminal, head to your repository (the folder named `ceg2350-yourgithubusername).
 
-1. Go to the folder in which you cloned your Git repository for this course.
-   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/` depending on your setup
-2. Create a directory called `Lab09`
-   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab09` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab09` depending on your setup
-3. In this directory, create a file called `README.md`
-4. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS so you can keep the `README.md` file open while you expirement with the lab.
-   - At the top of the file please enter your personal details as follows:
+Create a new directory, `Lab09`
 
-```
-Name: Your name
-Email: Your email
+Create a file named `Lab09.md` [based on the template](LabTemplate.md).
 
-```
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Fall2021-CEG2350/main/Labs/Lab09/LabTemplate.md)
 
-## Part 1: [/insert AOL noises here/](https://www.youtube.com/watch?v=D1UY7eDRXrs) (15 pts)
+For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
-For your local / personal system, identify the following information regarding your machine's network connection:
+If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-1. Network interface of your current connection
-2. MAC address of the network interface
-3. System hostname
-4. IP Address (of your machine, not your address from your ISP)
-5. Subnet mask
-6. Gateway
-7. Is your IP for your machine a public or private address?
+## Part 1 - Write Code
 
-On your AWS system, use `ifconfig` and `curl ipinfo.io` and read `/etc/hostname` to fill out the following:
+Use Java or C or C++ to write an echo program. Name your source code file `repeat` with the appropraite source code extention: `repeat.java`, `repeat.c`, `repeat.cpp`. The program should be the following:
 
-8. Network interface
-9. MAC address of the network interface
-10. Hostname
-11. IP address:
-12. Subnet mask:
-13. Gateway: 
-14. AWS system public IP address:
-15. Which of these IP addresses do you use to access your AWS system?
+- prompt the user to enter text
+- capture text from standard input
+- output the captured text back to standard output
 
-## Part 2: Snakes and Browsers (6 pts)
+- **Additional notes**
+  - Code integrity does not matter - you may work together or use things found on the internet or textbooks. Practice citing your sources using comments in your code.
+  - You are welcome to use an IDE you are familiar with to write test and debug your code, but you'll need to get the source code to a file on your AWS instance for the remainder of the lab.
+  - There is some useful C starter code in [this guide](https://www.geeksforgeeks.org/strings-in-c-2/) about halfway down.
+    - You'll need to add another print statement before the scan statement to prompt the user to enter a string.
 
-The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.  The programming language you would like to use in the notebook must be installed on the machine.  python and python3 are pre-installed on your AWS machines.  Jupyter, when run, will start up an HTTP connection that you can access via the web browser on the default port for jupyter, 8888.
+## Part 2 - Compile a Program
 
-1. Install the `jupyter` package. Write the command(s) you used. (1 pt)
-2. Before we play with jupyter notebook, let's look at the local port.  Run `curl localhost:8888`.  Write what you see. (1 pt)
-3. On your AWS system, start a `jupyter notebook` with the "no browser" option. Copy the output to your lab writeup. (1 pt)
-   - Note: use `jupyter notebook --help`
-4. Open a second terminal on your local system (do not `ssh` into the AWS system). 
-5. Forward the port running `jupyter notebook` to your local system and open the notebook in your browser by following the steps below:
-   - Use `ssh` to forward the port as follows, but replace `your_elastic_ip` with your AWS system's IP:
-   - `ssh -N -f -i your_private_key -L localhost:8888:localhost:8888 ubuntu@your_elastic_ip`
-   - In your browser, type the following URL: `localhost:8888`
-   - Paste the token (see your output from step 2) to get in.
-   - Write the token in your lab (1 pt)
-6. Answer the following: (2 pts)
-   - What flags are in the `ssh` command in Step 5, and what do they do?
-      - Note: full list of flags is `-N`, `-f`, `-i`, and `-L`
-   - What files are displayed in the browser (what system are they from)?
+1. Identify the compiler for your source code and well as its version and installed location.
+2. Compile your source code using the compiler.
+3. Run your compiled code.
 
-Note: you may want to take a moment and look at the extra credit once you have this part done.
+## Part 3 - Create a Makefile
 
-**Resources**
+1. Create a file called `Makefile`.
+2. Write targets in your `Makefile` such that the following terminal commands do the corresponding actions:
+   - `make` - if the source code file exists, will compile the program
+   - `make run` - if the compiled program exists, will execute / run the program
+   - `make clean` - if the compiled program exists, will delete the compiled program
 
-- [Running a Jupyter Notebook](https://ljvmiranda921.github.io/notebook/2018/01/31/running-a-jupyter-notebook/)
-- [Jupyter Notebook Tutorial - Go to Creating Your First Notebook](https://www.dataquest.io/blog/jupyter-notebook-tutorial/)
-- [How To Use Bash's Job Control to Manage Foreground and Background Processes](https://www.digitalocean.com/community/tutorials/how-to-use-bash-s-job-control-to-manage-foreground-and-background-processes)
-- [Understanding foreground and background Linux processes](https://linuxconfig.org/understanding-foreground-and-background-linux-processes)
+- **Resources**
+  - [Sample Java Makefile in this folder](./Makefile-Java)
+  - [Sample C/C++ Makefile in the folder](./Makefile-C)
+  - [Makefile in C](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#C)
+  - [Makefile in Java](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#java)
 
-## Part 3: Get Off my Port (3 pts)
+## Extra Credit - Dependents
 
-A common issue is that a port you want to listen on (run a service on) is already taken by another service / process. Let’s learn how to discover that process pid.
+Create a folder in your `Lab09` folder called `ec`. In Java, C or C++, create a multi-file code project.
 
-1. Install the `http` package for python using `pip` (1 pt)
-   - Write the command to install `pip` for `python`
-   - Write the command to install `http` with `pip`
-2. In one terminal, execute `python3 -m http.server 4444` to start a minimal web server listening on port 4444.
-3. Craft a command that uses `lsof` to show only the LISTEN[ing] ports on the system. Write the command in your notes and paste the output of running the command. (1 pt)
-   - Useful commands: `lsof`, `|`, `grep`
-4. Find that process pid and terminate it by running `kill <PID>`. Write the command you used (1 pt)
+- Perhaps your main code file calls on a function that is detailed in the other file (function can do a simple action, like print a message)
+- You may use an old / existing multifile project
 
-## Part 4: The Git Part (1 pt)
+Modify your `Makefile` to compile the original file & its new dependency(s). Note that your `Makefile` should have an updated version of the pre requisites to compile the program.
 
-1. Use `git` commands to `add`, `commit` and `push` the `Lab09` folder to GitHub.
+## Extra Credit - G@M3R
 
-## Extra Credit: Exploring Jupyter (2.5 pts)
+Install ninvader from the source, [ninvaders-0.1.1.tar.gz](ninvaders-0.1.1.tar.gz). For credit, you need to detail how you installed ninvaders succesfully by including at least the details specified below including which commands you used.
 
-- Create a jupyter notebook.  Have the notebook print "Hello World" when the notebook is run.  You will need to select python as the programming language.
-   - [Hint](https://www.dataquest.io/blog/jupyter-notebook-tutorial/)
-- Use `git` commands to `add`, `commit` and `push` your notebook to your `Lab09` folder to GitHub.
+- **Useful Commands: `wget`, `tar`, `apt`, `make`**
 
-## Extra Credit: Good listening (2.5 pts)
-
-- Echo a message over a port. When a connection is made on `localhost` or using the public IP, the message should print until the connection is terminated.
-- Document your steps in your `README.md` file, along with any resources you used.
-- Use `git` commands to `add`, `commit` and `push` to your `Lab09` folder to GitHub.
+1. Download `ninvaders-0.1.1.tar.gz` to your home directory.
+2. Install / check installation of `gcc` and `ncurses`.
+3. Extract ninvaders to your home directory.
+4. Install ninvaders
 
 ## Submission
 
-In your GitHub repository, select the green `Code` button then select `Download ZIP`. Upload this zip file to the Pilot Dropbox.
+1. Verify that your GitHub repo has a `Lab09` folder with at minimum:
 
-In the `Comment` area in the Pilot Dropbox, copy URL / link to the repository corresponding to the project your are submitting.
+   - `repeat.java` OR `repeat.c` OR `repeat.cpp`
+   - your compiled code
+   - `Makefile`
+   - `Lab09.md`
 
+2. In the Pilot Dropbox, paste the URL to the `Lab09` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab09
 
-### Credits:
+## Rubric
 
-Exercise based on https://missing.csail.mit.edu/2020/debugging-profiling/
+- Part 1 - 4 pts
+- Part 2 - 3 pts
+- Part 3 - 3 pts
+- Extra Credit - Dependents - 1 pt (10%)
+- Extra Credit - G@M3RS - 1 pt (10%)

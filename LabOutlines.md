@@ -85,6 +85,14 @@
 
 # Lab 09
 
+- Write source code
+- compile source code
+- write a makefile
+- ec is install ninvaders
+- ec is add dependent file (function / library that "main" relies on)
+
+# Lab 10
+
 - explore your internet connection and the AWS internet connection
 - play with port forwarding using jupyter notebooks
 - Run a python web server on port 4444, find PID using lsof
@@ -92,27 +100,21 @@
 - EC - echo a message over a port, access message via public IP or curl localhost
 - create and solve merge conflict
 
-# Lab 10
-
-- Write source code
-- compile source code
-- debug an error with GDB - NEW
-- write a makefile
-- ec is add dependent file (function / library that "main" relies on)
-- git branches
-
 # Lab 11?
 
+- MINICONDA?
 - tar'ing
 - ~/.ssh/config
 - create key pair for bob (authorized_keys)
 - sftp
 - checksums
+- EC - solve a merge conflict
 
 # Lab XX
 
 - branching
 - resolving merge conflicts
+- ~~debug an error with GDB - NEW~~
 
 # Lab 10
 
