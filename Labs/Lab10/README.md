@@ -1,7 +1,10 @@
 # Lab 10 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - To Infinity](#Part-1---To-Infinity)
+- [Part 1 - Network Discovery](#Part-1---Network-Discovery)
+- [Part 2 - Network Sniffing](#Part-2---Network-Sniffing)
+- [Part 3 - Silly Server](#Part-3---Silly-Server)
+- [Part 4 - Get Off my Port](#Part-4---Get-Off-my-Port)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -33,13 +36,15 @@ With your PC (not the AWS instance) connected to a network, identify the followi
 
 - Note: These results are going to look boring at home, but interesting on more complex networks, like Wright State. At home you likely have one device (your router) that is the first stop for most requests (DHCP, DNS, and gateway to route traffic to the next stop). On a complex network, you'll see these addresses getting distributed to different devices - there is a device to connect to to request an address and network information (DHCP server), another that is a first stop for DNS resolution, and maybe another that is the gateway address that packets outside the network are forwarded to to find their destination.
 
-## Part 2 -
+## Part 2 - Network Sniffing
+
+Perform the following on your AWS instance unless otherwise specified.
+
+- **Useful Commands: `traceroute`, `nmap`, `nc`**
 
 1. For a website of your choice, identify the ip addresses of the first three hops that your packet is sent to.
-   - Windows Powershell: `tracert hostname`
-   - Linux (hopefully Mac too?): `traceroute hostname`
-2.
-3.
+2. For a website of your choice, scan for open ports. Identify which ports are open and what service is listening on the port.
+3. Using `nmap` or `nc`, find out what version of SSH your AWS instance is running.
 
 ## Part 3 - Silly server
 
@@ -87,4 +92,4 @@ A common issue is that a port you want to listen on (run a service on) is alread
 
 ## Rubric
 
-- Part 1
+- 1 pt per question (20 pts total)
