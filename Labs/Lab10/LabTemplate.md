@@ -36,14 +36,12 @@
 4. Command to see contents served:
    - What is it?
 5. URL:
-   - ![Browser screenshot](relative_path_to_filename_here)
 6. Using the messages produced by the server:
 
    - A successful request log:
    - A breakdown of the meaning:
 
 7. Firewall implemented:
-   - ![Browser screenshot after firewall change](relative_path_to_filename_here)
 
 ## Part 4 Answers
 

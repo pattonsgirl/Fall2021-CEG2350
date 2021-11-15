@@ -63,14 +63,13 @@ Perform the following on your AWS instance unless otherwise specified.
    - instance public IP:
 4. Your http server is serving content / listening on port `4141`. Give a description of what content is being served.
    - **Useful commands: `wget`, `curl`**
-5. Use your browser on your system, and connect to the instance on the port your service is running on. Include a screenshot.
+5. Use your browser on your system, and connect to the instance on the port your service is running on.
 6. Peek back at the terminal running the server and answer the following
 
    - A successful request log:
    - A breakdown of the meaning:
 
-7. This content is likely something you did not intend to put on the web. So here are where firewalls come into play. Using either `iptables` or the Security Groups on AWS, disallow this port `4141` from being public.
-   Describe what step(s) you took and include a screenshot of the results once the port has been blocked.
+7. This content is likely something you did not intend to put on the web. So here are where firewalls come into play. Using either `iptables` or the Security Groups on AWS, disallow this port `4141` from being public. Describe what step(s) you took and how you know the port is now blocked.
    - For `iptables`, DROP any public addresses 0.0.0.0/0 incoming to port `4141`
      - Do NOT save these rules. Just type them out - if something breaks, you can reboot and the iptables will be flushed. If you save, well, you could premanently lock yourself out of say, port 22 (SSH)
    - For Security Groups, if you read through the list of Inbound rules, you'll see one of these rules opens all the ports from any IP
