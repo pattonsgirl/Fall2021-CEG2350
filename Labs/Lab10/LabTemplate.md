@@ -19,7 +19,11 @@
    - Hop 1:
    - Hop 2:
    - Hop 3:
-2.
+   - Hop 4:
+2. Port scan command with hostname of site:
+   - List of ports and services:
+3. Command to find SSH version of AWS instance:
+   - Version information:
 
 ## Part 3 Answers
 
@@ -46,3 +50,9 @@
 1. Run web server
 2. Command:
 3. Command:
+
+## Extra Credit Answers
+
+1. How to start listening on port 2222:
+2. How to connect to port 2222 from another system:
+3. Changes made to firewall:

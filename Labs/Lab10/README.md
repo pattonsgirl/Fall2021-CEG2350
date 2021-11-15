@@ -4,7 +4,8 @@
 - [Part 1 - Network Discovery](#Part-1---Network-Discovery)
 - [Part 2 - Network Sniffing](#Part-2---Network-Sniffing)
 - [Part 3 - Silly Server](#Part-3---Silly-Server)
-- [Part 4 - Get Off my Port](#Part-4---Get-Off-my-Port)
+- [Part 4 - Get Off My Port](#Part-4---Get-Off-My-Port)
+- [Extra Credit - Message in a Bottle](#Extra-Credit---Message-in-a-Bottle)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -24,7 +25,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - Network Discovery
 
-With your PC (not the AWS instance) connected to a network, identify the following:
+With your PC (not the AWS instance) connected to a network, identify the following information. I give you permission to use GUIs to dig it up, or the system terminal (don't use WSL2)
 
 1. The hostname:
 2. The IP address:
@@ -38,13 +39,16 @@ With your PC (not the AWS instance) connected to a network, identify the followi
 
 ## Part 2 - Network Sniffing
 
-Perform the following on your AWS instance unless otherwise specified.
+Perform the following on your system in a terminal. I recommend Windows users go with WSL2.
 
 - **Useful Commands: `traceroute`, `nmap`, `nc`**
 
-1. For a website of your choice, identify the ip addresses of the first three hops that your packet is sent to.
+1. For a website of your choice, identify the ip addresses of the first four hops that your packet is sent to.
 2. For a website of your choice, scan for open ports. Identify which ports are open and what service is listening on the port.
 3. Using `nmap` or `nc`, find out what version of SSH your AWS instance is running.
+   - Hint: read your output, it is there to help you
+
+- Resources: [nmap service and version detection](https://nmap.org/book/man-version-detection.html)
 
 ## Part 3 - Silly server
 
@@ -71,15 +75,25 @@ Perform the following on your AWS instance unless otherwise specified.
      - Do NOT save these rules. Just type them out - if something breaks, you can reboot and the iptables will be flushed. If you save, well, you could premanently lock yourself out of say, port 22 (SSH)
    - For Security Groups, if you read through the list of Inbound rules, you'll see one of these rules opens all the ports from any IP
 
-## Part 4 - Get Off my Port
+## Part 4 - Get Off My Port
 
 A common issue is that a port you want to listen on (run a service on) is already taken by another service / process. Let's use one (of many) ways to find out what service is running and how to kill it. Perform the following on your AWS instance unless otherwise specified.
 
 1. Run `python3 -m http.server 4141` to start a minimal web server listening on port `4141`. Leave this running in it's own terminal.
    - If this is still running from Part 2, you don't need to do it again - but you would get the exact error we are trying to hunt down! A service is already bound to that port, and you can't run something else there until the first one terminates
-2. In another terminal, use `lsof` to show only the LISTEN[ing] ports on the system.
+2. In another terminal, use `lsof` to show only the LISTEN[ing] services on the system.
    - Useful commands: `lsof`, `|`, `grep`
 3. Identify the process ID and `kill` the process.
+
+## Extra Credit - Message in a Bottle
+
+Use `nc` (netcat) to create a simple chat server that listens and can be connected to on port 2222. You should be able to use the server's public ip to connect and chat.
+
+Depending on what you did for part 3, your firewall may need patching to open this port externally.
+
+Proof is documentation on what commands create, how to connect, and any changes you needed to make to your firewall.
+
+Hint: [Netcat nc command with examples](https://linuxize.com/post/netcat-nc-command-with-examples/)
 
 ## Submission
 
