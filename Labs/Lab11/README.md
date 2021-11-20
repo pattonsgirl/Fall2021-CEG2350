@@ -19,6 +19,16 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
+## Part 1 - SSH config
+
+## Part 2 - tar it up
+
+## Part 3 - SFTP
+
+## Part 4 - Install miniconda
+
+## Extra Credit - Solving Conflict
+
 ## Submission
 
 1. Verify that your GitHub repo has a `Lab11` folder with at minimum:
@@ -31,28 +41,6 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 ## Rubric
 
 - Part 1
-
-# Lab 10 - NOT FINALIZED
-
-## Lab Procedure
-
-**For each step, include the command you used to perform the direction or answer the question posed.** If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.  
-`ssh` in to your AWS environment. If you've forgotten your key, you'll need to provision a new stack in AWS Educate and create a new key.  
-See [Remaking your AWS Educate environment](../../..) for instructions.
-
-1. Go to the folder in which you cloned your Git repository for this course.
-   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/` depending on your setup
-2. Create a directory called `Lab10`
-   - Path of `/home/ubuntu/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab10` OR `/home/ubuntu/git/spring2021-ceg2350-YOURGITHUBUSERNAME/Lab10` depending on your setup
-3. In this directory, create a file called `README.md`
-4. This `README.md` file is where you will put your answers to this lab. I recommend creating two connections to your Linux AWS so you can keep the `README.md` file open while you expirement with the lab.
-   - At the top of the file please enter your personal details as follows:
-
-```
-Name: Your name
-Email: Your email
-
-```
 
 ## Part 1: Can do `conda` (12 pts)
 
