@@ -45,11 +45,28 @@ The alias command I had you make so long ago, while inconvenient, needs an updat
    - `-f`
    - `-z`
    - `-x`
-2.
+2. On your AWS instance, find the size of your user's home directory.
+3. tar and compress your user's home directory
+4. What is the size of the tarball?
 
 ## Part 3 - SFTP
 
+1. `sftp` on to your AWS instance.
+2. Describe what the following options do:
+   - `ls`
+   - `lls`
+   - `put`
+   - `get`
+3. Retrieve the tarball from your AWS instance and download it to your local system
+
 ## Part 4 - Install miniconda
+
+## Part 5 - New account, who this?
+
+1. On your AWS instance, create a new user
+2. On your system, make a new key pair - you can use the default file name and location or a name of choice.
+3. Put your public key of the key pair you just made in your new user's `~/.ssh/authorized_keys` file
+4. `ssh` in to the AWS instance using the new user's username and the new private key.
 
 ## Extra Credit - Solving Conflict
 
