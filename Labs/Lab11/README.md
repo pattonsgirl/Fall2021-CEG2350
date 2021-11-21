@@ -21,7 +21,31 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - SSH config
 
+The alias command I had you make so long ago, while inconvenient, needs an update. Go ahead and comment it out / remove it (maybe comment for now so you don't have to hunt down your ip to your instance again).
+
+1. For an SSH `config` file, determine what values the following values hold:
+   - Host
+   - Hostname
+   - User
+   - Port
+   - IdentityFile
+2. Edit your ~/.ssh/config with an entry that will let you SSH in to your AWS instance.
+   - Copy / paste the entry into your lab notes as well
+3. Write the command to `ssh` to your AWS instance now that your `config` file is operational.
+
+- **Resources**
+  - [Create SSH config file on linux / unix](https://www.cyberciti.biz/faq/create-ssh-config-file-on-linux-unix/)
+  - [Using the SSH config file](https://linuxize.com/post/using-the-ssh-config-file/)
+
 ## Part 2 - tar it up
+
+1. For the `tar` command, write what each option below does:
+   - `-c`
+   - `-v`
+   - `-f`
+   - `-z`
+   - `-x`
+2.
 
 ## Part 3 - SFTP
 
