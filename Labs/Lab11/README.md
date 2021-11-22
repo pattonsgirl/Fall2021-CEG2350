@@ -135,6 +135,7 @@ For this extra credit, you are going to create and solve a merge conflict. I'm g
 1. Verify that your GitHub repo has a `Lab11` folder with at minimum:
 
    - `Lab11.md`
+   - `problem-child.txt` (if extra credit)
 
 2. In the Pilot Dropbox, paste the URL to the `Lab11` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab11
