@@ -94,11 +94,10 @@
 # Lab 10
 
 - explore your internet connection and the AWS internet connection
-- play with port forwarding using jupyter notebooks
-- Run a python web server on port 4444, find PID using lsof
-- EC - hello world in jupyter notebook
+- Run a python web server on port 4141, play with firewalls
+- Use lsof to find port service is running on, kill process
+- scan version of service running on instance
 - EC - echo a message over a port, access message via public IP or curl localhost
-- create and solve merge conflict
 
 # Lab 11?
 
@@ -110,20 +109,9 @@
 - checksums
 - EC - solve a merge conflict
 
-# Lab XX
-
-- branching
-- resolving merge conflicts
-- ~~debug an error with GDB - NEW~~
-
-# Lab 10
-
-- install anaconda and analyze tarball within
-- tar a folder, use sftp to transfer file, check checksum on both ends, then un-tar
-- create a new SSH keypair set - goal is to mess with SSH essential files
-- EC - install ninvaders
-
 # Removed:
 
 - ~~marco/polo script~~
   - pay attention to PATH and file locations
+  - EC - hello world in jupyter notebook
+  - play with port forwarding using jupyter notebooks
