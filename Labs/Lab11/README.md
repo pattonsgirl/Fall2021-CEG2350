@@ -91,7 +91,7 @@ Anaconda is a super popular python + common science and machine learning library
 
 ## Part 5 - New account - who this
 
-- **Useful commands: `useradd`, `ssh-keygen`, `vim`, `ssh`**
+- **Useful commands: `adduser`, `ssh-keygen`, `vim`, `ssh`**
 
 1. On your AWS instance, create a new user
 2. On your system, make a new key pair - you can use the default file name and location or a name of choice.
