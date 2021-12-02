@@ -181,10 +181,3 @@
 12. Open source movement
 13. Torrents?
 14. Commands: write, finger, who, mesg
-
-## Computer-ception
-
-1. Virtual machines (GUI style) and hypervisors
-2. Containers
-3. Cloud computing (Google, AWS, Azure) & basic terminology
-   - Storage buckets, cloud networking, heavy computation
