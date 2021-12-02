@@ -109,13 +109,13 @@ For this extra credit, you are going to create and solve a merge conflict. I'm g
    Add some text to this file, just to get the party started.
 3. `add`, `commit` and `push` the file, and confirm you see the file on GitHub.
 4. Create and switch to a new branch called `improvements`
-5. On the `improvements` branch, make some edits to `problem-child.txt` and `commit` (`push` is optional)
+5. On the `improvements` branch, make some edits to `problem-child.txt`
 6. `commit` and `push` you changes on your branch
 7. Switch back to the `main` branch
 
 - Don't `merge` yet - you'll ruin the expirement
 
-9. Making sure you are on the `main` branch, make some edits to `problem-child.txt`
+9. Making sure you are on the `main` branch, make some edits to `problem-child.txt` and `commit` (`push` is optional)
 10. `merge` the `improvements` branch with `main`
 
 ### Solve the conflict

@@ -111,6 +111,7 @@
    - stack vs. heap
 5. Libraries & dynamic linking (loads and links the shared libraries needed by an executable when it is executed)
 6. Overview of command line debugging
+7. Install from source w/ make
 
 ## Data storage and access:
 
@@ -152,32 +153,23 @@
 
 ## Networking
 
-1. Host names, IP addresses, Subnets, DNS, URLs
-2. Protocols: HTTP vs HTTPS
-3. TCP and UDP
-4. Ports vs sockets, clients and servers, secure shell, sftp
-   - Application opens a socket which is connected to a port
-5. X11 in terms of graphical “forwarding” and role of a GUI
-6. Web browsers (URLs, SSL certs) and clients (ping, wget, traceroute)
-7. Physical pieces of a network
-   - hosts, routers, switches, ISPs, wireless, LAN
-8. Firewalls
 9. OSI layers (encapsulation / packets, application, transport, network, datalink, physical)
+1. Host names, IP addresses, Subnets, DNS, URLs
+1. Protocols: HTTP vs HTTPS
+1. TCP and UDP
+1. Ports vs sockets, clients and servers, secure shell, sftp
+   - Application opens a socket which is connected to a port
+1. X11 in terms of graphical “forwarding” and role of a GUI
+1. Web browsers (URLs, SSL certs) and clients (ping, wget, traceroute)
+1. Physical pieces of a network
+   - hosts, routers, switches, ISPs, wireless, LAN
+1. Firewalls
 
 ## System Administration
 
-1. File system & hardware integrity
-2. Updates (Linux vs. Windows)
-   - .vimrc
-3. Installing packages with make
-4. systemctl & journalctl
-5. Virus scanning & types of computer diseases
-6. Creating archives, password locking files
-7. System restore (automatic, manual, backups)
-8. Windows Registry
-9. Passwords: /etc/passwd, /etc/shadow
-10. Boot scripts & init.d
-11. Access Control List (ACL)
-12. Open source movement
-13. Torrents?
-14. Commands: write, finger, who, mesg
+1. Updates (Linux vs. Windows)
+   - Linux - apt / package manager update request
+   - Windows - click button, prod server
+2. Virus scanning & types of computer diseases
+3. Creating archives, password locking files
+4. Torrents
