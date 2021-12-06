@@ -1,13 +1,3 @@
-5. ~~Hard links & soft links (ln)~~
-6. ~~Inodes~~
-7. ~~File locks~~
-8. ~~Alternate data streams (od, /dev/null) ~~
-9. Compression (gzip, tar)
-10. File systems: vfat, ntfs, ext
-    - implementations / fragmentation / performance
-11. Network file share: SFTP, NFS, Samba
-12. Commands: df, du, mount, umount, etc/fstab
-
 ## Intro topics
 
 1. How did the modern computer come to be?
@@ -103,15 +93,16 @@
 
 1. Interpreters
 2. Compilers
-   - Linux ELF (Executable & Linkable Format)
-   - Windows EXE
+   - c / c++
+     - Linux ELF (Executable & Linkable Format)
+     - Windows EXE
 3. Makefiles
 4. Memory handling in programming
    - size of memory - Bits (1), bytes (8 bits), word (16, 32, or 64 bits)
    - stack vs. heap
 5. Libraries & dynamic linking (loads and links the shared libraries needed by an executable when it is executed)
 6. Overview of command line debugging
-7. Install from source w/ make
+7. Install from source w/ make or installation scripts
 
 ## Data storage and access:
 
@@ -141,15 +132,18 @@
 1. Task Manager (Linux [top] vs. Windows)
 2. init process / kernel level vs user level processes
    1. parent vs child process
-3. System calls (way for programs / APIs to interact with the operating system)
-   1. systemd - systemctl & journalctl
+3. System calls & signals
+   1. systemd / init - systemctl & journalctl
    2. Fork & exec
-4. Commands: kill, ps, top, nice, bg, fg, jobs, nohup, killall, screen
-5. Preemptive (interruptible) and non-preemptive scheduling, priorities, signals
+   3. wait & exit
+   4. zombie and orphan process states
+4. Thread vs Fork
+5. Process scheduling & priorities
 6. CPU & kernel memory management
-7. Thread vs Fork
-8. Single CPU multi-tasking
-9. Multiple CPUs and SMP (Symmetric multiprocessing)
+   - page faults (minor & major)
+7. Single CPU multi-tasking
+8. Multiple CPUs and SMP (Symmetric multiprocessing)
+9. Commands: kill, ps, top, nice, bg, fg, jobs, screen
 
 ## Networking
 
@@ -172,4 +166,7 @@
    - Windows - click button, prod server
 2. Virus scanning & types of computer diseases
 3. Creating archives, password locking files
+
+   - Compression (gzip, tar)
+
 4. Torrents
