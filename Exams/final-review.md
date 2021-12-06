@@ -42,7 +42,7 @@
 6. Regular expressions
 7. Requiring root to run
 
-## Computer Hardware, Boot Process, and Data on Disks:
+## Computer Hardware, Boot Process, and Data on Disks
 
 1. Computer Hardware:
    - Von Neumann machine: Control unit; instruction fetch, decode, and execution
@@ -89,6 +89,47 @@
    - checkout
    - merge
 
+## Devices, Filesystems, Data Storage
+
+1. Devices
+   - block - SSD, HDD, NVME, CD, USB
+   - character - /dev/null, /dev/zero, /dev/random
+2. Storing data on a disk
+   - partition table
+   - partitions
+   - filesystem
+   - mounting filesystem
+3. Filesystems
+   - journaling
+   - Windows: vfat, ntfs
+   - Linux: ext4
+   - Special: swap
+4. Fragmentation and block devices
+5. Inodes
+   - hard links
+   - soft links
+   - cp vs mv
+6. File locks
+7. Commands: df, du, mkfs, gdisk, fdisk, parted, mount, umount, stat
+
+## Processes
+
+1. init process / kernel level vs user level processes
+   - parent vs child process
+2. System calls & signals
+   - systemd / init - systemctl & journalctl
+   - Fork & exec
+   - wait & exit
+   - zombie and orphan process states
+3. Thread vs Fork
+4. Process scheduling & priorities
+5. CPU & kernel memory management
+   - page faults (minor & major)
+   - virtual memory
+6. Single CPU multi-tasking & context switching
+7. Multiple CPUs and SMP (Symmetric multiprocessing)
+8. Commands: kill, ps, top, nice, bg, fg, jobs, screen
+
 ## Command line programming
 
 1. Interpreters
@@ -97,67 +138,54 @@
      - Linux ELF (Executable & Linkable Format)
      - Windows EXE
 3. Makefiles
+   - make
+   - targets
+   - dependencies
+   - actions
 4. Memory handling in programming
    - size of memory - Bits (1), bytes (8 bits), word (16, 32, or 64 bits)
    - stack vs. heap
 5. Libraries & dynamic linking (loads and links the shared libraries needed by an executable when it is executed)
 6. Overview of command line debugging
 7. Install from source w/ make or installation scripts
-
-## Data storage and access:
-
-1. RAM vs. ROM (SSDs vs HDDs)
-   - Suspend vs hibernation of an OS
-   - Virtual memory & swap tables (one go) / paging (chunking)
-2. Booting of OS
-   - Von Neumann machine: Control unit; instruction fetch, decode, and execution
-   - Power on self-test (POST)
-   - BIOS vs UEFI
-   - Boot loaders: NTLDR, GRUB
-3. Fragmentation
-4. Sequential and random access
-5. Compression (gzip, tar)
-6. File systems: vfat, ntfs, ext
-   - implementations / fragmentation / performance
-7. Network file share: SFTP, NFS, Samba
-8. Commands: df, du, mount, umount, etc/fstab
-9. MBR vs GPT
-10. Devices and drivers
-11. Hard links & soft links (ln)
-12. Inodes
-13. File locks
-
-## Processes
-
-1. Task Manager (Linux [top] vs. Windows)
-2. init process / kernel level vs user level processes
-   1. parent vs child process
-3. System calls & signals
-   1. systemd / init - systemctl & journalctl
-   2. Fork & exec
-   3. wait & exit
-   4. zombie and orphan process states
-4. Thread vs Fork
-5. Process scheduling & priorities
-6. CPU & kernel memory management
-   - page faults (minor & major)
-7. Single CPU multi-tasking
-8. Multiple CPUs and SMP (Symmetric multiprocessing)
-9. Commands: kill, ps, top, nice, bg, fg, jobs, screen
+8. Commands: make, which, whereis, python, gcc, java, javac, ldd, strace
 
 ## Networking
 
-9. OSI layers (encapsulation / packets, application, transport, network, datalink, physical)
-1. Host names, IP addresses, Subnets, DNS, URLs
-1. Protocols: HTTP vs HTTPS
-1. TCP and UDP
-1. Ports vs sockets, clients and servers, secure shell, sftp
+1. OSI model and TCP / IP model of networking
+   - application
+     - HTTP
+     - HTTPS
+       - Certificate Authorities & browser trust
+     - SSH
+       - private / public key pairs, `config` & `authorized_keys` files
+     - SFTP
+   - transport
+     - ports
+     - UDP
+     - TCP
+   - network / internet
+     - IP addresses (v4 and v6)
+     - DNS to resolve IP addresses
+     - subnets
+     - routes
+     - NAT
+   - data / link
+     - MAC
+     - NIC
+   - physical
+2. Ports vs sockets
    - Application opens a socket which is connected to a port
-1. X11 in terms of graphical “forwarding” and role of a GUI
-1. Web browsers (URLs, SSL certs) and clients (ping, wget, traceroute)
-1. Physical pieces of a network
-   - hosts, routers, switches, ISPs, wireless, LAN
-1. Firewalls
+3. Pieces of a network
+   - hosts (devices)
+   - routers
+   - switches
+   - ISPs
+4. Firewalls
+   - inbound / ingress
+   - outbound / egress
+   - common sense rules & trusted networks
+5. Commands: ip, route, arp, iptables, ping, curl, wget, nmap
 
 ## System Administration
 
@@ -166,7 +194,11 @@
    - Windows - click button, prod server
 2. Virus scanning & types of computer diseases
 3. Creating archives, password locking files
-
    - Compression (gzip, tar)
-
 4. Torrents
+
+## Excess Topics - not for studying
+
+- X11 and RDP
+- Network file shares: SFTP, NFS, Samba
+- Filesystem differences in terms of implementation
