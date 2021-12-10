@@ -138,7 +138,7 @@ Use make commands to compile and run the source code given in code.c
 1. IP addresses are assigned to computers / hosts on the network subnet.
 
    - False. IP addresses are assigned to Network Interface Cards
-   - TODO: Debate dropping?
+   - Note: Question dropped, all scores marked as 1 pt
 
 2. SSH commonly uses port 443
 
