@@ -41,7 +41,7 @@ Use make commands to compile and run the source code given in code.c
 
 - make alpha OR make
   - alpha is first and therefore is the default target make will use
-- make cappa
+- make delta
 
 ## Written Answer
 
